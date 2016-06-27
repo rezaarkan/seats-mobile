@@ -1,5 +1,27 @@
-@import "intro";
+@import
+'vendors/normalize',
+'vendors/materialdesignicons',
+'vendors/materialize';
 
-body {
-  font-family: Arial;
-}
+@import
+'abstracts/material-color',
+'abstracts/variables',
+'abstracts/mixins',
+'abstracts/breakpoint',
+'abstracts/functions',
+'abstracts/helpers';
+
+@import
+'themes/color';
+
+@import
+'base/globals',
+'base/global-components';
+
+@import
+'components/Navbar';
+
+// @import
+// 'pages/HalteDetails';
+
+@import 'shame';

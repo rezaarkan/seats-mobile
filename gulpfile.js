@@ -3,7 +3,10 @@ var gulp = require('gulp'),
 
 var cssSrcPath = 'app/styles',
     cssSrcName = '/main.scss',
-    cssDestPath = './dist';
+    cssDestPath = './dist',
+    jsSrcPath = 'app/scripts/**/*.js',
+    jsDestPath = './dist',
+    jsDestName = 'seats.min.js';
 
 gulp.task('css', function() {
   return gulp.src(cssSrcPath + cssSrcName)
@@ -15,10 +18,24 @@ gulp.task('css', function() {
            }))
            .pipe($.sourcemaps.write())
            .pipe(gulp.dest(cssDestPath));
-})
+});
 
-gulp.task('css:watch', function() {
+gulp.task('js', function() {
+  return gulp.src(jsSrcPath)
+    .pipe($.concat(jsDestName))
+    .pipe(gulp.dest(jsDestPath))
+});
+
+gulp.task('js:build', function() {
+  return gulp.src(jsSrcPath)
+    .pipe($.concat(jsDestName))
+    .pipe($.uglify())
+    .pipe(gulp.dest(jsDestPath))
+});
+
+gulp.task('watch', function() {
   gulp.watch(cssSrcPath + '/**/*.scss', ['css']);
+  gulp.watch(jsSrcPath, ['js']);
 });
 
 gulp.task('css:build', ['css'], function() {

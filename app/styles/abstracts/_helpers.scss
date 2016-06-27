@@ -1,0 +1,230 @@
+//Helpers from Materialize//
+
+// Text
+// .left-align
+// .center-align
+// .right-align
+// .truncate
+
+// Position
+// .valign-wrapper
+// .valign
+// .left
+// .right
+
+// Visibility
+// .hide
+// .hide-on-small-only
+// .hide-on-med-only
+// .hide-on-med-and-down
+// .hide-on-med-and-up
+// .hide-on-large-only
+
+// Misc
+// .hoverable
+
+.center-horizontal{
+	&-row{
+		text-align: center;
+	}
+
+	&-col{
+		display: inline-block;
+		float: none;
+	}
+}
+
+.body-text{
+	@include text-body;
+}
+
+.caption-text{
+	@include text-caption-2;
+}
+
+.subhead-text{
+	@include text-body;
+	color: $clr-red;
+	text-align: left;
+	@extend %mp-clear;
+	@include text-type($medium, none, uppercase);
+}
+
+.icon{
+	&-12{
+		font-size: 12px !important;
+		font-size: calculateRem(12px) !important;
+	}
+}
+
+.border{
+	&-top{
+		border-top: 1px solid $black-12;
+	}
+
+	&-bottom{
+		border-bottom: 1px solid $black-12;
+	}
+
+	&-left{
+		border-left: 1px solid $black-12;
+	}
+
+	&-right{
+		border-right: 1px solid $black-12;
+	}
+}
+
+.weight{
+	&-regular{
+		font-weight: $regular;
+	}
+
+	&-medium{
+		font-weight: $medium;
+	}
+
+	&-bold{
+		font-weight: $bold;
+	}
+}
+
+.black{
+	&-12{
+		background-color: $black-12;
+
+		&-text{
+			color: $black-12;
+		}
+	}
+
+	&-26{
+		background-color: $black-26;
+
+		&-text{
+			color: $black-26;
+		}
+	}
+
+	&-54{
+		background-color: $black-54;
+		
+		&-text{
+			color: $black-54;
+		}
+	}
+}
+
+.no-padding{
+	padding: 0;
+
+	&-top{
+		padding-top: 0 !important;
+	}
+
+	&-bottom{
+		padding-bottom: 0 !important;
+	}
+
+	&-left{
+		padding-left: 0 !important;
+	}
+
+	&-right{
+		padding-right: 0 !important;
+	}
+
+	&-vertical{
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+
+	&-horizontal{
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
+
+.no-margin{
+	margin: 0;
+
+	&-top{
+		margin-top: 0 !important;
+	}
+
+	&-bottom{
+		margin-bottom: 0 !important;
+	}
+
+	&-left{
+		margin-left: 0 !important;
+	}
+
+	&-right{
+		margin-right: 0 !important;
+	}
+
+	&-vertical{
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+
+	&-horizontal{
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+}
+
+.absolute{
+	&-bottom{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+}
+
+.fixed{
+	&-bottom{
+		position: fixed;
+		left: 0;
+		bottom: 0;
+	}
+}
+
+.hidden{
+	display: none !important;
+}
+
+.clearfix:after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+$properties: (margin, padding);
+$sides: (top, right, bottom, left);
+$alignments: (left, center, right);
+
+@each $align in $alignments {
+	.text-#{$align} {
+		text-align: #{$align};
+	}
+}
+
+@each $prop in $properties {
+  @for $i from 1 through 10 {
+    .#{$prop}-#{$i*4} {
+      #{$prop}: #{$i*4}px !important;
+      $temp: $i*4px;
+      #{$prop}: calculateRem($temp) !important;
+    }
+    @each $side in $sides {
+      .#{$prop}-#{$side}-#{$i*4} {
+        #{$prop}-#{$side}: #{$i*4}px !important;
+        $temp: $i*4px;
+        #{$prop}-#{$side}: calculateRem($temp) !important;
+      }
+    }
+  }
+}

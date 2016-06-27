@@ -1,0 +1,14 @@
+.divider{
+	width: 100%;
+	height: 1px;
+	height: calculateRem(1px);
+
+	background-color: $border-color;
+}
+
+.container{
+	@include padding-h(24px);
+	@include padding-h(calculateRem(24px));
+	@include padding-v(24px);
+	@include padding-v(calculateRem(24px));
+}

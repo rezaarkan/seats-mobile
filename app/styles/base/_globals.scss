@@ -1,0 +1,38 @@
+html, body{
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	color: $black-87;
+	font-weight: 400;
+	line-height: calculateRem(24px);
+	@extend %mp-clear;
+
+	background: $clr-grey-50;
+}
+
+ul, li{
+	@extend %mp-clear;
+	list-style: none;
+}
+
+input, button, submit{
+  border: none;
+  background: none;
+  cursor: pointer;
+  @extend %mp-clear;
+
+  &:active, &:visited, &:link{
+  	background: none;
+  }
+
+  > a, a:hover, a:visited, a:link, a:active{
+  	text-decoration: none;
+  }
+}
+
+a, a:hover, a:visited, a:link, a:active{
+	text-decoration: none;
+}
+
+.material-icons{
+	@extend %no-select;
+}

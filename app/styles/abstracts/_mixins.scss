@@ -1,0 +1,323 @@
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+%mp-clear {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin visual-hide{
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+//Typography//
+@mixin font-size($size) {
+  font-size: $size; //Fallback in px
+  font-size: calculateRem($size);
+}
+
+@mixin truncate{
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+%no-select{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+//Opacity//
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+//Gradients//
+@function convert-angle($value, $unit) {
+  $convertable-units: deg grad turn rad;
+  $conversion-factors: 1 (10grad/9deg) (1turn/360deg) (3.1415926rad/180deg);
+  @if index($convertable-units, unit($value)) and index($convertable-units, $unit) {
+    @return $value
+             / nth($conversion-factors, index($convertable-units, unit($value)))
+             * nth($conversion-factors, index($convertable-units, $unit));
+  }
+  
+  @warn "Cannot convert `#{unit($value)}` to `#{$unit}`.";
+}
+
+@function is-direction($value) {
+  $is-direction: index((to top, to top right, to right top, to right, to bottom right, to right bottom, to bottom, to bottom left, to left bottom, to left, to left top, to top left), $value);
+  $is-angle: type-of($value) == 'number' and index('deg' 'grad' 'turn' 'rad', unit($value));
+  
+  @return $is-direction or $is-angle;
+}
+
+@function legacy-direction($value) {
+  @if is-direction($value) == false {
+    @warn "Cannot convert `#{$value}` to legacy syntax because it doesn't seem to be an angle or a direction";
+  }
+  
+  $conversion-map: ( 
+    to top          : bottom,
+    to top right    : bottom left,
+    to right top    : left bottom,
+    to right        : left,
+    to bottom right : top left,
+    to right bottom : left top,
+    to bottom       : top,
+    to bottom left  : top right,
+    to left bottom  : right top,
+    to left         : right,
+    to left top     : right bottom,
+    to top left     : bottom right
+  );
+    
+  @if map-has-key($conversion-map, $value) {
+    @return map-get($conversion-map, $value);
+  }
+  
+  @return 90deg - convert-angle($value, 'deg');
+}
+
+@mixin linear-gradient($direction, $color-stops...) {
+  @if is-direction($direction) == false {
+    $color-stops: ($direction, $color-stops);
+    $direction: 180deg;
+  }
+  
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
+
+//Alignments//
+%center-block{
+  display: block;
+  margin: 0 auto;
+}
+
+//Typography//
+@mixin text-type($weight, $decoration, $transform) {
+  font-weight: $weight;
+  text-decoration: $decoration;
+  text-transform: $transform;
+}
+
+@mixin text-display-4{
+  @include font-size(112px);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+@mixin text-display-3{
+  @include font-size(56px);
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+
+@mixin text-display-2{
+  @include font-size(45px);
+  font-weight: 400;
+  line-height: 48px;
+}
+
+@mixin text-display-1{
+  @include font-size(34px);
+  font-weight: 400;
+  line-height: 40px;
+}
+
+@mixin text-headline{
+  @include font-size(24px);
+  font-weight: 400;
+  line-height: 32px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin text-title{
+  @include font-size(20px);
+  font-weight: $medium;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+@mixin text-subhead{
+  @include font-size(16px);
+  font-weight: $medium;
+  line-height: 24px;
+}
+
+@mixin text-subhead-2{
+  @include font-size(16px);
+  font-weight: 400;
+  line-height: 28px;
+}
+
+@mixin text-body{
+  @include font-size(14px);
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+@mixin text-caption{
+  @include font-size(12px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+@mixin text-caption-2{
+  @include font-size(12px);
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+@mixin text-mini{
+  @include font-size(10px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+//Sizing//
+@mixin size($value) {
+  width: $value;
+  height: $value;
+}
+
+@mixin size-min($value) {
+  min-width: $value;
+  min-height: $value;
+}
+
+@mixin size-max($value) {
+  max-width: $value;
+  max-height: $value;
+}
+
+@mixin circle($value) {
+  width: $value;
+  height: $value;
+  border-radius: 50%;
+}
+
+@mixin circle-min($value) {
+  min-width: $value;
+  min-height: $value;
+  border-radius: 50%;
+}
+
+@mixin circle-max($value) {
+  max-width: $value;
+  max-height: $value;
+  border-radius: 50%;
+}
+
+@mixin aspect-ratio($width, $height) {
+  width: 100%;
+  position: relative;
+
+  &:before{
+    content: "";
+    display: block;
+    padding-top: ($height / $width) * 100%
+  }
+}
+
+
+//Margins & Paddings//
+@mixin margin-h($value) {
+  margin-left: $value;
+  margin-right: $value;
+}
+
+@mixin margin-v($value) {
+  margin-top: $value;
+  margin-bottom: $value;
+}
+
+@mixin padding-h($value) {
+  padding-left: $value;
+  padding-right: $value;
+}
+
+@mixin padding-v($value) {
+  padding-top: $value;
+  padding-bottom: $value;
+}
+
+
+//Elements//
+@mixin button-link($color) {
+  color: $color;
+  @include text-type($medium, none, uppercase);
+  text-align: center;
+  @extend %no-select;
+}
+
+@mixin button-modify-size($height) {
+  height: $height;
+  line-height: $height;
+}
+
+@mixin button($color, $radius, $padv, $padh) {
+  background-color: $color;
+  border-radius: $radius;
+  padding: $padv $padh;
+  text-align: center;
+  @extend %no-select;
+}
+
+@mixin button-outline($color, $radius, $padv, $padh) {
+  background-color: transparent;
+  border: 1px solid $color;
+  color: $color;
+  border-radius: $radius;
+  padding: $padv $padh;
+  text-align: center;
+  @extend %no-select;
+}
+
+@mixin divider($color, $width, $mrgv) {
+  background-color: $color;
+  width: $width;
+  height: 1px;
+  margin-top: $mrgv;
+  margin-bottom: $mrgv;
+  @extend %no-select;
+}
