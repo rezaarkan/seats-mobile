@@ -321,3 +321,40 @@
   margin-bottom: $mrgv;
   @extend %no-select;
 }
+
+//Breakpoint Media Query//
+@mixin xl-media {
+  @media #{$xl-devices} {
+    @content;
+  }
+}
+
+@mixin l-media {
+  @media #{$l-devices} {
+    @content;
+  }
+}
+
+@mixin m-media {
+  @media #{$m-devices} {
+    @content;
+  }
+}
+
+@mixin s-media {
+  @media #{$s-devices} {
+    @content;
+  }
+}
+
+@mixin xs-media {
+  @media #{$xs-devices} {
+    @content;
+  }
+}
+
+@mixin xxs-media {
+  @media #{$xxs-devices} {
+    @content;
+  }
+}

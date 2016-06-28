@@ -1,0 +1,17 @@
+.SectionCariRute{
+	padding-top: 32px;
+	padding-top: calculateRem(32px);
+
+	padding-bottom: 32px;
+	padding-bottom: calculateRem(32px);
+
+	.block-button{
+		display: block;
+
+		width: 75%;
+		float: right;
+
+		padding-top: 16px;
+		padding-top: calculateRem(16px);
+	}
+}

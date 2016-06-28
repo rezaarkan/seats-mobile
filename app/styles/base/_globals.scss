@@ -7,6 +7,8 @@ html, body{
 	@extend %mp-clear;
 
 	background: $clr-grey-50;
+
+	min-height: 100vh;
 }
 
 ul, li{

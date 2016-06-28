@@ -1,7 +1,6 @@
 @import
 'vendors/normalize',
-'vendors/materialdesignicons',
-'vendors/materialize';
+'vendors/materialdesignicons';
 
 @import
 'abstracts/material-color',
@@ -19,9 +18,10 @@
 'base/global-components';
 
 @import
-'components/Navbar';
+'components/Navbar',
+'components/CariRuteInput';
 
-// @import
-// 'pages/HalteDetails';
+@import
+'pages/SectionCariRute';
 
 @import 'shame';

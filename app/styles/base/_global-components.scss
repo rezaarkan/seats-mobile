@@ -12,3 +12,37 @@
 	@include padding-v(24px);
 	@include padding-v(calculateRem(24px));
 }
+
+.container-mobile{
+	$mobile-web-container-size: calculateRem(380px);
+
+	width: $mobile-web-container-size;
+
+	@include xxs-media{
+		width: 100%;	
+	}
+
+	@include xs-media{
+		width: 100%;	
+	}
+
+	@include s-media{
+		width: $mobile-web-container-size;	
+	}
+
+	@include m-media{
+		width: $mobile-web-container-size;	
+	}
+
+	@include l-media{
+		width: $mobile-web-container-size;	
+	}
+
+	@include xl-media{
+		width: $mobile-web-container-size;	
+	}
+
+	margin: 0 auto;
+
+	background-color: $clr-white;
+}

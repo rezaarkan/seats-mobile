@@ -25,6 +25,6 @@ const store = configureStore(reduxState)
 
 ReactDOM.render((
   <Provider store={store}>
-    { createRoutes(browserHistory) }
+      { createRoutes(browserHistory) }
   </Provider>
 ), document.getElementById('root'))

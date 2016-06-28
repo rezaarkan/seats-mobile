@@ -1,0 +1,52 @@
+.CariRuteInput{
+	.block-left{
+		display: block;
+
+		width: 25%;
+		float: left;
+
+		box-sizing: border-box;
+		padding-top: 24px;
+		padding-top: calculateRem(24px);
+	}
+
+	.block-right{
+		display: block;
+
+		box-sizing: border-box;
+		padding-left: 8px;
+		padding-left: calculateRem(8px);
+		padding-top: 16px;
+		padding-top: calculateRem(16px);
+		padding-bottom: 6px;
+		padding-bottom: calculateRem(6px);
+
+		width: 75%;
+		float: right;
+
+		border-bottom: 1px solid $border-color;
+	}
+
+	.circle{
+		@include circle(30px);
+
+		margin: 0 auto;
+
+		background-color: $clr-blue-500;
+	}
+
+	.location{
+		@include text-subhead;
+		color: $black-87;
+		font-weight: $regular;
+	}
+
+	.label{
+		@include text-caption-2;
+		color: $black-54;
+		text-transform: uppercase;
+
+		margin-bottom: 4px;
+		margin-bottom: calculateRem(4px);
+	}
+}
