@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"rute",
+				"rute-size"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"clr",
+				"clr-blue-500"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"sw",
+				"swipeableChild"
+			],
+			[
 				"paddin",
 				"padding-top"
 			],
@@ -482,38 +514,6 @@
 			[
 				"dest",
 				"destHeight"
-			],
-			[
-				"image",
-				"image2Data"
-			],
-			[
-				"can",
-				"canvas1"
-			],
-			[
-				"des",
-				"destHeight"
-			],
-			[
-				"sourc",
-				"sourceHeight"
-			],
-			[
-				"source",
-				"sourceWidth"
-			],
-			[
-				"sour",
-				"sourceY"
-			],
-			[
-				"canvas",
-				"canvas1"
-			],
-			[
-				"cr",
-				"croppingYPosition"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "app/containers/Home.js",
 			"settings":
 			{
-				"buffer_size": 1415,
+				"buffer_size": 1840,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,63 +531,42 @@
 			"file": "app/components/SectionCariRute.js",
 			"settings":
 			{
-				"buffer_size": 654,
+				"buffer_size": 695,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/styles/abstracts/_helpers.scss",
+			"file": "app/components/SectionDaftarRute.js",
 			"settings":
 			{
-				"buffer_size": 2913,
+				"buffer_size": 401,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/styles/components/_CariRuteInput.scss",
+			"contents": "import React, { Component, PropTypes } from 'react'\nimport { Link } from 'react-router'\n\nclass SectionDaftarRute extends Component {\n  render() {\n    return (\n      <div className=\"RuteItem\">\n        <div className=\"block-left\">\n          <div className=\"rute\">\n            {this.props.rute}\n          </div>\n        </div>\n        <div className=\"block-right\">\n          <div className=\"halte\">\n            <i className=\"mdi \">\n            <p>{this.props.halteCount}</p>\n          </div>\n          <div className=\"bus\">\n            {this.props.busCount}\n          </div>\n        </div>\n      </div>\n    )\n  }\n}\n\nexport default SectionDaftarRute\n",
+			"file": "app/components/RuteItem.js",
+			"file_size": 656,
+			"file_write_time": 131116026026424221,
 			"settings":
 			{
-				"buffer_size": 803,
+				"buffer_size": 646,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/styles/pages/_SectionCariRute.scss",
+			"file": "app/styles/components/_RuteItem.scss",
 			"settings":
 			{
-				"buffer_size": 260,
+				"buffer_size": 484,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/styles/abstracts/_variables.scss",
+			"file": "app/styles/main.scss",
 			"settings":
 			{
-				"buffer_size": 621,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/styles/abstracts/_mixins.scss",
-			"settings":
-			{
-				"buffer_size": 6785,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/styles/base/_global-components.scss",
-			"settings":
-			{
-				"buffer_size": 398,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/containers/App.js",
-			"settings":
-			{
-				"buffer_size": 710,
+				"buffer_size": 443,
 				"line_ending": "Windows"
 			}
 		}
@@ -660,19 +639,27 @@
 	],
 	"file_history":
 	[
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/base/_globals.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/CariRuteInput.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/vendors/_materialdesignicons.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_SectionCariRute.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/main.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_variables.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/themes/_color.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_helpers.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/_shame.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_SectionDaftarRute.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteItem.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/CariRuteInput.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_CariRuteInput.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/containers/App.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/Navbar.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_mixins.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_variables.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_helpers.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/base/_global-components.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/themes/_color.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/base/_globals.scss",
 		"/E/xampp/htdocs/seats-react-universal/package.json",
 		"/E/xampp/htdocs/seats-react-mobile/webpack.config.js",
 		"/E/xampp/htdocs/seats-react-mobile/.babelrc",
 		"/E/xampp/htdocs/seats-react-mobile/app/server/server.js",
 		"/E/xampp/htdocs/seats-react-mobile/webpack.server.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/containers/App.js",
 		"/E/xampp/htdocs/seats-react-mobile/gulpfile.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/Home.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/app.js",
@@ -685,8 +672,6 @@
 		"/E/xampp/htdocs/seats-react-mobile/app/scripts/1 - materialize.min.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/scripts/0 - jquery-3.0.0.min.js",
 		"/E/xampp/htdocs/seats-react-mobile/dist/rev-manifest.json",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/base/_global-components.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/Navbar.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/Navbar.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/Intro.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/routes/index.js",
@@ -781,13 +766,7 @@
 		"/E/xampp/htdocs/kulina-mobile-web/node_modules/analytics.js/analytics.js",
 		"/E/xampp/htdocs/kulina-mobile-web/reducers/questions.js",
 		"/E/xampp/htdocs/kulina-mobile-web/src/styles/kulina/vendors/materialize/components/_buttons.scss",
-		"/E/xampp/htdocs/kulina-mobile-web/dist/kulina.min.js",
-		"/E/xampp/htdocs/Kulina-Mobile App Materialize/views/checkout.php",
-		"/E/xampp/htdocs/kulina-mobile-web/src/styles/kulina/components/_header.scss",
-		"/E/xampp/htdocs/kulina-mobile-web/src/styles/kulina/components/_modals.scss",
-		"/E/xampp/htdocs/kulina-mobile-web/src/scripts/1 - materialize.js",
-		"/E/xampp/htdocs/kulina-mobile-web/src/scripts/0 - jquery.min.js",
-		"/E/xampp/htdocs/kulina-mobile-web/node_modules/react-date-range/lib/Calendar.js"
+		"/E/xampp/htdocs/kulina-mobile-web/dist/kulina.min.js"
 	],
 	"find":
 	{
@@ -805,6 +784,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"circle",
+			"blue",
 			"break",
 			"x-",
 			"break",
@@ -930,9 +911,7 @@
 			"render",
 			"ls.get",
 			"google",
-			"<goo",
-			"<google",
-			"google"
+			"<goo"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -961,7 +940,7 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -970,19 +949,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1415,
+						"buffer_size": 1840,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								216,
-								159
-							],
-							[
-								220,
-								220
+								1559,
+								1559
 							]
 						],
 						"settings":
@@ -992,10 +967,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 595.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -1004,15 +979,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 654,
+						"buffer_size": 695,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								548,
-								548
+								239,
+								239
 							]
 						],
 						"settings":
@@ -1020,470 +995,6 @@
 							"syntax": "Packages/JSX/JSX.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/styles/abstracts/_helpers.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2913,
-						"regions":
-						{
-							"gutter_color_1086":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/black.png",
-								"regions":
-								[
-									[
-										1086,
-										1093
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1367":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										1367,
-										1395
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1411":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										1411,
-										1442
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1456":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										1456,
-										1485
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1500":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										1500,
-										1530
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1548":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										1548,
-										1576
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1577":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										1577,
-										1608
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1628":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										1628,
-										1657
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1658":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										1658,
-										1688
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1728":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										1728,
-										1755
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1771":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										1771,
-										1801
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1815":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										1815,
-										1843
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1858":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										1858,
-										1887
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1905":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										1905,
-										1932
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1933":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										1933,
-										1963
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1983":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										1983,
-										2011
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_2012":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										2012,
-										2041
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_2199":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										2199,
-										2225
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_2587":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										2587,
-										2624
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_2646":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										2646,
-										2693
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_2763":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										2763,
-										2811
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_2835":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										2835,
-										2893
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_548":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/red.png",
-								"regions":
-								[
-									[
-										548,
-										565
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_669":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										669,
-										698
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_699":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										699,
-										742
-									]
-								],
-								"scope": "gutter_color"
-							}
-						},
-						"selection":
-						[
-							[
-								640,
-								645
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 440.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/styles/components/_CariRuteInput.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 803,
-						"regions":
-						{
-							"gutter_color_137":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/blue.png",
-								"regions":
-								[
-									[
-										160,
-										160
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_402":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/blue.png",
-								"regions":
-								[
-									[
-										485,
-										567
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_501":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/blue.png",
-								"regions":
-								[
-									[
-										530,
-										564
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_530":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/blue.png",
-								"regions":
-								[
-									[
-										530,
-										564
-									]
-								],
-								"scope": "gutter_color"
-							}
-						},
-						"selection":
-						[
-							[
-								427,
-								400
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/styles/pages/_SectionCariRute.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 260,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								111,
-								111
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1493,75 +1004,135 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "app/styles/abstracts/_variables.scss",
+					"buffer": 2,
+					"file": "app/components/SectionDaftarRute.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 621,
+						"buffer_size": 401,
 						"regions":
 						{
-							"gutter_color_101":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/rgba(0,0,0,0.12).png",
-								"regions":
-								[
-									[
-										101,
-										130
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_11":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/rgba(0,0,0,0.87).png",
-								"regions":
-								[
-									[
-										11,
-										40
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_132":
+						},
+						"selection":
+						[
+							[
+								329,
+								329
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/components/RuteItem.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 646,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								426,
+								426
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/styles/components/_RuteItem.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 484,
+						"regions":
+						{
+							"gutter_color_350":
 							{
 								"flags": 144,
 								"icon": "Cache/GutterColor/blue.png",
 								"regions":
 								[
 									[
-										132,
-										158
+										386,
+										420
 									]
 								],
 								"scope": "gutter_color"
 							},
-							"gutter_color_41":
+							"gutter_color_352":
 							{
 								"flags": 144,
-								"icon": "Cache/GutterColor/rgba(0,0,0,0.54).png",
+								"icon": "Cache/GutterColor/white.png",
 								"regions":
 								[
 									[
-										41,
-										70
+										364,
+										384
 									]
 								],
 								"scope": "gutter_color"
 							},
-							"gutter_color_71":
+							"gutter_color_353":
 							{
 								"flags": 144,
-								"icon": "Cache/GutterColor/rgba(0,0,0,0.26).png",
+								"icon": "Cache/GutterColor/blue.png",
 								"regions":
 								[
 									[
-										71,
-										100
+										386,
+										420
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_364":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/white.png",
+								"regions":
+								[
+									[
+										364,
+										384
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_386":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/blue.png",
+								"regions":
+								[
+									[
+										386,
+										420
 									]
 								],
 								"scope": "gutter_color"
@@ -1570,8 +1141,37 @@
 						"selection":
 						[
 							[
-								598,
-								598
+								475,
+								475
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 25.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/styles/main.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 443,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1582,133 +1182,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/styles/abstracts/_mixins.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6785,
-						"regions":
-						{
-							"gutter_color_3766":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/gray.png",
-								"regions":
-								[
-									[
-										3766,
-										3803
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_647":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										647,
-										669
-									]
-								],
-								"scope": "gutter_color"
-							}
-						},
-						"selection":
-						[
-							[
-								6754,
-								6754
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4801.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/styles/base/_global-components.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 398,
-						"regions":
-						{
-							"gutter_color_366":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										366,
-										396
-									]
-								],
-								"scope": "gutter_color"
-							}
-						},
-						"selection":
-						[
-							[
-								346,
-								346
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app/containers/App.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 710,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								381,
-								381
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JSX/JSX.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -1763,6 +1237,46 @@
 		"selected_items":
 		[
 			[
+				"material",
+				"app\\styles\\vendors\\_materialdesignicons.scss"
+			],
+			[
+				"main",
+				"app\\styles\\main.scss"
+			],
+			[
+				"ruteite",
+				"app\\styles\\components\\_RuteItem.scss"
+			],
+			[
+				"secti",
+				"app\\styles\\pages\\_SectionCariRute.scss"
+			],
+			[
+				"shame",
+				"app\\styles\\_shame.scss"
+			],
+			[
+				"cari",
+				"app\\styles\\components\\_CariRuteInput.scss"
+			],
+			[
+				"car",
+				"app\\styles\\components\\_CariRuteInput.scss"
+			],
+			[
+				"glo",
+				"app\\styles\\base\\_global-components.scss"
+			],
+			[
+				"nav",
+				"app\\styles\\components\\Navbar.scss"
+			],
+			[
+				"colo",
+				"app\\styles\\themes\\_color.scss"
+			],
+			[
 				"glob",
 				"app\\styles\\base\\_global-components.scss"
 			],
@@ -1773,10 +1287,6 @@
 			[
 				"var",
 				"app\\styles\\abstracts\\_variables.scss"
-			],
-			[
-				"main",
-				"app\\styles\\main.scss"
 			],
 			[
 				"color",
@@ -1967,16 +1477,8 @@
 				"containers\\PlanDetail.js"
 			],
 			[
-				"shame",
-				"src\\styles\\kulina\\_shame.scss"
-			],
-			[
 				"index.",
 				"server\\views\\index.ejs"
-			],
-			[
-				"material",
-				"src\\styles\\kulina\\vendors\\_materialdesignicons.scss"
 			],
 			[
 				"check",
@@ -1989,10 +1491,6 @@
 			[
 				"chec",
 				"containers\\Checkout.js"
-			],
-			[
-				"nav",
-				"src\\styles\\kulina\\layout\\_navigation.scss"
 			],
 			[
 				"analytic",
@@ -2232,9 +1730,17 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "",
+		"last_filter": "se",
 		"selected_items":
 		[
+			[
+				"se",
+				"E:\\xampp\\htdocs\\seats-react\\seats.sublime-project"
+			],
+			[
+				"seat",
+				"E:\\xampp\\htdocs\\seats-react\\seats.sublime-project"
+			],
 			[
 				"",
 				"F:\\Reza Projects\\kulina-mobile-web.sublime-project"

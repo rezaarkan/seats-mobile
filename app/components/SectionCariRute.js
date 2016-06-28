@@ -16,9 +16,10 @@ class SectionCariRute extends Component {
         <CariRuteInput 
         	label={"tujuan"}
         	location={"Candi Prambanan"}
+          type={"finish"}
         />
         <div className="block-button">
-        	<RaisedButton label="Cari Rute"/>
+        	<RaisedButton label="Cari Rute" primary={true}/>
         </div>
       </div>
     )

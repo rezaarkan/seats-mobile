@@ -1,0 +1,67 @@
+.RuteItem{
+	border-bottom: 1px solid $border-color;
+
+	&:last-child{
+		border-bottom: none;
+	}
+
+	.block-left{
+		display: block;
+		padding-top: 20px;
+		padding-top: calculateRem(20px);
+		padding-bottom: 20px;
+		padding-bottom: calculateRem(20px);
+
+		width: 25%;
+
+		float: left;
+	}
+
+	.block-right{
+		display: block;
+		padding-top: 14px;
+		padding-top: calculateRem(14px);
+
+		width: 75%;
+
+		float: right;
+	}
+
+	.rute{
+		$rute-size: 40px;
+
+		display: block;
+		margin: 0 auto;
+
+		@include circle($rute-size);
+		@include circle(calculateRem($rute-size));
+
+		@include text-subhead;
+		line-height: $rute-size;
+		text-align: center;
+		color: $clr-white;
+
+		background-color: $clr-blue-500;
+	}
+
+	.halte, .bus{
+		span{
+			vertical-align: middle;
+
+			margin: 0;
+
+			@include text-body;
+		}
+
+		i{
+			vertical-align: middle;
+
+			margin-right: 12px;
+			margin-right: calculateRem(12px);
+
+			font-size: 22px;
+			font-size: calculateRem(22px);
+			color: $black-26;	
+		}
+	}
+}

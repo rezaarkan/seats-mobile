@@ -4,9 +4,23 @@ import { Link } from 'react-router';
 
 import Navbar from 'components/Navbar';
 import SectionCariRute from 'components/SectionCariRute';
+import SectionDaftarRute from 'components/SectionDaftarRute';
 
 import {Tabs, Tab} from 'material-ui/Tabs';
 import SwipeableViews from 'react-swipeable-views';
+
+const style={
+  swipeable: {
+    boxSizing: 'border-box',
+    minHeight: '300px',
+    borderBottom: '1px solid rgba(0,0,0,0.12)',
+    overflow: 'hidden',
+  },
+  swipeableChild: {
+    minHeight: '300px',
+    overflow: 'hidden',
+  }
+}
 
 class Home extends Component {
 
@@ -34,21 +48,22 @@ class Home extends Component {
             onChange={this.handleChange}
             value={this.state.slideIndex}
           >
-            <Tab label="Tab One" value={0} />
-            <Tab label="Tab Two" value={1} />
-            <Tab label="Tab Three" value={2} />
+            <Tab label="Cari rute" value={0}/>
+            <Tab label="rute" value={1} />
+            <Tab label="halte" value={2} />
           </Tabs>
           <SwipeableViews
+            style={style.swipeable}
             index={this.state.slideIndex}
             onChangeIndex={this.handleChange}
           >
-            <div>
+            <div style={style.swipeableChild}>
               <SectionCariRute />
             </div>
-            <div>
-              slide n°2
+            <div style={style.swipeableChild}>
+              <SectionDaftarRute />
             </div>
-            <div>
+            <div style={style.swipeableChild}>
               slide n°3
             </div>
           </SwipeableViews>
