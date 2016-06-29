@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"Rute",
+				"RuteIndicator"
+			],
+			[
+				"tex",
+				"text-subhead"
+			],
+			[
+				"compo",
+				"componentWillMount	Life Cycle Method"
+			],
+			[
+				"trans",
+				"transitText"
+			],
+			[
+				"List",
+				"ListItem"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
 				"rute",
 				"rute-size"
 			],
@@ -40,20 +76,12 @@
 				"padding-top"
 			],
 			[
-				"padd",
-				"padding-top"
-			],
-			[
 				"bor",
 				"border-box"
 			],
 			[
 				"ca",
 				"calculateRem"
-			],
-			[
-				"mar",
-				"margin-bottom"
 			],
 			[
 				"font",
@@ -268,10 +296,6 @@
 				"padding-left"
 			],
 			[
-				"tex",
-				"text-align"
-			],
-			[
 				"black-",
 				"black-54"
 			],
@@ -364,10 +388,6 @@
 				"black-54"
 			],
 			[
-				"trans",
-				"trans-time"
-			],
-			[
 				"tran",
 				"transition"
 			],
@@ -440,10 +460,6 @@
 				"mobile-web-container-size"
 			],
 			[
-				"margi",
-				"margin-top"
-			],
-			[
 				"colo",
 				"color"
 			],
@@ -498,75 +514,32 @@
 			[
 				"imag",
 				"imageSrcPath"
-			],
-			[
-				"bower",
-				"bower"
-			],
-			[
-				"as",
-				"assets"
-			],
-			[
-				"he",
-				"height"
-			],
-			[
-				"dest",
-				"destHeight"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/containers/Home.js",
+			"file": "app/containers/PilihRute.js",
 			"settings":
 			{
-				"buffer_size": 1840,
+				"buffer_size": 979,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/components/SectionCariRute.js",
+			"file": "app/components/RencanaRuteItem.js",
 			"settings":
 			{
-				"buffer_size": 695,
+				"buffer_size": 1158,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/components/SectionDaftarRute.js",
+			"file": "app/styles/components/_RencanaRuteItem.scss",
 			"settings":
 			{
-				"buffer_size": 401,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "import React, { Component, PropTypes } from 'react'\nimport { Link } from 'react-router'\n\nclass SectionDaftarRute extends Component {\n  render() {\n    return (\n      <div className=\"RuteItem\">\n        <div className=\"block-left\">\n          <div className=\"rute\">\n            {this.props.rute}\n          </div>\n        </div>\n        <div className=\"block-right\">\n          <div className=\"halte\">\n            <i className=\"mdi \">\n            <p>{this.props.halteCount}</p>\n          </div>\n          <div className=\"bus\">\n            {this.props.busCount}\n          </div>\n        </div>\n      </div>\n    )\n  }\n}\n\nexport default SectionDaftarRute\n",
-			"file": "app/components/RuteItem.js",
-			"file_size": 656,
-			"file_write_time": 131116026026424221,
-			"settings":
-			{
-				"buffer_size": 646,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/styles/components/_RuteItem.scss",
-			"settings":
-			{
-				"buffer_size": 484,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/styles/main.scss",
-			"settings":
-			{
-				"buffer_size": 443,
+				"buffer_size": 211,
 				"line_ending": "Windows"
 			}
 		}
@@ -639,19 +612,30 @@
 	],
 	"file_history":
 	[
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/main.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteIndicator.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteIndicator.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteItem.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_helpers.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_mixins.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/routes/index.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteItem.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/containers/Home.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/SearchBar.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/HalteItem.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/SectionDaftarHalte.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/SectionDaftarRute.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/SectionCariRute.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/server/views/index.ejs",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/vendors/_materialdesignicons.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_SectionCariRute.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/main.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/_shame.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_SectionDaftarRute.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteItem.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/CariRuteInput.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_CariRuteInput.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/App.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/Navbar.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_mixins.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_variables.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_helpers.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/base/_global-components.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/themes/_color.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/base/_globals.scss",
@@ -661,20 +645,17 @@
 		"/E/xampp/htdocs/seats-react-mobile/app/server/server.js",
 		"/E/xampp/htdocs/seats-react-mobile/webpack.server.js",
 		"/E/xampp/htdocs/seats-react-mobile/gulpfile.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/containers/Home.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/app.js",
 		"/E/nodejs/node_modules/npm/package.json",
 		"/E/xampp/htdocs/seats-react-mobile/package.json",
 		"/E/xampp/htdocs/seats-react-mobile/node_modules/material-ui/package.json",
 		"/E/xampp/htdocs/seats-react-mobile/node_modules/material-ui/index.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/vendors/_materialize.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/server/views/index.ejs",
 		"/E/xampp/htdocs/seats-react-mobile/app/scripts/1 - materialize.min.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/scripts/0 - jquery-3.0.0.min.js",
 		"/E/xampp/htdocs/seats-react-mobile/dist/rev-manifest.json",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/Navbar.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/Intro.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/routes/index.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/Questions.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/themes/_dark.scss",
 		"/E/xampp/htdocs/seats-react-mobile/dist/main.css",
@@ -758,15 +739,7 @@
 		"/E/xampp/htdocs/kulina-mobile-web/node_modules/react-sidebar/dist-modules/index.js",
 		"/E/xampp/htdocs/kulina-mobile-web/node_modules/react-sidebar/dist-modules/sidebar.js",
 		"/E/xampp/htdocs/kulina-mobile-web/node_modules/react-materialize/lib/Input.js",
-		"/E/xampp/htdocs/kulina-catalog/package.json",
-		"/E/xampp/htdocs/kulina-catalog/gulpfile.js",
-		"/E/xampp/htdocs/kulina-catalog/views/assets/styles/kulina.min.css",
-		"/E/xampp/htdocs/kulina-catalog/src/styles/main.scss",
-		"/E/xampp/htdocs/kulina-mobile-web/src/styles/kulina/utils/_mixins.scss",
-		"/E/xampp/htdocs/kulina-mobile-web/node_modules/analytics.js/analytics.js",
-		"/E/xampp/htdocs/kulina-mobile-web/reducers/questions.js",
-		"/E/xampp/htdocs/kulina-mobile-web/src/styles/kulina/vendors/materialize/components/_buttons.scss",
-		"/E/xampp/htdocs/kulina-mobile-web/dist/kulina.min.js"
+		"/E/xampp/htdocs/kulina-catalog/package.json"
 	],
 	"find":
 	{
@@ -784,6 +757,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"rute",
+			"ruteit",
+			"rute",
+			"style",
+			"white",
 			"circle",
 			"blue",
 			"break",
@@ -906,12 +884,7 @@
 			"js",
 			"atau",
 			"hidden",
-			"facebooklo",
-			"<Goo",
-			"render",
-			"ls.get",
-			"google",
-			"<goo"
+			"facebooklo"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -940,114 +913,24 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/containers/Home.js",
+					"file": "app/containers/PilihRute.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1840,
+						"buffer_size": 979,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1559,
-								1559
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JSX/JSX.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 595.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/components/SectionCariRute.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 695,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								239,
-								239
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JSX/JSX.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/components/SectionDaftarRute.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 401,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								329,
-								329
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JSX/JSX.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/components/RuteItem.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 646,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								426,
-								426
+								838,
+								838
 							]
 						],
 						"settings":
@@ -1064,75 +947,66 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "app/styles/components/_RuteItem.scss",
+					"buffer": 1,
+					"file": "app/components/RencanaRuteItem.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 484,
+						"buffer_size": 1158,
 						"regions":
 						{
-							"gutter_color_350":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/blue.png",
-								"regions":
-								[
-									[
-										386,
-										420
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_352":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										364,
-										384
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_353":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/blue.png",
-								"regions":
-								[
-									[
-										386,
-										420
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_364":
+						},
+						"selection":
+						[
+							[
+								886,
+								886
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 157.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/styles/components/_RencanaRuteItem.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 211,
+						"regions":
+						{
+							"gutter_color_538":
 							{
 								"flags": 144,
 								"icon": "Cache/GutterColor/white.png",
 								"regions":
 								[
 									[
-										364,
-										384
+										211,
+										211
 									]
 								],
 								"scope": "gutter_color"
 							},
-							"gutter_color_386":
+							"gutter_color_560":
 							{
 								"flags": 144,
 								"icon": "Cache/GutterColor/blue.png",
 								"regions":
 								[
 									[
-										386,
-										420
+										211,
+										211
 									]
 								],
 								"scope": "gutter_color"
@@ -1141,8 +1015,8 @@
 						"selection":
 						[
 							[
-								475,
-								475
+								206,
+								206
 							]
 						],
 						"settings":
@@ -1151,38 +1025,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 25.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/styles/main.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 443,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1237,12 +1083,36 @@
 		"selected_items":
 		[
 			[
-				"material",
+				"main",
+				"app\\styles\\main.scss"
+			],
+			[
+				"rute",
+				"app\\styles\\components\\_RuteItem.scss"
+			],
+			[
+				"hel",
+				"app\\styles\\abstracts\\_helpers.scss"
+			],
+			[
+				"mixi",
+				"app\\styles\\abstracts\\_mixins.scss"
+			],
+			[
+				"rou",
+				"app\\routes\\index.js"
+			],
+			[
+				"index.ej",
+				"app\\server\\views\\index.ejs"
+			],
+			[
+				"mate",
 				"app\\styles\\vendors\\_materialdesignicons.scss"
 			],
 			[
-				"main",
-				"app\\styles\\main.scss"
+				"material",
+				"app\\styles\\vendors\\_materialdesignicons.scss"
 			],
 			[
 				"ruteite",
@@ -1385,10 +1255,6 @@
 				"app\\server\\server.js"
 			],
 			[
-				"mate",
-				"app\\scripts\\1 - materialize.min.js"
-			],
-			[
 				"mat",
 				"app\\scripts\\1 - materialize.min.js"
 			],
@@ -1399,10 +1265,6 @@
 			[
 				"gulp",
 				"gulpfile.js"
-			],
-			[
-				"index.ej",
-				"app\\server\\views\\index.ejs"
 			],
 			[
 				"route",
@@ -1581,10 +1443,6 @@
 				"src\\styles\\kulina\\utils\\_helpers.scss"
 			],
 			[
-				"hel",
-				"node_modules\\crypto-browserify\\helpers.js"
-			],
-			[
 				"button",
 				"src\\styles\\kulina\\components\\_button.scss"
 			],
@@ -1639,10 +1497,6 @@
 			[
 				"pilih",
 				"containers\\PilihLokasi.js"
-			],
-			[
-				"mixi",
-				"src\\styles\\kulina\\utils\\_mixins.scss"
 			],
 			[
 				"modals",
@@ -1730,9 +1584,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "se",
+		"last_filter": "cata",
 		"selected_items":
 		[
+			[
+				"cata",
+				"F:\\Reza Projects\\kulina-catalog.sublime-project"
+			],
 			[
 				"se",
 				"E:\\xampp\\htdocs\\seats-react\\seats.sublime-project"
@@ -1756,10 +1614,6 @@
 			[
 				"seats",
 				"E:\\xampp\\htdocs\\seats-react\\seats.sublime-project"
-			],
-			[
-				"cata",
-				"F:\\Reza Projects\\kulina-meals-catalogue.sublime-project"
 			],
 			[
 				"catalo",

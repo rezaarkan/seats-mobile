@@ -5,15 +5,15 @@ import { Link } from 'react-router';
 import Navbar from 'components/Navbar';
 import SectionCariRute from 'components/SectionCariRute';
 import SectionDaftarRute from 'components/SectionDaftarRute';
+import SectionDaftarHalte from 'components/SectionDaftarHalte';
 
 import {Tabs, Tab} from 'material-ui/Tabs';
 import SwipeableViews from 'react-swipeable-views';
 
-const style={
+const styles={
   swipeable: {
     boxSizing: 'border-box',
     minHeight: '300px',
-    borderBottom: '1px solid rgba(0,0,0,0.12)',
     overflow: 'hidden',
   },
   swipeableChild: {
@@ -53,18 +53,18 @@ class Home extends Component {
             <Tab label="halte" value={2} />
           </Tabs>
           <SwipeableViews
-            style={style.swipeable}
+            style={styles.swipeable}
             index={this.state.slideIndex}
             onChangeIndex={this.handleChange}
           >
-            <div style={style.swipeableChild}>
+            <div style={styles.swipeableChild}>
               <SectionCariRute />
             </div>
-            <div style={style.swipeableChild}>
+            <div style={styles.swipeableChild}>
               <SectionDaftarRute />
             </div>
-            <div style={style.swipeableChild}>
-              slide n°3
+            <div style={styles.swipeableChild}>
+              <SectionDaftarHalte />
             </div>
           </SwipeableViews>
           </div>

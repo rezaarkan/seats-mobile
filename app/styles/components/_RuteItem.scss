@@ -1,10 +1,4 @@
 .RuteItem{
-	border-bottom: 1px solid $border-color;
-
-	&:last-child{
-		border-bottom: none;
-	}
-
 	.block-left{
 		display: block;
 		padding-top: 20px;

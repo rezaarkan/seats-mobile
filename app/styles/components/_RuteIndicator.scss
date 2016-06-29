@@ -1,0 +1,40 @@
+.RuteIndicator{
+	margin-bottom: 8px;
+	margin-bottom: calculateRem(8px);
+
+	.text{
+		@include text-subhead;
+		font-weight: $regular;
+
+		margin-right: 6px;
+		margin-right: calculateRem(6px);
+	}
+
+	.plus{
+		@include text-body;
+
+		margin-left: 2px;
+		margin-left: calculateRem(2px);
+		margin-right: 2px;
+		margin-right: calculateRem(2px);
+	}
+
+	.rute{
+		$rute-size: 26px;
+		display: inline-block;
+		margin-left: 6px;
+		margin-left: calculateRem(6px);
+		margin-right: 6px;
+		margin-right: calculateRem(6px);
+
+		@include circle($rute-size);
+		@include circle(calculateRem($rute-size));
+
+		@include text-caption;
+		line-height: $rute-size;
+		text-align: center;
+		color: $clr-white;
+
+		background-color: $clr-blue-500;
+	}
+}
