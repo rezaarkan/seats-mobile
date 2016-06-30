@@ -5,7 +5,7 @@ class Navbar extends Component {
   render() {
     return (
       <div className="Navbar">
-        <div className="container-mobile">
+        <div className="container-mobile border-none">
 
         </div>
       </div>

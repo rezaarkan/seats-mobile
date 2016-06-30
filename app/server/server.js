@@ -25,7 +25,6 @@ if ( process.env.NODE_ENV === 'production' ) {
   scriptSrcs = [
     `/${assets.vendor.js}`,
     `/${assets.app.js}`,
-    '/seats.min.js'
   ];
   styleSrc = `/${refManifest['main.css']}`;
 } else {
@@ -33,7 +32,6 @@ if ( process.env.NODE_ENV === 'production' ) {
     'http://localhost:3001/static/vendor.js',
     'http://localhost:3001/static/dev.js',
     'http://localhost:3001/static/app.js',
-    '/seats.min.js'
   ];
   styleSrc = '/main.css';
 }

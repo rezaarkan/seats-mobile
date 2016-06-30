@@ -1,15 +1,91 @@
 .RencanaRuteItem{
-	.time{
-		@include text-headline;
-		text-align: center;
-
-		margin-bottom: 0;
-	}
 	.text{
-		@include text-body;
-		text-align: center;
+		@include text-subhead;
+		font-weight: $regular;
+		text-transform: capitalize;
+		text-align: left;
+	}
 
-		line-height: 16px;
-		line-height: calculateRem(16px);
+	.time{
+		@include text-body;
+		font-size: 13px;
+		font-size: calculateRem(13px);
+		font-weight: $regular;
+		text-transform: capitalize;
+	}
+
+	.from, .transit{
+		.text{
+			margin-bottom: 6px;
+			margin-bottom: calculateRem(6px);
+		}
+
+		.block-left{
+			display: block;
+			width: 65%;
+
+			float: left;
+
+			i{
+				vertical-align: middle;
+
+				font-size: 18px;
+				font-size: calculateRem(18px);
+				line-height: 18px;
+				font-size: calculateRem(18px);
+				color: $black-54;
+
+				margin-right: 12px;
+				margin-right: calculateRem(12px);
+			}
+		}
+
+		.block-right{
+			display: block;
+			width: 35%;
+
+			float: right;
+
+			text-align: right;
+		}
+	}
+
+	.journey{
+		.text{
+			@include text-body;
+			font-size: 13px;
+			font-size: calculateRem(13px);
+			font-weight: $regular;
+			text-transform: capitalize;
+		}
+
+		.block-left{
+			display: block;
+			width: 65%;
+
+			float: left;
+		}
+
+		.block-right{
+			display: block;
+			width: 35%;
+
+			float: right;
+			text-align: right;
+		}
+	}
+
+	.line{
+		&:before{
+			position: absolute;
+			border: 1px dashed $clr-cyan-500;
+			width: 0;
+			height: 130px;
+			display: block;
+			content: ''; left: 50%;
+			z-index: 1;
+			bottom: 26px;
+			margin-left: -1px;
+		}
 	}
 }

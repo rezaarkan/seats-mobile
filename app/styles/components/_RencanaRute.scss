@@ -1,0 +1,38 @@
+.RencanaRute{
+	.header-rute{
+		top: initial;
+
+		@include text-body;
+		font-size: 13px;
+		font-size: calculateRem(13px);
+		text-transform: uppercase;
+		color: $black-54;
+	}
+
+	.header-halte{
+		@include text-caption;
+		font-size: 13px;
+		font-size: calculateRem(13px);
+		text-transform: uppercase;
+		color: $black-54;
+	}
+
+	.time{
+		@include text-headline;
+		text-align: center;
+
+		margin-bottom: 0;
+	}
+
+	.text{
+		@include text-body;
+		text-align: center;
+
+		line-height: 16px;
+		line-height: calculateRem(16px);
+	}
+
+	.RuteIndicator{
+		margin: 0;
+	}
+}

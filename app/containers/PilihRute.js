@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router';
 
 import Navbar from 'components/Navbar';
-import RencanaRuteItem from 'components/RencanaRuteItem';
+import PilihRuteItem from 'components/PilihRuteItem';
 
 class PilihRute extends Component {
 
@@ -14,20 +14,23 @@ class PilihRute extends Component {
 
         </Navbar>
         <div className="container-mobile">
-          <RencanaRuteItem
+          <PilihRuteItem
+            halteKeberangkatan={"Mandala Krida"}
+            transitCount={"1"}
+          />
+          <PilihRuteItem
+            halteKeberangkatan={"Mandala Krida"}
+            transitCount={"1"}
+          />
+          <PilihRuteItem
             halteKeberangkatan={"Mandala Krida"}
           />
-          <RencanaRuteItem
+          <PilihRuteItem
             halteKeberangkatan={"Mandala Krida"}
           />
-          <RencanaRuteItem
+          <PilihRuteItem
             halteKeberangkatan={"Mandala Krida"}
-          />
-          <RencanaRuteItem
-            halteKeberangkatan={"Mandala Krida"}
-          />
-          <RencanaRuteItem
-            halteKeberangkatan={"Mandala Krida"}
+            last={true}
           />
         </div>
 

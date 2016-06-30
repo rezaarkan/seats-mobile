@@ -30,6 +30,7 @@ class SectionDaftarHalte extends Component {
         />
         <HalteItem
           halteName={"Kridosono"}
+          last={true}
         />
       </div>
     )

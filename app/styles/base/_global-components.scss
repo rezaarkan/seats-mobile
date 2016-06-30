@@ -27,7 +27,7 @@
 	}
 
 	@include s-media{
-		width: $mobile-web-container-size;	
+		width: 100%;
 	}
 
 	@include m-media{
@@ -45,4 +45,5 @@
 	margin: 0 auto;
 
 	background-color: $clr-white;
+	border-bottom: 1px solid $border-color;
 }

@@ -22,6 +22,15 @@ const styles={
 
 class RuteItem extends Component {
   render() {
+    var lastTrue = this.props.last || false;
+    var divider;
+
+    if (lastTrue) {
+      divider=<br />;
+    } else {
+      divider=<Divider inset={true} />;
+    }
+
     return (
       <div className="RuteItem clearfix">
         <Link to="/">      
@@ -51,7 +60,7 @@ class RuteItem extends Component {
           >
           </ListItem>
         </Link>
-        <Divider inset={true} />
+        {divider}
       </div>
     )
   }

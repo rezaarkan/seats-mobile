@@ -56,6 +56,7 @@ class SectionDaftarRute extends Component {
           rute={"2A"}
           halteCount={"14"}
           busCount={"6"}
+          last={true}
         />
       </div>
     )

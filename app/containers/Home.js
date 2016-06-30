@@ -40,9 +40,9 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <Navbar>
+        <Navbar
 
-        </Navbar>
+        />
         <div className="container-mobile">
           <Tabs
             onChange={this.handleChange}

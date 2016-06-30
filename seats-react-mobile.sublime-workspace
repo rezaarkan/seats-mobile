@@ -4,8 +4,36 @@
 		"selected_items":
 		[
 			[
+				"renca",
+				"rencanaRuteIndicator"
+			],
+			[
+				"di",
+				"divider"
+			],
+			[
 				"mar",
+				"margin-bottom"
+			],
+			[
+				"margin",
 				"margin-right"
+			],
+			[
+				"RencanaR",
+				"RencanaRuteItem"
+			],
+			[
+				"Rencana",
+				"RencanaRuteItem"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"tex",
+				"text-caption"
 			],
 			[
 				"margi",
@@ -18,10 +46,6 @@
 			[
 				"Rute",
 				"RuteIndicator"
-			],
-			[
-				"tex",
-				"text-subhead"
 			],
 			[
 				"compo",
@@ -64,10 +88,6 @@
 				"position"
 			],
 			[
-				"di",
-				"display"
-			],
-			[
 				"sw",
 				"swipeableChild"
 			],
@@ -82,10 +102,6 @@
 			[
 				"ca",
 				"calculateRem"
-			],
-			[
-				"font",
-				"font-weight"
 			],
 			[
 				"paddi",
@@ -332,10 +348,6 @@
 				"content"
 			],
 			[
-				"margin",
-				"margin-top"
-			],
-			[
 				"marg",
 				"margin-left"
 			],
@@ -502,28 +514,16 @@
 			[
 				"margin-",
 				"margin-bottom"
-			],
-			[
-				"mg",
-				"mg-base"
-			],
-			[
-				"boo",
-				"bootstrapPath"
-			],
-			[
-				"imag",
-				"imageSrcPath"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/containers/PilihRute.js",
+			"file": "app/containers/RencanaRute.js",
 			"settings":
 			{
-				"buffer_size": 979,
+				"buffer_size": 2153,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,15 +531,7 @@
 			"file": "app/components/RencanaRuteItem.js",
 			"settings":
 			{
-				"buffer_size": 1158,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/styles/components/_RencanaRuteItem.scss",
-			"settings":
-			{
-				"buffer_size": 211,
+				"buffer_size": 4262,
 				"line_ending": "Windows"
 			}
 		}
@@ -607,54 +599,61 @@
 	[
 		"/E/xampp/htdocs/seats-react-mobile",
 		"/E/xampp/htdocs/seats-react-mobile/app",
-		"/E/xampp/htdocs/seats-react-mobile/app/components",
-		"/E/xampp/htdocs/seats-react-mobile/app/containers"
+		"/E/xampp/htdocs/seats-react-mobile/app/components"
 	],
 	"file_history":
 	[
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/main.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteIndicator.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteIndicator.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteItem.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/server/server.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/PilihRuteItem.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RencanaRuteItem.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/Navbar.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_helpers.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_mixins.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RencanaRute.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteIndicator.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteIndicator.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_PilihRuteItem.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/containers/HomeMobile.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/base/_global-components.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_variables.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/routes/index.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteItem.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/containers/Home.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/SearchBar.js",
+		"/E/xampp/htdocs/seats-react-mobile/package.json",
+		"/E/xampp/htdocs/seats-react-mobile/app/containers/PilihRute.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/HalteItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/SectionDaftarHalte.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/SectionDaftarRute.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/SectionCariRute.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/server/views/index.ejs",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/vendors/_materialdesignicons.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_SectionCariRute.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/_shame.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_SectionDaftarRute.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteItem.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/main.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/RencanaRuteItem.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/containers/RencanaRute.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/CariRuteInput.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_CariRuteInput.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/SectionCariRute.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/containers/Home.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_SectionCariRute.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/vendors/_materialdesignicons.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/scripts/1 - materialize.min.js",
+		"/E/xampp/htdocs/seats-react-mobile/webpack.server.js",
+		"/E/xampp/htdocs/seats-react-mobile/webpack.config.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/server/views/index.ejs",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteItem.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_mixins.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/SearchBar.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/_shame.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_SectionDaftarRute.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/App.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/Navbar.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_variables.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/base/_global-components.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/themes/_color.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/base/_globals.scss",
 		"/E/xampp/htdocs/seats-react-universal/package.json",
-		"/E/xampp/htdocs/seats-react-mobile/webpack.config.js",
 		"/E/xampp/htdocs/seats-react-mobile/.babelrc",
-		"/E/xampp/htdocs/seats-react-mobile/app/server/server.js",
-		"/E/xampp/htdocs/seats-react-mobile/webpack.server.js",
 		"/E/xampp/htdocs/seats-react-mobile/gulpfile.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/app.js",
 		"/E/nodejs/node_modules/npm/package.json",
-		"/E/xampp/htdocs/seats-react-mobile/package.json",
 		"/E/xampp/htdocs/seats-react-mobile/node_modules/material-ui/package.json",
 		"/E/xampp/htdocs/seats-react-mobile/node_modules/material-ui/index.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/vendors/_materialize.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/scripts/1 - materialize.min.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/scripts/0 - jquery-3.0.0.min.js",
 		"/E/xampp/htdocs/seats-react-mobile/dist/rev-manifest.json",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/Navbar.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/Intro.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/Questions.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/themes/_dark.scss",
@@ -731,15 +730,7 @@
 		"/E/xampp/htdocs/kulina-mobile-web/node_modules/react-facebook-login/demo/index.js",
 		"/E/xampp/htdocs/kulina-mobile-web/src/todo.md",
 		"/E/xampp/htdocs/kulina-mobile-web/vendors/react-sidebar/sidebar_content.js",
-		"/E/xampp/htdocs/kulina-mobile-web/vendors/react-sidebar/index.js",
-		"/E/xampp/htdocs/kulina-mobile-web/vendors/react-sidebar/sidebar.js",
-		"/E/xampp/htdocs/kulina-mobile-web/node_modules/react-sidebar/src/sidebar.js",
-		"/E/xampp/htdocs/kulina-mobile-web/node_modules/react-sidebar/example/src/sidebar_content.js",
-		"/E/xampp/htdocs/kulina-mobile-web/node_modules/react-sidebar/example/src/index.js",
-		"/E/xampp/htdocs/kulina-mobile-web/node_modules/react-sidebar/dist-modules/index.js",
-		"/E/xampp/htdocs/kulina-mobile-web/node_modules/react-sidebar/dist-modules/sidebar.js",
-		"/E/xampp/htdocs/kulina-mobile-web/node_modules/react-materialize/lib/Input.js",
-		"/E/xampp/htdocs/kulina-catalog/package.json"
+		"/E/xampp/htdocs/kulina-mobile-web/vendors/react-sidebar/index.js"
 	],
 	"find":
 	{
@@ -757,6 +748,25 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"react-res",
+			"border",
+			"no",
+			"no-b",
+			"verti",
+			"mater",
+			"rencana",
+			"local",
+			"localhost",
+			"local",
+			"dev",
+			"webpack dev",
+			"webpack-de",
+			"NODE_En",
+			"dev",
+			"deve",
+			"dev",
+			"webpack-ass",
+			"assets",
 			"rute",
 			"ruteit",
 			"rute",
@@ -865,26 +875,7 @@
 			"submitchec",
 			"track",
 			".track",
-			"track",
-			"response",
-			"data-t",
-			"theme-d",
-			"g-sign",
-			"google",
-			"register",
-			"facebookl",
-			"regis",
-			"facebookL",
-			"facebook",
-			"register",
-			"login",
-			"facebookL",
-			"js-logincha",
-			"js-",
-			"js",
-			"atau",
-			"hidden",
-			"facebooklo"
+			"track"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -913,24 +904,54 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/containers/PilihRute.js",
+					"file": "app/containers/RencanaRute.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 979,
+						"buffer_size": 2153,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								838,
-								838
+								462,
+								462
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 240.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/components/RencanaRuteItem.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3514,
+								3514
 							]
 						],
 						"settings":
@@ -944,91 +965,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/components/RencanaRuteItem.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1158,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								886,
-								886
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JSX/JSX.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 157.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/styles/components/_RencanaRuteItem.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 211,
-						"regions":
-						{
-							"gutter_color_538":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										211,
-										211
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_560":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/blue.png",
-								"regions":
-								[
-									[
-										211,
-										211
-									]
-								],
-								"scope": "gutter_color"
-							}
-						},
-						"selection":
-						[
-							[
-								206,
-								206
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1083,16 +1019,148 @@
 		"selected_items":
 		[
 			[
-				"main",
-				"app\\styles\\main.scss"
+				"server",
+				"app\\server\\server.js"
 			],
 			[
-				"rute",
-				"app\\styles\\components\\_RuteItem.scss"
+				"renca",
+				"app\\components\\RencanaRuteItem.js"
 			],
 			[
 				"hel",
 				"app\\styles\\abstracts\\_helpers.scss"
+			],
+			[
+				"nav",
+				"app\\components\\Navbar.js"
+			],
+			[
+				"rencana",
+				"app\\styles\\components\\_RencanaRute.scss"
+			],
+			[
+				"rute",
+				"app\\styles\\components\\_RuteIndicator.scss"
+			],
+			[
+				"pilh",
+				"app\\styles\\components\\_PilihRuteItem.scss"
+			],
+			[
+				"pili",
+				"app\\components\\PilihRuteItem.js"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"glo",
+				"app\\styles\\base\\_global-components.scss"
+			],
+			[
+				"var",
+				"app\\styles\\abstracts\\_variables.scss"
+			],
+			[
+				"home",
+				"app\\containers\\Home.js"
+			],
+			[
+				"route",
+				"app\\routes\\index.js"
+			],
+			[
+				"halte",
+				"app\\components\\HalteItem.js"
+			],
+			[
+				"sec",
+				"app\\components\\SectionDaftarRute.js"
+			],
+			[
+				"pilih",
+				"app\\containers\\PilihRute.js"
+			],
+			[
+				"globa",
+				"app\\styles\\base\\_global-components.scss"
+			],
+			[
+				"ruteit",
+				"app\\components\\RuteItem.js"
+			],
+			[
+				"daftar",
+				"app\\components\\SectionDaftarHalte.js"
+			],
+			[
+				"cari",
+				"app\\styles\\components\\_CariRuteInput.scss"
+			],
+			[
+				"ruteite",
+				"app\\components\\RuteItem.js"
+			],
+			[
+				"mate",
+				"app\\styles\\vendors\\_materialdesignicons.scss"
+			],
+			[
+				"mater",
+				"app\\styles\\vendors\\_materialdesignicons.scss"
+			],
+			[
+				"pil",
+				"app\\styles\\components\\_PilihRuteItem.scss"
+			],
+			[
+				"main",
+				"app\\styles\\main.scss"
+			],
+			[
+				"rutein",
+				"app\\components\\RuteIndicator.js"
+			],
+			[
+				"ren",
+				"app\\styles\\components\\_RencanaRuteItem.scss"
+			],
+			[
+				"web",
+				"webpack.server.js"
+			],
+			[
+				"serv",
+				"app\\server\\server.js"
+			],
+			[
+				"glob",
+				"app\\styles\\base\\_global-components.scss"
+			],
+			[
+				"ind",
+				"app\\server\\views\\index.ejs"
+			],
+			[
+				"ser",
+				"app\\server\\server.js"
+			],
+			[
+				"pac",
+				"package.json"
+			],
+			[
+				"webp",
+				"webpack.config.js"
+			],
+			[
+				"webpack",
+				"webpack.config.js"
+			],
+			[
+				"packa",
+				"package.json"
 			],
 			[
 				"mixi",
@@ -1107,16 +1175,8 @@
 				"app\\server\\views\\index.ejs"
 			],
 			[
-				"mate",
-				"app\\styles\\vendors\\_materialdesignicons.scss"
-			],
-			[
 				"material",
 				"app\\styles\\vendors\\_materialdesignicons.scss"
-			],
-			[
-				"ruteite",
-				"app\\styles\\components\\_RuteItem.scss"
 			],
 			[
 				"secti",
@@ -1127,36 +1187,16 @@
 				"app\\styles\\_shame.scss"
 			],
 			[
-				"cari",
-				"app\\styles\\components\\_CariRuteInput.scss"
-			],
-			[
 				"car",
 				"app\\styles\\components\\_CariRuteInput.scss"
-			],
-			[
-				"glo",
-				"app\\styles\\base\\_global-components.scss"
-			],
-			[
-				"nav",
-				"app\\styles\\components\\Navbar.scss"
 			],
 			[
 				"colo",
 				"app\\styles\\themes\\_color.scss"
 			],
 			[
-				"glob",
-				"app\\styles\\base\\_global-components.scss"
-			],
-			[
 				"mix",
 				"app\\styles\\abstracts\\_mixins.scss"
-			],
-			[
-				"var",
-				"app\\styles\\abstracts\\_variables.scss"
 			],
 			[
 				"color",
@@ -1187,20 +1227,12 @@
 				"app\\containers\\App.js"
 			],
 			[
-				"home",
-				"app\\containers\\Home.js"
-			],
-			[
 				"babel",
 				".babelrc"
 			],
 			[
 				"",
 				"webpack.config.js"
-			],
-			[
-				"server",
-				"app\\server\\server.js"
 			],
 			[
 				"se",
@@ -1219,24 +1251,8 @@
 				"app\\app.js"
 			],
 			[
-				"pac",
-				"package.json"
-			],
-			[
-				"packa",
-				"package.json"
-			],
-			[
-				"pack",
-				"package.json"
-			],
-			[
 				"bab",
 				".babelrc"
-			],
-			[
-				"webpack",
-				"webpack.config.js"
 			],
 			[
 				"hom",
@@ -1251,10 +1267,6 @@
 				"app\\server\\views\\index.ejs"
 			],
 			[
-				"serv",
-				"app\\server\\server.js"
-			],
-			[
 				"mat",
 				"app\\scripts\\1 - materialize.min.js"
 			],
@@ -1265,14 +1277,6 @@
 			[
 				"gulp",
 				"gulpfile.js"
-			],
-			[
-				"route",
-				"app\\routes\\index.js"
-			],
-			[
-				"globa",
-				"app\\styles\\base\\_globals.scss"
 			],
 			[
 				"dark",
@@ -1305,10 +1309,6 @@
 			[
 				"hal",
 				"resources\\styles\\components\\HalteInfoSidebar.scss"
-			],
-			[
-				"ser",
-				"server\\server.js"
 			],
 			[
 				"kulina",
@@ -1369,10 +1369,6 @@
 			[
 				"app.",
 				"containers\\App.js"
-			],
-			[
-				"pili",
-				"containers\\PilihLokasi.js"
 			],
 			[
 				"buildin",
@@ -1455,10 +1451,6 @@
 				"src\\todo.md"
 			],
 			[
-				"pil",
-				"containers\\PilihLokasi.js"
-			],
-			[
 				"pl",
 				"containers\\PlanDetail.js"
 			],
@@ -1493,10 +1485,6 @@
 			[
 				"header.sc",
 				"src\\styles\\kulina\\components\\_header.scss"
-			],
-			[
-				"pilih",
-				"containers\\PilihLokasi.js"
 			],
 			[
 				"modals",
@@ -1541,42 +1529,6 @@
 			[
 				"20",
 				"node_modules\\bl\\node_modules\\readable-stream\\doc\\wg-meetings\\2015-01-30.md"
-			],
-			[
-				"react-s",
-				"styles\\kulina\\vendors\\_react-slick.scss"
-			],
-			[
-				"ma-f",
-				"styles\\kulina\\pages\\_ma-f-browse.scss"
-			],
-			[
-				"p",
-				"package.json"
-			],
-			[
-				"gulpfi",
-				"gulpfile.js"
-			],
-			[
-				"vari",
-				"styles\\sass\\kulina\\utils\\_variables.scss"
-			],
-			[
-				"tags",
-				"styles\\sass\\kulina\\components\\_tags.scss"
-			],
-			[
-				"mixins.sc",
-				"styles\\sass\\kulina\\utils\\_mixins.scss"
-			],
-			[
-				"overrides",
-				"styles\\kulina\\vendors\\_overrides.scss"
-			],
-			[
-				"helpers.s",
-				"styles\\kulina\\utils\\_helpers.scss"
 			]
 		],
 		"width": 0.0
@@ -1584,9 +1536,17 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "cata",
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"F:\\Reza Projects\\kulina-mobile-web.sublime-project"
+			],
+			[
+				"ku",
+				"F:\\Reza Projects\\kulina-mobile-web.sublime-project"
+			],
 			[
 				"cata",
 				"F:\\Reza Projects\\kulina-catalog.sublime-project"
@@ -1598,10 +1558,6 @@
 			[
 				"seat",
 				"E:\\xampp\\htdocs\\seats-react\\seats.sublime-project"
-			],
-			[
-				"",
-				"F:\\Reza Projects\\kulina-mobile-web.sublime-project"
 			],
 			[
 				"kuline",
@@ -1647,7 +1603,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 191.0,
+	"side_bar_width": 216.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
