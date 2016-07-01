@@ -1,0 +1,82 @@
+.RuteBusItem{
+	.block-left{
+		i{
+			vertical-align: middle;
+
+			margin-right: 4px;
+			margin-right: calculateRem(4px);
+
+			font-size: 20px;
+			font-size: calculateRem(20px);
+			color: $black-54;	
+		}
+
+		.id{
+			display: inline-block;
+			vertical-align: middle;
+
+			@include text-caption;
+			font-size: 11px;
+			font-size: calculateRem(10px);
+			color: $clr-white;
+			text-transform: uppercase;
+
+			padding: 3px;
+			padding: calculateRem(3px);
+
+			background-color: $clr-cyan-500;
+			border-radius: 3px;
+		}
+	}
+
+	.block-right{
+		margin-top: -5px;
+		margin-top: calculateRem(-5px);
+		padding-left: 48px;
+		padding-left: calculateRem(48px);
+
+		.title{
+			@include text-body;
+			font-size: 13px;
+			font-size: calculateRem(13px);
+			text-transform: uppercase;
+			color: $black-54;
+		}
+
+		.text{
+			@include text-subhead;
+			font-weight: $regular;
+			text-transform: capitalize;
+			color: $black-87;
+
+			margin-bottom: 6px;
+			margin-bottom: calculateRem(6px);
+		}
+
+		.time, .distance{
+			display: inline-block;
+
+			margin-right: 20px;
+			margin-right: calculateRem(20px);
+
+			span{
+				vertical-align: middle;
+
+				margin: 0;
+
+				@include text-caption;
+			}
+
+			i{
+				vertical-align: middle;
+
+				margin-right: 12px;
+				margin-right: calculateRem(12px);
+
+				font-size: 18px;
+				font-size: calculateRem(18px);
+				color: $black-26;	
+			}
+		}
+	}
+}

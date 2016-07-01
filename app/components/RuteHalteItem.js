@@ -7,13 +7,10 @@ import { ListItem } from 'material-ui/List';
 import Divider from 'material-ui/Divider';
 
 const styles={
-  hidden: {
-    display: "none",
-  }
+
 }
 
-class PilihRuteItem extends Component {
-
+class RuteHalteItem extends Component {
   render() {
     var lastTrue = this.props.last || false;
     var divider;
@@ -24,29 +21,22 @@ class PilihRuteItem extends Component {
       divider=<Divider />;
     }
 
-    var transitText = "";
-
-    if (this.props.transitCount > 0){
-      transitText = " ("+this.props.transitCount+" transit)";
-    }
-
     return (
-      <div className="PilihRuteItem clearfix">
+      <div className="RuteHalteItem clearfix">
         <Link to="/">      
           <ListItem
             primaryText={
-              <RuteIndicator type={"pilih"} />
-            }
-            secondaryText={
-              "Brgkt. dari "+this.props.halteKeberangkatan+transitText
-            }
-            rightAvatar={
               <div>
-                <div className="time">
-                  28
+                <div className="halte">
+                  <span className="name">{"Halte "+this.props.name}</span>
+                  <RuteIndicator type={"ruteHalte"}/>
                 </div>
-                <div className="text">
-                  menit
+                <div className="address">
+                  <i className="mdi mdi-map-marker" />
+                  <span>{this.props.address}</span>
+                </div>
+                <div className="landmark">
+                  <span>{this.props.landmark}</span>
                 </div>
               </div>
             }
@@ -59,4 +49,4 @@ class PilihRuteItem extends Component {
   }
 }
 
-export default PilihRuteItem
+export default RuteHalteItem

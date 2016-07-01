@@ -21,6 +21,7 @@ class SectionCariRute extends Component {
         <div className="block-button">
         	<RaisedButton label="Cari Rute" primary={true}/>
         </div>
+        <br /><br />
       </div>
     )
   }

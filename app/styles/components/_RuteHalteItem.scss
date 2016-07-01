@@ -1,0 +1,22 @@
+.RuteHalteItem{
+	.halte{
+		.name{
+			@include text-subhead;
+			font-weight: $regular;
+			text-transform: capitalize;
+		}
+	}
+
+	.address{
+		span{
+			@include text-body;
+		}
+	}
+	.landmark{
+		span{
+			@include text-body;
+			font-size: 13px;
+			font-size: calculateRem(13px);
+		}
+	}	
+}

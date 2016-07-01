@@ -36,7 +36,7 @@ class RencanaRute extends Component {
         <div className="container-mobile">
           <ListItem 
             primaryText={
-              <RuteIndicator />
+              <RuteIndicator type={"rencana"} />
             }
             rightAvatar={
               <div>

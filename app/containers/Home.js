@@ -45,28 +45,17 @@ class Home extends Component {
         />
         <div className="container-mobile">
           <Tabs
-            onChange={this.handleChange}
-            value={this.state.slideIndex}
           >
-            <Tab label="Cari rute" value={0}/>
-            <Tab label="rute" value={1} />
-            <Tab label="halte" value={2} />
-          </Tabs>
-          <SwipeableViews
-            style={styles.swipeable}
-            index={this.state.slideIndex}
-            onChangeIndex={this.handleChange}
-          >
-            <div style={styles.swipeableChild}>
+            <Tab label="Cari rute">
               <SectionCariRute />
-            </div>
-            <div style={styles.swipeableChild}>
+            </Tab>
+            <Tab label="rute">
               <SectionDaftarRute />
-            </div>
-            <div style={styles.swipeableChild}>
+            </Tab>
+            <Tab label="halte">
               <SectionDaftarHalte />
-            </div>
-          </SwipeableViews>
+            </Tab>
+          </Tabs>
           </div>
       </div>
     );

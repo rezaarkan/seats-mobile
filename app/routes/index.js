@@ -8,6 +8,8 @@ import Home from 'containers/Home';
 import HomeMobile from 'containers/HomeMobile';
 import PilihRute from 'containers/PilihRute';
 import RencanaRute from 'containers/RencanaRute';
+import Rute from 'containers/Rute';
+import Halte from 'containers/Halte';
 
 export default function(history) {
   return (
@@ -15,6 +17,8 @@ export default function(history) {
       <Route path="/" component={App}>
         <Route path="pilih-rute" component={PilihRute} />
         <Route path="rencana-rute" component={RencanaRute} />
+        <Route path="rute" component={Rute} />
+        <Route path="halte" component={Halte} />
         <IndexRoute component={Home} />
       </Route>
     </Router>

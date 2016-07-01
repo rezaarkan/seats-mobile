@@ -37,4 +37,55 @@
 
 		background-color: $clr-cyan-500;
 	}
+
+	&.rute-halte{
+		display: inline-block;
+
+		vertical-align: middle;
+
+		.rute{
+			$rute-size: 24px;
+			display: inline-block;
+			margin-left: 6px;
+			margin-left: calculateRem(6px);
+			margin-right: 6px;
+			margin-right: calculateRem(6px);
+
+			@include circle($rute-size);
+			@include circle(calculateRem($rute-size));
+
+			@include text-caption;
+			line-height: $rute-size;
+			text-align: center;
+			color: $clr-white;
+
+			background-color: $clr-cyan-500;
+		}
+	}
+
+	&.halte{
+		display: inline-block;
+
+		vertical-align: middle;
+
+		.rute{
+			$rute-size: 28px;
+			display: inline-block;
+			margin-left: 0;
+			margin-top: 6px;
+			margin-top: calculateRem(6px);
+			margin-right: 12px;
+			margin-right: calculateRem(12px);
+
+			@include circle($rute-size);
+			@include circle(calculateRem($rute-size));
+
+			@include text-caption;
+			line-height: $rute-size;
+			text-align: center;
+			color: $clr-white;
+
+			background-color: $clr-cyan-500;
+		}
+	}
 }
