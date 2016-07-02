@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"home",
+				"homeLocationNameTujuan"
+			],
+			[
+				"compo",
+				"componentDidMount	Life Cycle Method"
+			],
+			[
 				"tujuan",
 				"tujuanOld"
 			],
@@ -162,10 +170,6 @@
 			[
 				"inli",
 				"inline-block"
-			],
-			[
-				"compo",
-				"componentWillMount	Life Cycle Method"
 			],
 			[
 				"List",
@@ -510,23 +514,11 @@
 			[
 				"max-",
 				"max-width"
-			],
-			[
-				"divider-",
-				"divider-h"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "app/components/SectionCariRute.js",
-			"settings":
-			{
-				"buffer_size": 795,
-				"line_ending": "Windows"
-			}
-		},
 		{
 			"file": "app/containers/PilihRute.js",
 			"settings":
@@ -536,34 +528,13 @@
 			}
 		},
 		{
+			"contents": "import React, { Component, PropTypes } from 'react'\nimport { Link } from 'react-router'\n\nimport RuteIndicator from 'components/RuteIndicator';\n\nimport { ListItem } from 'material-ui/List';\nimport Divider from 'material-ui/Divider';\n\nconst styles={\n  hidden: {\n    display: \"none\",\n  }\n}\n\nclass PilihRuteItem extends Component {\n\n  render() {\n    var lastTrue = this.props.last || false;\n    var divider;\n\n    if (lastTrue) {\n      divider=<Divider style={styles.hidden}/>;\n    } else {\n      divider=<Divider />;\n    }\n\n    var transitText = \"\";\n\n    if (this.props.transitCount > 0){\n      transitText = \" (\"+this.props.transitCount+\" transit)\";\n    }\n\n    return (\n      <div className=\"PilihRuteItem clearfix\">\n        <Link to=\"/rencana-rute\" onclick=>      \n          <ListItem\n            primaryText={\n              <RuteIndicator \n                type={\"pilih\"}\n                ruteCount={this.props.transitCount}\n                rute1={this.props.rute1}\n                rute2={this.props.rute2}\n              />\n            }\n            secondaryText={\n              \"Brgkt. dari \"+this.props.halteKeberangkatan+transitText\n            }\n            rightAvatar={\n              <div>\n                <div className=\"time\">\n                  28\n                </div>\n                <div className=\"text\">\n                  menit\n                </div>\n              </div>\n            }\n          >\n          </ListItem>\n        </Link>\n        {divider}\n      </div>\n    )\n  }\n}\n\nexport default PilihRuteItem\n",
 			"file": "app/components/PilihRuteItem.js",
+			"file_size": 1579,
+			"file_write_time": 131118754662520985,
 			"settings":
 			{
-				"buffer_size": 1512,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/components/RuteIndicator.js",
-			"settings":
-			{
-				"buffer_size": 1406,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/components/Peta.js",
-			"settings":
-			{
-				"buffer_size": 3602,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/styles/components/_Peta.scss",
-			"settings":
-			{
-				"buffer_size": 880,
+				"buffer_size": 1521,
 				"line_ending": "Windows"
 			}
 		}
@@ -636,13 +607,24 @@
 	],
 	"file_history":
 	[
-		"/E/xampp/htdocs/seats-react-mobile/app/components/Peta.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/SectionCariRute.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/containers/Home.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/_shame.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/server/server.deploy.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/server/views/index.ejs",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/main.scss",
+		"/E/xampp/htdocs/seats-react-mobile/webpack.config.js",
+		"/E/xampp/htdocs/seats-react-mobile/webpack.config.deploy.js",
+		"/E/xampp/htdocs/seats-react-mobile/webpack.server.deploy.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/vendors/_materialdesignicons.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_Peta.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/Peta.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteIndicator.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/PilihRuteItem.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/containers/PilihRute.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/PilihLokasiAsal.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/PilihLokasiTujuan.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/CariRuteInput.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/_shame.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_Peta.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_Rute.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/routes/index.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/Peta.js",
@@ -659,8 +641,6 @@
 		"/E/xampp/htdocs/seats-react-mobile/node_modules/react-google-maps/lib/index.js",
 		"/E/xampp/htdocs/seats-react-mobile/node_modules/react-google-maps/lib/GoogleMap.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/base/_global-components.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/server/views/index.ejs",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/main.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteBusItem.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteHalteItem.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteHalteItem.js",
@@ -671,12 +651,9 @@
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/Halte.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/HalteBusItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_Halte.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteIndicator.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_PilihRuteItem.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/HalteItem.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/PilihRuteItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/HalteBusItem.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/containers/PilihRute.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/RencanaRute.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/RencanaRuteItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_mixins.scss",
@@ -686,7 +663,6 @@
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_SectionDaftarRute.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RencanaRute.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RencanaRuteItem.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/containers/Home.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/server/server.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/Navbar.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_helpers.scss",
@@ -696,10 +672,8 @@
 		"/E/xampp/htdocs/seats-react-mobile/app/components/SectionDaftarHalte.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/SectionDaftarRute.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_SectionCariRute.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/vendors/_materialdesignicons.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/scripts/1 - materialize.min.js",
 		"/E/xampp/htdocs/seats-react-mobile/webpack.server.js",
-		"/E/xampp/htdocs/seats-react-mobile/webpack.config.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/SearchBar.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/App.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/Navbar.scss",
@@ -760,10 +734,7 @@
 		"/E/xampp/htdocs/kulina-mobile-web/src/styles/kulina/_shame.scss",
 		"/E/xampp/htdocs/kulina-mobile-web/containers/App.js",
 		"/E/xampp/htdocs/kulina-mobile-web/src/styles/kulina/vendors/_materialdesignicons.scss",
-		"/E/xampp/htdocs/kulina-mobile-web/node_modules/babel-core/lib/helpers/code-frame.js",
-		"/E/xampp/htdocs/kulina-mobile-web/src/scripts/3 - analytics.js",
-		"/E/xampp/htdocs/kulina-mobile-web/containers/GoogleLogin.js",
-		"/E/xampp/htdocs/kulina-mobile-web/app.js"
+		"/E/xampp/htdocs/kulina-mobile-web/node_modules/babel-core/lib/helpers/code-frame.js"
 	],
 	"find":
 	{
@@ -781,6 +752,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"local",
+			"localhost",
 			"rutecount",
 			"rute",
 			"finish",
@@ -906,9 +879,7 @@
 			"form>",
 			"form",
 			"login",
-			"g-s",
-			"onthis",
-			"google-re"
+			"g-s"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -937,41 +908,11 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/components/SectionCariRute.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 795,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								701,
-								701
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "app/containers/PilihRute.js",
 					"semi_transient": false,
 					"settings":
@@ -983,8 +924,8 @@
 						"selection":
 						[
 							[
-								1818,
-								1818
+								1288,
+								1288
 							]
 						],
 						"settings":
@@ -994,27 +935,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 349.0,
+						"translation.y": 269.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "app/components/PilihRuteItem.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1512,
+						"buffer_size": 1521,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								745,
-								745
+								755,
+								755
 							]
 						],
 						"settings":
@@ -1024,138 +965,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 157.0,
+						"translation.y": 217.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/components/RuteIndicator.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1406,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								822,
-								822
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JSX/JSX.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 22.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/components/Peta.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3602,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1303,
-								1303
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 502.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/styles/components/_Peta.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 880,
-						"regions":
-						{
-							"gutter_color_539":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										579,
-										610
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_576":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										579,
-										610
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_579":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										579,
-										610
-									]
-								],
-								"scope": "gutter_color"
-							}
-						},
-						"selection":
-						[
-							[
-								871,
-								871
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 344.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -1210,16 +1023,52 @@
 		"selected_items":
 		[
 			[
+				"pilih",
+				"app\\components\\PilihRuteItem.js"
+			],
+			[
+				"sec",
+				"app\\components\\SectionCariRute.js"
+			],
+			[
+				"home",
+				"app\\containers\\Home.js"
+			],
+			[
+				"shame",
+				"app\\styles\\_shame.scss"
+			],
+			[
+				"webpack",
+				"webpack.config.js"
+			],
+			[
+				"mate",
+				"app\\styles\\vendors\\_materialdesignicons.scss"
+			],
+			[
+				"main",
+				"app\\styles\\main.scss"
+			],
+			[
+				"index.e",
+				"app\\server\\views\\index.ejs"
+			],
+			[
+				"web",
+				"webpack.server.js"
+			],
+			[
+				"server",
+				"app\\server\\server.js"
+			],
+			[
 				"peta",
 				"app\\components\\Peta.js"
 			],
 			[
 				"rute",
 				"app\\components\\RuteIndicator.js"
-			],
-			[
-				"pilih",
-				"app\\components\\PilihRuteItem.js"
 			],
 			[
 				"section",
@@ -1252,14 +1101,6 @@
 			[
 				"idex.ej",
 				"app\\server\\views\\index.ejs"
-			],
-			[
-				"shame",
-				"app\\styles\\_shame.scss"
-			],
-			[
-				"main",
-				"app\\styles\\main.scss"
 			],
 			[
 				"rute.sc",
@@ -1350,16 +1191,8 @@
 				"app\\components\\HalteItem.js"
 			],
 			[
-				"home",
-				"app\\containers\\Home.js"
-			],
-			[
 				"mix",
 				"app\\styles\\abstracts\\_mixins.scss"
-			],
-			[
-				"server",
-				"app\\server\\server.js"
 			],
 			[
 				"hel",
@@ -1382,10 +1215,6 @@
 				"app\\styles\\abstracts\\_variables.scss"
 			],
 			[
-				"sec",
-				"app\\components\\SectionDaftarRute.js"
-			],
-			[
 				"globa",
 				"app\\styles\\base\\_global-components.scss"
 			],
@@ -1398,10 +1227,6 @@
 				"app\\components\\SectionDaftarHalte.js"
 			],
 			[
-				"mate",
-				"app\\styles\\vendors\\_materialdesignicons.scss"
-			],
-			[
 				"mater",
 				"app\\styles\\vendors\\_materialdesignicons.scss"
 			],
@@ -1412,10 +1237,6 @@
 			[
 				"ren",
 				"app\\styles\\components\\_RencanaRuteItem.scss"
-			],
-			[
-				"web",
-				"webpack.server.js"
 			],
 			[
 				"serv",
@@ -1439,10 +1260,6 @@
 			],
 			[
 				"webp",
-				"webpack.config.js"
-			],
-			[
-				"webpack",
 				"webpack.config.js"
 			],
 			[
@@ -1536,10 +1353,6 @@
 			[
 				"hom",
 				"app\\containers\\Home.js"
-			],
-			[
-				"index.e",
-				"app\\server\\views\\index.ejs"
 			],
 			[
 				"mat",

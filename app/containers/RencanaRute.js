@@ -8,6 +8,7 @@ import RencanaRuteItem from 'components/RencanaRuteItem';
 
 import { ListItem } from 'material-ui/List';
 import Divider from 'material-ui/Divider';
+import ls from 'local-storage';
 
 const styles={
   rencanaHeader: {
@@ -28,6 +29,36 @@ const styles={
 class RencanaRute extends Component {
 
   render() {
+    var selectedRute1 = ls.get('selectedRute1');
+    var selectedRute2 = ls.get('selectedRute2');
+    var ruteCount = ls.get('transitCount');
+    var selectedHalte1 = ls.get('selectedHalte1');
+    var selectedHalteTransit = ls.get('selectedHalteTransit');
+    var selectedHalte2 = ls.get('selectedHalte2');
+
+    var locationNameAsal = ls.get('locationNameAsal');
+    var locationNameTujuan = ls.get('locationNameTujuan');
+
+    var totalRencanaRute;
+
+    if (ruteCount=="0") {
+      totalRencanaRute =
+      <div>
+        <RencanaRuteItem type={"start"} location={selectedHalte1} nearestBusTime={"14"} rute={selectedRute1}/>
+        <RencanaRuteItem type={"journey"} journeyTime={"23"}/>
+        <RencanaRuteItem type={"finish"} location={selectedHalte2}/>
+      </div>;
+    } else {
+      totalRencanaRute =
+      <div>
+        <RencanaRuteItem type={"start"} location={selectedHalte1} nearestBusTime={"14"} rute={selectedRute1}/>
+        <RencanaRuteItem type={"journey"} journeyTime={"23"}/>
+        <RencanaRuteItem type={"transit"} location={selectedHalteTransit} nearestBusTime={"14"} rute={selectedRute2}/>
+        <RencanaRuteItem type={"journey"} journeyTime={"23"}/>
+        <RencanaRuteItem type={"finish"} location={selectedHalte2 }/>
+      </div>;
+    }
+
     return (
       <div className="RencanaRute">
         <Navbar>
@@ -36,7 +67,12 @@ class RencanaRute extends Component {
         <div className="container-mobile">
           <ListItem 
             primaryText={
-              <RuteIndicator type={"rencana"} />
+              <RuteIndicator
+                type={"rencana"} 
+                rute1 = {selectedRute1}
+                rute2 = {selectedRute2}
+                ruteCount={ruteCount}
+              />
             }
             rightAvatar={
               <div>
@@ -65,11 +101,7 @@ class RencanaRute extends Component {
               </div>
             }
           />
-          <RencanaRuteItem type={"start"} location={"Mandala Krida"} nearestBusTime={"14"}/>
-          <RencanaRuteItem type={"journey"} journeyTime={"23"}/>
-          <RencanaRuteItem type={"transit"} location={"Kopma UGM"} nearestBusTime={"15"}/>
-          <RencanaRuteItem type={"journey"} journeyTime={"47"}/>
-          <RencanaRuteItem type={"finish"} location={"Candi Prambanan"}/>
+          {totalRencanaRute}
         </div>
 
       </div>

@@ -57,7 +57,7 @@ class RencanaRuteItem extends Component {
               size={28}
               style={styles.rute}
             >
-              2A
+              {this.props.rute}
             </Avatar>
             </Link>
           }
@@ -128,7 +128,7 @@ class RencanaRuteItem extends Component {
               size={28}
               style={styles.rute}
             >
-              2A
+              {this.props.rute}
             </Avatar>
             </Link>
           }

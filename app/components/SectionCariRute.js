@@ -7,16 +7,20 @@ import RaisedButton from 'material-ui/RaisedButton';
 import ls from 'local-storage';
 
 class SectionCariRute extends Component {
+
   render() {
+    var homeLocationNameAsal = ls.get('locationNameAsal') || "Pilih asal";
+    var homeLocationNameTujuan = ls.get('locationNameTujuan') || "Pilih tujuan";
+
     return (
       <div className="SectionCariRute">
         <CariRuteInput 
         	type={"asal"}
-        	location={ls.get('locationNameAsal')}
+        	location={homeLocationNameAsal}
         />
         <CariRuteInput 
         	type={"tujuan"}
-        	location={ls.get('locationNameTujuan')}
+        	location={homeLocationNameTujuan}
         />
         <div className="block-button">
           <Link to="/pilih-rute">

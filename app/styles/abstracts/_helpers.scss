@@ -206,6 +206,13 @@
    clear: both;
 }
 
+.vertical-align{
+	top: 50% !important;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
 $properties: (margin, padding);
 $sides: (top, right, bottom, left);
 $alignments: (left, center, right);
