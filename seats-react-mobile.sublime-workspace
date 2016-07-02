@@ -4,6 +4,70 @@
 		"selected_items":
 		[
 			[
+				"rand",
+				"randomDistanceTujuan"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"ha",
+				"halteTransit"
+			],
+			[
+				"halte",
+				"halteTransit"
+			],
+			[
+				"hal",
+				"halte1"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"tra",
+				"transitContent"
+			],
+			[
+				"selec",
+				"selectedRute1"
+			],
+			[
+				"renc",
+				"totalRencanaRute"
+			],
+			[
+				"loca",
+				"locationNameTujuan"
+			],
+			[
+				"location",
+				"locationNameAsal"
+			],
+			[
+				"rute",
+				"ruteCount"
+			],
+			[
+				"sele",
+				"selectedRute2"
+			],
+			[
+				"transit",
+				"transitCount"
+			],
+			[
+				"pili",
+				"pilihRuteClickHandler"
+			],
+			[
 				"home",
 				"homeLocationNameTujuan"
 			],
@@ -20,20 +84,12 @@
 				"locationNameAsal"
 			],
 			[
-				"rute",
-				"ruteCount"
-			],
-			[
 				"random",
 				"randomIndex"
 			],
 			[
 				"trans",
 				"transitCount"
-			],
-			[
-				"mar",
-				"margin-bottom"
 			],
 			[
 				"margin",
@@ -48,16 +104,8 @@
 				"suggestAddress"
 			],
 			[
-				"location",
-				"locationAddress"
-			],
-			[
 				"Pilih",
 				"PilihLokasiAsal"
-			],
-			[
-				"loca",
-				"locationName"
 			],
 			[
 				"sug",
@@ -106,10 +154,6 @@
 			[
 				"tex",
 				"text-body"
-			],
-			[
-				"padd",
-				"padding"
 			],
 			[
 				"Halte",
@@ -162,10 +206,6 @@
 			[
 				"Rencana",
 				"RencanaRuteItem"
-			],
-			[
-				"margi",
-				"margin-right"
 			],
 			[
 				"inli",
@@ -384,10 +424,6 @@
 				"trackOrderSummary"
 			],
 			[
-				"tra",
-				"trackPlansName"
-			],
-			[
 				"tabKi",
 				"tabListKitchenClick"
 			],
@@ -478,64 +514,17 @@
 			[
 				"lighten",
 				"lighten-2"
-			],
-			[
-				"le",
-				"left"
-			],
-			[
-				"wid",
-				"width"
-			],
-			[
-				"bla",
-				"black-54"
-			],
-			[
-				"tran",
-				"transition"
-			],
-			[
-				"po",
-				"pointer"
-			],
-			[
-				"in",
-				"inline-block"
-			],
-			[
-				"bl",
-				"black-12"
-			],
-			[
-				"cur",
-				"cursor"
-			],
-			[
-				"max-",
-				"max-width"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/containers/PilihRute.js",
+			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 2024,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "import React, { Component, PropTypes } from 'react'\nimport { Link } from 'react-router'\n\nimport RuteIndicator from 'components/RuteIndicator';\n\nimport { ListItem } from 'material-ui/List';\nimport Divider from 'material-ui/Divider';\n\nconst styles={\n  hidden: {\n    display: \"none\",\n  }\n}\n\nclass PilihRuteItem extends Component {\n\n  render() {\n    var lastTrue = this.props.last || false;\n    var divider;\n\n    if (lastTrue) {\n      divider=<Divider style={styles.hidden}/>;\n    } else {\n      divider=<Divider />;\n    }\n\n    var transitText = \"\";\n\n    if (this.props.transitCount > 0){\n      transitText = \" (\"+this.props.transitCount+\" transit)\";\n    }\n\n    return (\n      <div className=\"PilihRuteItem clearfix\">\n        <Link to=\"/rencana-rute\" onclick=>      \n          <ListItem\n            primaryText={\n              <RuteIndicator \n                type={\"pilih\"}\n                ruteCount={this.props.transitCount}\n                rute1={this.props.rute1}\n                rute2={this.props.rute2}\n              />\n            }\n            secondaryText={\n              \"Brgkt. dari \"+this.props.halteKeberangkatan+transitText\n            }\n            rightAvatar={\n              <div>\n                <div className=\"time\">\n                  28\n                </div>\n                <div className=\"text\">\n                  menit\n                </div>\n              </div>\n            }\n          >\n          </ListItem>\n        </Link>\n        {divider}\n      </div>\n    )\n  }\n}\n\nexport default PilihRuteItem\n",
-			"file": "app/components/PilihRuteItem.js",
-			"file_size": 1579,
-			"file_write_time": 131118754662520985,
-			"settings":
-			{
-				"buffer_size": 1521,
-				"line_ending": "Windows"
+				"buffer_size": 3023,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -607,6 +596,20 @@
 	],
 	"file_history":
 	[
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_PilihRuteItem.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RencanaRuteItem.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/RencanaRuteItem.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/containers/PilihRute.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/PilihRuteItem.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/containers/RencanaRute.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_helpers.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_mixins.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteItem.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteBusItem.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteHalteItem.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteBusItem.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/Peta.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteIndicator.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/SectionCariRute.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/Home.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/_shame.scss",
@@ -618,10 +621,6 @@
 		"/E/xampp/htdocs/seats-react-mobile/webpack.server.deploy.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/vendors/_materialdesignicons.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_Peta.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/Peta.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteIndicator.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/PilihRuteItem.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/containers/PilihRute.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/PilihLokasiAsal.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/PilihLokasiTujuan.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/CariRuteInput.js",
@@ -641,31 +640,21 @@
 		"/E/xampp/htdocs/seats-react-mobile/node_modules/react-google-maps/lib/index.js",
 		"/E/xampp/htdocs/seats-react-mobile/node_modules/react-google-maps/lib/GoogleMap.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/base/_global-components.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteBusItem.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteHalteItem.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteHalteItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/Rute.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteBusItem.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteIndicator.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/Halte.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/HalteBusItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_Halte.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_PilihRuteItem.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/HalteItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/HalteBusItem.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/containers/RencanaRute.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/RencanaRuteItem.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_mixins.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/_RuteHalteItem.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/RuteBusItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteItem.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_SectionDaftarRute.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RencanaRute.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RencanaRuteItem.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/server/server.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/Navbar.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_helpers.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/HomeMobile.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_variables.scss",
 		"/E/xampp/htdocs/seats-react-mobile/package.json",
@@ -752,6 +741,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"baciro",
+			"line",
+			"before",
+			"rutetex",
+			"halte",
+			"rutetext",
+			"time",
+			"transf",
+			"trans",
+			"right",
+			"shop",
+			"halte",
+			"2B",
+			"ls",
+			"rutecount",
 			"local",
 			"localhost",
 			"rutecount",
@@ -864,22 +868,7 @@
 			"facebookl",
 			"facebook",
 			"div id",
-			"div",
-			"onsignin",
-			"address_de",
-			"address",
-			"name=",
-			"input",
-			"a",
-			"styl",
-			"style",
-			"mobile",
-			"mobile_api",
-			"textbutt",
-			"form>",
-			"form",
-			"login",
-			"g-s"
+			"div"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -908,64 +897,34 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/containers/PilihRute.js",
+					"file": "package.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2024,
+						"buffer_size": 3023,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1288,
-								1288
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JSX/JSX.tmLanguage",
-							"tab_size": 2,
+							"syntax": "Packages/Seti_UI/icons/Langs/npm JSON.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 269.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/components/PilihRuteItem.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1521,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								755,
-								755
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JSX/JSX.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 217.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1023,8 +982,60 @@
 		"selected_items":
 		[
 			[
+				"packa",
+				"package.json"
+			],
+			[
 				"pilih",
-				"app\\components\\PilihRuteItem.js"
+				"app\\containers\\PilihRute.js"
+			],
+			[
+				"renca",
+				"app\\styles\\components\\_RencanaRuteItem.scss"
+			],
+			[
+				"rencana",
+				"app\\components\\RencanaRuteItem.js"
+			],
+			[
+				"pili",
+				"app\\containers\\PilihRute.js"
+			],
+			[
+				"mixin",
+				"app\\styles\\abstracts\\_mixins.scss"
+			],
+			[
+				"helper",
+				"app\\styles\\abstracts\\_helpers.scss"
+			],
+			[
+				"rute",
+				"app\\components\\RuteItem.js"
+			],
+			[
+				"bus",
+				"app\\components\\RuteBusItem.js"
+			],
+			[
+				"ruteha",
+				"app\\components\\RuteHalteItem.js"
+			],
+			[
+				"rutebus",
+				"app\\styles\\components\\_RuteBusItem.scss"
+			],
+			[
+				"pilihru",
+				"app\\styles\\components\\_PilihRuteItem.scss"
+			],
+			[
+				"peta",
+				"app\\components\\Peta.js"
+			],
+			[
+				"ru",
+				"app\\components\\RuteIndicator.js"
 			],
 			[
 				"sec",
@@ -1063,24 +1074,12 @@
 				"app\\server\\server.js"
 			],
 			[
-				"peta",
-				"app\\components\\Peta.js"
-			],
-			[
-				"rute",
-				"app\\components\\RuteIndicator.js"
-			],
-			[
 				"section",
 				"app\\components\\SectionCariRute.js"
 			],
 			[
 				"cari",
 				"app\\components\\CariRuteInput.js"
-			],
-			[
-				"pili",
-				"app\\containers\\PilihLokasiAsal.js"
 			],
 			[
 				"route",
@@ -1115,10 +1114,6 @@
 				"app\\containers\\Rute.js"
 			],
 			[
-				"rutebus",
-				"app\\styles\\components\\_RuteBusItem.scss"
-			],
-			[
 				"rutehal",
 				"app\\styles\\components\\_RuteHalteItem.scss"
 			],
@@ -1131,16 +1126,8 @@
 				"app\\styles\\components\\_RuteIndicator.scss"
 			],
 			[
-				"ruteha",
-				"app\\styles\\components\\_RuteHalteItem.scss"
-			],
-			[
 				"rutebu",
 				"app\\components\\RuteBusItem.js"
-			],
-			[
-				"ru",
-				"app\\components\\RuteItem.js"
 			],
 			[
 				"ruteite",
@@ -1161,14 +1148,6 @@
 			[
 				"ruteb",
 				"app\\components\\RuteBusItem.js"
-			],
-			[
-				"renca",
-				"app\\containers\\RencanaRute.js"
-			],
-			[
-				"rencana",
-				"app\\containers\\RencanaRute.js"
 			],
 			[
 				"mi",
@@ -1263,10 +1242,6 @@
 				"webpack.config.js"
 			],
 			[
-				"packa",
-				"package.json"
-			],
-			[
 				"mixi",
 				"app\\styles\\abstracts\\_mixins.scss"
 			],
@@ -1309,10 +1284,6 @@
 			[
 				"help",
 				"app\\styles\\abstracts\\_helpers.scss"
-			],
-			[
-				"mixin",
-				"app\\styles\\abstracts\\_mixins.scss"
 			],
 			[
 				"global",
@@ -1519,20 +1490,8 @@
 				"src\\styles\\kulina\\utils\\_helpers.scss"
 			],
 			[
-				"helper",
-				"src\\styles\\kulina\\utils\\_helpers.scss"
-			],
-			[
 				"button",
 				"src\\styles\\kulina\\components\\_button.scss"
-			],
-			[
-				"butto",
-				"src\\styles\\kulina\\components\\_button.scss"
-			],
-			[
-				"todo",
-				"src\\todo.md"
 			]
 		],
 		"width": 0.0
@@ -1540,9 +1499,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "",
+		"last_filter": "kul",
 		"selected_items":
 		[
+			[
+				"kul",
+				"F:\\Reza Projects\\kulina-mobile-web.sublime-project"
+			],
 			[
 				"",
 				"F:\\Reza Projects\\kulina-mobile-web.sublime-project"
