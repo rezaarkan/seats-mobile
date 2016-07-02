@@ -39,23 +39,50 @@ class RencanaRute extends Component {
     var locationNameAsal = ls.get('locationNameAsal');
     var locationNameTujuan = ls.get('locationNameTujuan');
 
+    var randomDistanceAsal = Math.floor(Math.random() * 250);
+    var randomDistanceTujuan = Math.floor(Math.random() * 250);
+
     var totalRencanaRute;
 
     if (ruteCount=="0") {
       totalRencanaRute =
       <div>
-        <RencanaRuteItem type={"start"} location={selectedHalte1} nearestBusTime={"14"} rute={selectedRute1}/>
+        <RencanaRuteItem
+          type={"start"}
+          location={selectedHalte1}
+          nearestBusTime={"14"}
+          rute={selectedRute1}
+          position={locationNameAsal}
+          distance={randomDistanceAsal}
+        />
         <RencanaRuteItem type={"journey"} journeyTime={"23"}/>
-        <RencanaRuteItem type={"finish"} location={selectedHalte2}/>
+        <RencanaRuteItem
+          type={"finish"}
+          location={selectedHalte2}
+          position={locationNameTujuan}
+          distance={randomDistanceTujuan}
+        />
       </div>;
     } else {
       totalRencanaRute =
       <div>
-        <RencanaRuteItem type={"start"} location={selectedHalte1} nearestBusTime={"14"} rute={selectedRute1}/>
+        <RencanaRuteItem
+          type={"start"}
+          location={selectedHalte1}
+          nearestBusTime={"14"}
+          rute={selectedRute1}
+          position={locationNameAsal}
+          distance={randomDistanceAsal}
+        />
         <RencanaRuteItem type={"journey"} journeyTime={"23"}/>
         <RencanaRuteItem type={"transit"} location={selectedHalteTransit} nearestBusTime={"14"} rute={selectedRute2}/>
         <RencanaRuteItem type={"journey"} journeyTime={"23"}/>
-        <RencanaRuteItem type={"finish"} location={selectedHalte2 }/>
+        <RencanaRuteItem
+          type={"finish"}
+          location={selectedHalte2}
+          position={locationNameTujuan}
+          distance={randomDistanceTujuan}
+        />
       </div>;
     }
 

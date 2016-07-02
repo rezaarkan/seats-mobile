@@ -14,11 +14,29 @@
 		text-transform: capitalize;
 	}
 
-	.from, .transit{
+	.description{
+		@include text-caption;
+		color: $black-87;
+
+		margin-top: 4px;
+		margin-top: calculateRem(4px);
+	}
+
+	.from{
+		.description{
+			margin-bottom: 16px;
+			margin-bottom: calculateRem(16px);
+		}
+	}
+
+	.transit{
 		.text{
 			margin-bottom: 6px;
 			margin-bottom: calculateRem(6px);
 		}
+	}
+
+	.from, .transit{
 
 		.block-left{
 			display: block;
@@ -80,11 +98,13 @@
 			position: absolute;
 			border: 1px dashed $clr-cyan-500;
 			width: 0;
-			height: 130px;
+			height: 160px;
+			height: calculateRem(160px);
 			display: block;
 			content: ''; left: 50%;
 			z-index: 1;
 			bottom: 26px;
+			bottom: calculateRem(26px);
 			margin-left: -1px;
 		}
 	}

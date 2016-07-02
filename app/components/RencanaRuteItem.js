@@ -25,8 +25,8 @@ const styles={
     left: '1.125rem',
   },
   finish: {
-    top: '17px',
-    top: '1.063rem',
+    top: '28px',
+    top: '1.75rem',
     left: '18px',
     left: '1.125rem',
     backgroundColor: "rgba(0,0,0,0)",
@@ -64,6 +64,9 @@ class RencanaRuteItem extends Component {
           primaryText={
             <div className="from clearfix">
               <Link to="/"><div className="text">{this.props.location}</div></Link>
+              <div className="description">
+                <span>{this.props.distance+"m dari "+this.props.position}</span>
+              </div>
               <div className="block-left">
                 <i className="mdi mdi-bus" />
                 <span className="time">Bus terdekat:</span>
@@ -112,6 +115,9 @@ class RencanaRuteItem extends Component {
           primaryText={
             <div className="finish clearfix">
               <Link to="/"><div className="text">{this.props.location}</div></Link>
+              <div className="description">
+                <span>{this.props.distance+"m dari "+this.props.position}</span>
+              </div>
             </div>
           }/>;
       divider=<br />;
