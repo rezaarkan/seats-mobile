@@ -32,10 +32,15 @@ class PilihRuteItem extends Component {
 
     return (
       <div className="PilihRuteItem clearfix">
-        <Link to="/">      
+        <Link to="/rencana-rute">      
           <ListItem
             primaryText={
-              <RuteIndicator type={"pilih"} />
+              <RuteIndicator 
+                type={"pilih"}
+                ruteCount={this.props.transitCount}
+                rute1={this.props.rute1}
+                rute2={this.props.rute2}
+              />
             }
             secondaryText={
               "Brgkt. dari "+this.props.halteKeberangkatan+transitText

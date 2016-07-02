@@ -4,22 +4,24 @@ import { Link } from 'react-router'
 import CariRuteInput from 'components/CariRuteInput';
 
 import RaisedButton from 'material-ui/RaisedButton';
+import ls from 'local-storage';
 
 class SectionCariRute extends Component {
   render() {
     return (
       <div className="SectionCariRute">
         <CariRuteInput 
-        	label={"asal"}
-        	location={"Mandala Krida"}
+        	type={"asal"}
+        	location={ls.get('locationNameAsal')}
         />
         <CariRuteInput 
-        	label={"tujuan"}
-        	location={"Candi Prambanan"}
-          type={"finish"}
+        	type={"tujuan"}
+        	location={ls.get('locationNameTujuan')}
         />
         <div className="block-button">
-        	<RaisedButton label="Cari Rute" primary={true}/>
+          <Link to="/pilih-rute">
+        	 <RaisedButton label="Cari Rute" primary={true}/>
+          </Link>
         </div>
         <br /><br />
       </div>

@@ -32,7 +32,6 @@ class RuteHalteItem extends Component {
                   <RuteIndicator type={"ruteHalte"}/>
                 </div>
                 <div className="address">
-                  <i className="mdi mdi-map-marker" />
                   <span>{this.props.address}</span>
                 </div>
                 <div className="landmark">

@@ -1,0 +1,54 @@
+.Peta{
+	.search-location{
+		padding-left: 16px;
+		padding-left: calculateRem(16px);
+		padding-right: 16px;
+		padding-right: calculateRem(16px);
+		padding-top: 12px;
+		padding-top: calculateRem(12px);
+		padding-bottom: 12px;
+		padding-bottom: calculateRem(12px);
+
+		border-bottom: 1px solid $black-12;
+	}
+
+	.map{
+		height: calc(100vh - (63px + 56px));
+	}
+
+	.map-info{
+		position: absolute;
+		z-index: 2;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		bottom: 32px;
+
+		padding: 16px;
+		padding: calculateRem(16px);
+
+		border: 1px solid $black-12;
+		border-radius: 3px;
+
+		width: 80%;
+
+		background-color: $clr-white;
+
+		text-align: center;
+
+		.name{
+			@include text-subhead;
+			font-weight: $regular;
+		}
+
+		.address{
+			@include text-body;
+			font-size: 13px;
+			font-size: calculateRem(13px);
+			color: $black-54;
+
+			margin-bottom: 8px;
+			margin-bottom: calculateRem(8px);
+		}
+	}
+}

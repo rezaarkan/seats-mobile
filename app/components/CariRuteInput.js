@@ -8,9 +8,9 @@ class CariRuteInput extends Component {
       	<div className="block-left">
       		<div className="circle" />
       	</div>
-      	<Link to="/" className="block-right">
+      	<Link to={"/"+this.props.type} className="block-right">
           <div className="label">
-            {this.props.label}
+            {this.props.type}
           </div>
           <div className="location">
             {this.props.location}

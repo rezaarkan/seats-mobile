@@ -16,6 +16,8 @@
 .container-mobile{
 	$mobile-web-container-size: calculateRem(360px);
 
+	position: relative;
+
 	width: $mobile-web-container-size;
 
 	@include xxs-media{

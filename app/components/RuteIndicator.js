@@ -5,13 +5,19 @@ class RuteIndicator extends Component {
   render() {
     var ruteIndicator;
 
-    if (this.props.type=="pilih" || this.props.type=="rencana") {
+    if ((this.props.type=="pilih" || this.props.type=="rencana") && (this.props.ruteCount=="0")) {
       ruteIndicator=
         <div className="RuteIndicator clearfix">
           <span className="text">Rute</span>
-          <div className="rute">2B</div>
+          <div className="rute">{this.props.rute1}</div>
+        </div>;
+    } else if ((this.props.type=="pilih" || this.props.type=="rencana") && (this.props.ruteCount=="1")) {
+      ruteIndicator=
+        <div className="RuteIndicator clearfix">
+          <span className="text">Rute</span>
+          <div className="rute">{this.props.rute1}</div>
           <span className="plus">+</span>
-          <div className="rute">1B</div>
+          <div className="rute">{this.props.rute2}</div>
         </div>;
     } else if (this.props.type=="ruteHalte") {
       ruteIndicator=

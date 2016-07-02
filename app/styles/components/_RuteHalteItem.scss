@@ -4,12 +4,32 @@
 			@include text-subhead;
 			font-weight: $regular;
 			text-transform: capitalize;
+
+			vertical-align: top;
+
+			margin-right: 4px;
+			margin-right: calculateRem(4px);
 		}
 	}
 
 	.address{
 		span{
+			vertical-align: middle;
+
+			margin: 0;
+
 			@include text-body;
+		}
+
+		i{
+			vertical-align: middle;
+
+			margin-right: 12px;
+			margin-right: calculateRem(12px);
+
+			font-size: 18px;
+			font-size: calculateRem(18px);
+			color: $black-26;	
 		}
 	}
 	.landmark{

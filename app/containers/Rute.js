@@ -25,31 +25,37 @@ class Rute extends Component {
           <Tabs>
             <Tab label="bus">
               <RuteBusItem
+                busId={"AB 5473 FT"}
                 currentDestination={"Mandala Krida"}
                 arrivingIn={"20"}
                 distance={"3.2"}
               />
               <RuteBusItem
+                busId={"AB 5473 FT"}
                 currentDestination={"Mandala Krida"}
                 arrivingIn={"20"}
                 distance={"3.2"}
               />
               <RuteBusItem
+                busId={"AB 5473 FT"}
                 currentDestination={"Mandala Krida"}
                 arrivingIn={"20"}
                 distance={"3.2"}
               />
               <RuteBusItem
+                busId={"AB 5473 FT"}
                 currentDestination={"Mandala Krida"}
                 arrivingIn={"20"}
                 distance={"3.2"}
               />
               <RuteBusItem
+                busId={"AB 5473 FT"}
                 currentDestination={"Mandala Krida"}
                 arrivingIn={"20"}
                 distance={"3.2"}
               />
               <RuteBusItem
+                busId={"AB 5473 FT"}
                 currentDestination={"Mandala Krida"}
                 arrivingIn={"20"}
                 distance={"3.2"}
