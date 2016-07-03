@@ -3,6 +3,7 @@
 		top: initial;
 
 		@include text-body;
+		font-weight: $bold;
 		font-size: 13px;
 		font-size: calculateRem(13px);
 		text-transform: uppercase;
@@ -11,6 +12,7 @@
 
 	.header-halte{
 		@include text-caption;
+		font-weight: $bold;
 		font-size: 13px;
 		font-size: calculateRem(13px);
 		text-transform: uppercase;
@@ -20,6 +22,7 @@
 	.time{
 		@include text-headline;
 		text-align: center;
+		color: $white-100;
 
 		margin-bottom: 0;
 	}
@@ -27,6 +30,7 @@
 	.text{
 		@include text-body;
 		text-align: center;
+		color: $white-70;
 
 		line-height: 16px;
 		line-height: calculateRem(16px);

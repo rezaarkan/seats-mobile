@@ -23,21 +23,22 @@ const styles={
     paddingTop: "0.25rem",
     paddingBottom: "4px",
     paddingBottom: "0.25rem",
+    backgroundColor: "#154c87",
   },
 }
 
 class RencanaRute extends Component {
 
   render() {
-    var selectedRute1 = ls.get('selectedRute1');
-    var selectedRute2 = ls.get('selectedRute2');
-    var ruteCount = ls.get('transitCount');
-    var selectedHalte1 = ls.get('selectedHalte1');
+    var selectedRute1 = ls.get('selectedRute1') || "99";
+    var selectedRute2 = ls.get('selectedRute2') || "99";
+    var ruteCount = ls.get('transitCount') || "0";
+    var selectedHalte1 = ls.get('selectedHalte1') || "Halte Awal";
     var selectedHalteTransit = ls.get('selectedHalteTransit');
-    var selectedHalte2 = ls.get('selectedHalte2');
+    var selectedHalte2 = ls.get('selectedHalte2') || "Halte Akhir";
 
-    var locationNameAsal = ls.get('locationNameAsal');
-    var locationNameTujuan = ls.get('locationNameTujuan');
+    var locationNameAsal = ls.get('locationNameAsal') || "Lokasi Asal";
+    var locationNameTujuan = ls.get('locationNameTujuan') || "Lokasi Tujuan";
 
     var randomDistanceAsal = Math.floor(Math.random() * 250);
     var randomDistanceTujuan = Math.floor(Math.random() * 250);
@@ -88,13 +89,14 @@ class RencanaRute extends Component {
 
     return (
       <div className="RencanaRute">
-        <Navbar>
+        <Navbar back={true} pageName={"Rencana rute"}>
 
         </Navbar>
         <div className="container-mobile">
           <ListItem 
             primaryText={
               <RuteIndicator
+                className="rencana"
                 type={"rencana"} 
                 rute1 = {selectedRute1}
                 rute2 = {selectedRute2}

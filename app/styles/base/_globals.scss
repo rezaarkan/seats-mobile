@@ -6,7 +6,7 @@ html, body{
 	line-height: calculateRem(24px);
 	@extend %mp-clear;
 
-	background: $clr-grey-50;
+	background: $s-blue-darkest;
 
 	min-height: 100vh;
 }

@@ -23,6 +23,13 @@
 // Misc
 // .hoverable
 
+.truncate{
+	display:block;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis
+}
+
 .center-horizontal{
 	&-row{
 		text-align: center;
@@ -197,6 +204,10 @@
 
 .hidden{
 	display: none !important;
+}
+
+.invisible{
+	opacity: 0 !important;
 }
 
 .clearfix:after { 

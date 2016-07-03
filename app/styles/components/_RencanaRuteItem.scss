@@ -1,9 +1,9 @@
 .RencanaRuteItem{
 	.text{
 		@include text-subhead;
-		font-weight: $regular;
 		text-transform: capitalize;
 		text-align: left;
+		color: $s-blue-dark;
 	}
 
 	.time{
@@ -12,6 +12,7 @@
 		font-size: calculateRem(13px);
 		font-weight: $regular;
 		text-transform: capitalize;
+		color: $black-54;
 	}
 
 	.description{
@@ -20,6 +21,12 @@
 
 		margin-top: 4px;
 		margin-top: calculateRem(4px);
+	}
+
+	.journey{
+		.text{
+			color: $black-54;
+		}
 	}
 
 	.from{
@@ -51,7 +58,7 @@
 				font-size: calculateRem(18px);
 				line-height: 18px;
 				font-size: calculateRem(18px);
-				color: $black-54;
+				color: $s-blue-dark;
 
 				margin-right: 12px;
 				margin-right: calculateRem(12px);
@@ -96,15 +103,15 @@
 	.line{
 		&:before{
 			position: absolute;
-			border: 1px dashed $clr-cyan-500;
+			border: 1px dashed $black-12;
 			width: 0;
 			height: 160px;
 			height: calculateRem(160px);
 			display: block;
 			content: ''; left: 50%;
 			z-index: 1;
-			bottom: 26px;
-			bottom: calculateRem(26px);
+			bottom: 30px;
+			bottom: calculateRem(30px);
 			margin-left: -1px;
 		}
 	}

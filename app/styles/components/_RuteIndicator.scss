@@ -12,6 +12,7 @@
 
 	.plus{
 		@include text-body;
+		color: $white-50;
 
 		margin-left: 2px;
 		margin-left: calculateRem(2px);
@@ -35,7 +36,7 @@
 		text-align: center;
 		color: $clr-white;
 
-		background-color: $clr-cyan-500;
+		background-color: $s-blue-light;
 	}
 
 	&.rute-halte{
@@ -59,7 +60,7 @@
 			text-align: center;
 			color: $clr-white;
 
-			background-color: $clr-cyan-500;
+			background-color: $s-blue-light;
 		}
 	}
 
@@ -85,7 +86,7 @@
 			text-align: center;
 			color: $clr-white;
 
-			background-color: $clr-cyan-500;
+			background-color: $s-blue-light;
 		}
 	}
 }

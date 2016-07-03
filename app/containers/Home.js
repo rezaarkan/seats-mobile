@@ -11,14 +11,8 @@ import {Tabs, Tab} from 'material-ui/Tabs';
 import SwipeableViews from 'react-swipeable-views';
 
 const styles={
-  swipeable: {
-    boxSizing: 'border-box',
-    minHeight: '300px',
-    overflow: 'hidden',
-  },
-  swipeableChild: {
-    minHeight: '300px',
-    overflow: 'hidden',
+  tab:{
+    backgroundColor: "#154c87",
   }
 }
 
@@ -40,19 +34,24 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <Navbar
-
-        />
-        <div className="container-mobile">
+        <Navbar pageName={"Bus Information System"} />
+        <div className="container-mobile blue">
           <Tabs
+            inkBarStyle={
+              {
+                backgroundColor: "#00b6d9",
+                height: "4px",
+                marginTop: "-4px",
+              }
+            }
           >
-            <Tab label="Cari rute">
+            <Tab label="Cari rute" style={styles.tab}>
               <SectionCariRute />
             </Tab>
-            <Tab label="rute">
+            <Tab label="rute" style={styles.tab}>
               <SectionDaftarRute />
             </Tab>
-            <Tab label="halte">
+            <Tab label="halte" style={styles.tab}>
               <SectionDaftarHalte />
             </Tab>
           </Tabs>

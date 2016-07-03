@@ -1,7 +1,6 @@
 //Colors
 $background-color: #2a3458;
 $sidebar-background-color: #18203d;
-$border-color: rgba(0,0,0,0.12);
 
 $text-primary: rgba(0,0,0,0.87);
 $text-secondary: rgba(0,0,0,0.54);
@@ -10,3 +9,17 @@ $text-border: rgba(0,0,0,0.12);
 
 $seats-green: #33c23a;
 $seats-yellow: #ebd724;
+
+$white-100: rgba(255,255,255,1);
+$white-70: rgba(255,255,255,0.7);
+$white-50: rgba(255,255,255,0.5);
+$white-30: rgba(255,255,255,0.3);
+$white-15: rgba(255,255,255,0.15);
+
+$s-blue-darkest: #02274e;
+$s-blue-darker: #003b7a;
+$s-blue-dark: #154c87;
+
+$s-blue-light: #00b6d9;
+
+$border-color: $white-15;

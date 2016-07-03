@@ -104,7 +104,12 @@ class Peta extends Component {
               <div className="name">{this.state.name}</div>
               <div className="address">{this.state.address}</div>
               <Link to="/">
-                <RaisedButton label={"Pilih "+this.props.type} primary={true} style={styles.button}/>
+                <RaisedButton
+                  label={"Pilih "+this.props.type}
+                  primary={true}
+                  style={styles.button}
+                  backgroundColor={"#000"}
+                />
               </Link>
             </div>
           </div>

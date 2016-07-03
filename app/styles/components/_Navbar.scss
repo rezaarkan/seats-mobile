@@ -1,6 +1,85 @@
 .Navbar{
+	position: absolute;
+	z-index: 2;
+
 	height: 56px;
+	height: calculateRem(56px);
 	width: 100%;
 
-	background-color: $clr-cyan-600;
+	background-color: $s-blue-light;
+
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+
+	.left, .right{
+		display: block;
+
+		width: 56px;
+		width: calculateRem(56px);
+		height: 56px;
+		height: calculateRem(56px);
+
+		text-align: center;
+
+		
+		&.on{
+			cursor: pointer;
+
+			&:hover{
+				background-color: rgba(255,255,255,0.3);
+				transition: $trans-time;
+			}
+		}
+
+		i{
+			font-size: 24px;
+			font-size: calculateRem(24px);
+			color: $white-100;
+			line-height: 56px;
+			line-height: calculateRem(56px);
+		}
+	}
+
+	.left{
+		float: left;
+	}
+
+	.center{
+		height: 100%;
+
+		text-align: center;
+
+		span{
+			height: 56px;
+			height: calculateRem(56px);
+
+			@include text-subhead;
+			font-weight: $regular;
+			color: $white-100;
+			line-height: 56px;
+			line-height: calculateRem(56px);
+		}
+
+		&.from-to{
+
+			span{
+				@include text-body;
+				line-height: 56px;
+				line-height: calculateRem(56px);
+				color: $white-100;
+
+				margin: 0;
+			}
+
+			i{
+				vertical-align: middle;
+				font-size: 18px;
+				font-size: calculateRem(18px);
+				color: $white-100;	
+			}
+		}
+	}
+
+	.right{
+		float: right;
+	}
 }

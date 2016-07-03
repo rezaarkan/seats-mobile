@@ -72,10 +72,15 @@ class PilihRute extends Component {
 
     return (
       <div className="PilihRute">
-        <Navbar>
+        <Navbar back={true} pageName={"Pilih rute"}>
 
         </Navbar>
         <div className="container-mobile">
+          <div className="to-from">
+            <span>{asal}</span>
+            <i className="mdi mdi-chevron-right" />
+            <span>{tujuan}</span>
+          </div>
           <PilihRuteItem
             halteKeberangkatan={asal}
             transitCount={"1"}

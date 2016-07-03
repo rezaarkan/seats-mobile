@@ -12,6 +12,8 @@ import {
 
 const styles={
   rute: {
+    position: 'absolute',
+    zIndex: '2',
     textAlign: 'center',
     lineHeight: '28px',
     lineHeight: '1.75rem',
@@ -19,6 +21,8 @@ const styles={
     fontSize: "0.8125rem",
   },
   ruteLink: {
+    position: 'absolute',
+    zIndex: '2',
     top: '28px',
     top: '1.75rem',
     left: '18px',
@@ -32,7 +36,7 @@ const styles={
     backgroundColor: "rgba(0,0,0,0)",
     border: "3px solid",
     boxSizing: "border-box",
-    borderColor: cyan500,
+    borderColor: "#00b6d9",
   },
   hidden: {
     opacity: "0",
@@ -53,7 +57,7 @@ class RencanaRuteItem extends Component {
             <Link to="/" style={styles.ruteLink}>
             <Avatar
               color={white}
-              backgroundColor={cyan500}
+              backgroundColor={"#00b6d9"}
               size={28}
               style={styles.rute}
             >
@@ -84,7 +88,7 @@ class RencanaRuteItem extends Component {
           leftAvatar={
             <Avatar
               color={white}
-              backgroundColor={cyan500}
+              backgroundColor={"#00b6d9"}
               size={28}
               style={styles.hidden}
             />
@@ -107,7 +111,7 @@ class RencanaRuteItem extends Component {
           leftAvatar={
             <Avatar
               className="line"
-              backgroundColor={cyan500}
+              backgroundColor={"#00b6d9"}
               size={28}
               style={styles.finish}
             />
@@ -130,7 +134,7 @@ class RencanaRuteItem extends Component {
             <Avatar
               className="line"
               color={white}
-              backgroundColor={cyan500}
+              backgroundColor={"#00b6d9"}
               size={28}
               style={styles.rute}
             >

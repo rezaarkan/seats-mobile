@@ -1,6 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { Router, Route, IndexRoute } from 'react-router';
+import { Router, Route, IndexRoute, browserHistory} from 'react-router';
 import configureStore from 'store/configureStore';
 
 import App from 'containers/App';
@@ -15,7 +15,7 @@ import PilihLokasiTujuan from 'containers/PilihLokasiTujuan';
 
 export default function(history) {
   return (
-    <Router history={history}>
+    <Router history={browserHistory}>
       <Route path="/" component={App}>
         <Route path="pilih-rute" component={PilihRute} />
         <Route path="rencana-rute" component={RencanaRute} />

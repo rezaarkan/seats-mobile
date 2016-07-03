@@ -1,9 +1,17 @@
 .SectionCariRute{
+	margin: 20px;
+	margin: calculateRem(20px);
+
 	padding-top: 28px;
 	padding-top: calculateRem(28px);
-
 	padding-bottom: 32px;
 	padding-bottom: calculateRem(32px);
+
+	background-color: $white-100;
+
+	border-radius: 5px;
+
+	box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
 
 	.block-button{
 		display: block;

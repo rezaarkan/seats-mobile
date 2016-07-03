@@ -1,0 +1,31 @@
+.PilihRute{
+
+	.to-from{
+		box-sizing: border-box;
+		padding-left: 16px;
+		padding-left: calculateRem(16px);
+		padding-right: 16px;
+		padding-right: calculateRem(16px);
+		padding-top: 12px;
+		padding-top: calculateRem(12px);
+		padding-bottom: 12px;
+		padding-bottom: calculateRem(12px);
+
+		text-align: center;
+		color: $white-100;
+
+		background-color: $s-blue-dark;
+
+		span{
+			@include text-body;
+
+			margin: 0;
+		}
+
+		i{
+			vertical-align: middle;
+			font-size: 18px;
+			font-size: calculateRem(18px);	
+		}
+	}	
+}

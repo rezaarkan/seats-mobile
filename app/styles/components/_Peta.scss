@@ -36,9 +36,11 @@
 
 		text-align: center;
 
+		box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+
 		.name{
 			@include text-subhead;
-			font-weight: $regular;
+			color: $s-blue-dark;
 		}
 
 		.address{
@@ -49,6 +51,10 @@
 
 			margin-bottom: 8px;
 			margin-bottom: calculateRem(8px);
+		}
+
+		button{
+			background-color: $s-blue-light !important;
 		}
 	}
 }

@@ -523,8 +523,16 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 3023,
+				"buffer_size": 3218,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/server/server.js",
+			"settings":
+			{
+				"buffer_size": 3779,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -741,6 +749,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"cross",
+			"nodemon",
 			"baciro",
 			"line",
 			"before",
@@ -866,9 +876,7 @@
 			"head",
 			"googlelogin",
 			"facebookl",
-			"facebook",
-			"div id",
-			"div"
+			"facebook"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -897,7 +905,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -906,7 +914,38 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3023,
+						"buffer_size": 3218,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								136,
+								141
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Seti_UI/icons/Langs/npm JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/server/server.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3779,
 						"regions":
 						{
 						},
@@ -919,9 +958,7 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Seti_UI/icons/Langs/npm JSON.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -981,6 +1018,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"ser",
+				"app\\server\\server.js"
+			],
 			[
 				"packa",
 				"package.json"
@@ -1228,10 +1269,6 @@
 			[
 				"ind",
 				"app\\server\\views\\index.ejs"
-			],
-			[
-				"ser",
-				"app\\server\\server.js"
 			],
 			[
 				"pac",

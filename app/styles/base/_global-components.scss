@@ -17,6 +17,8 @@
 	$mobile-web-container-size: calculateRem(360px);
 
 	position: relative;
+	padding-top: 56px;
+	padding-top: calculateRem(56px);
 
 	width: $mobile-web-container-size;
 
@@ -48,4 +50,14 @@
 
 	background-color: $clr-white;
 	border-bottom: 1px solid $border-color;
+
+	&.navbar{
+		padding-top: 0;
+
+		background-color: rgba(0,0,0,0);
+	}
+
+	&.blue{
+		background-color: $s-blue-darker;
+	}
 }

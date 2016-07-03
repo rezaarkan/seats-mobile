@@ -1,5 +1,6 @@
 @import
-'vendors/normalize';
+'vendors/normalize',
+'vendors/materialdesignicons';
 
 @import
 'abstracts/material-color',
@@ -32,6 +33,8 @@
 
 @import
 'pages/SectionCariRute',
-'pages/SectionDaftarRute';
+'pages/SectionDaftarRute',
+'pages/SectionDaftarHalte',
+'pages/PilihRute';
 
 @import 'shame';
