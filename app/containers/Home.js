@@ -35,7 +35,7 @@ class Home extends Component {
     return (
       <div className="Home">
         <Navbar pageName={"Bus Information System"} />
-        <div className="container-mobile blue">
+        <div className="container-mobile blue border-none">
           <Tabs
             inkBarStyle={
               {

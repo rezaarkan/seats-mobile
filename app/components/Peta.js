@@ -67,7 +67,7 @@ class Peta extends Component {
 
     return (
       <div className="Peta">
-        <Navbar />
+        <Navbar back={true} pageName={"Lokasi "+this.props.type} />
         <div className="container-mobile">
           <div className="search-location">
             <Geosuggest 
