@@ -1,4 +1,22 @@
 .PilihRuteItem{
+	padding: 20px;
+	padding: calculateRem(20px);
+	padding-bottom: 8px;
+	padding-bottom: calculateRem(8px);
+
+	.shade{
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		height: 67px;
+		width: 100%;
+
+		background-color: rgba(0,0,0,0.04);
+
+		border-bottom: 1px solid $black-12;
+	}
+
 	.time{
 		@include text-headline;
 		text-align: center;
@@ -21,6 +39,11 @@
 		padding-left: 7px;
 		padding-left: calculateRem(7px);
 
+		&.awal{
+			margin-top: 37px;
+			margin-top: calculateRem(37px);
+		}
+
 		span{
 			vertical-align: middle;
 
@@ -31,6 +54,14 @@
 			font-size: calculateRem(13px);
 		}
 
+		.halte-location{
+			@include text-body;
+			font-size: 13px;
+			font-size: calculateRem(13px);
+
+			color: $s-blue-light;
+		}
+
 		i{
 			vertical-align: middle;
 
@@ -39,7 +70,7 @@
 
 			font-size: 18px;
 			font-size: calculateRem(18px);
-			color: $black-26;	
+			color: $s-blue-dark;	
 		}
 	}
 }

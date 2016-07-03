@@ -8,6 +8,11 @@ import Divider from 'material-ui/Divider';
 import ls from 'local-storage';
 
 const styles={
+  list:{
+    backgroundColor: "white",
+    borderRadius: "5px",
+    boxShadow: "0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15)",
+  },
   hidden: {
     display: "none",
   },
@@ -47,9 +52,9 @@ class PilihRuteItem extends Component {
     if (this.props.transitCount > 0){
       transitText = " ("+this.props.transitCount+" transit)";
       transitContent =
-      <div className="transit">
+      <div className="transit truncate">
         <i className="mdi mdi-directions-fork" />
-        <span>{"Transit: "+this.props.halteTransit}</span>
+        <span>Transit: </span><span className="halte-location">{this.props.halteTransit}</span>
       </div>;
     }
 
@@ -57,6 +62,7 @@ class PilihRuteItem extends Component {
       <div className="PilihRuteItem clearfix">
         <Link to="/rencana-rute" onClick={this.pilihRuteClickHandler.bind(this)}>      
           <ListItem
+            style={styles.list}
             primaryText={
               <div>
                 <RuteIndicator 
@@ -65,14 +71,15 @@ class PilihRuteItem extends Component {
                   rute1={this.props.rute1}
                   rute2={this.props.rute2}
                 />
-                <div className="halte">
+                <div className="shade" />
+                <div className="halte awal truncate">
                   <i className="mdi mdi-store" />
-                  <span>{"Berangkat: "+this.props.halte1}</span>
+                  <span>Berangkat: </span><span className="halte-location">{this.props.halte1}</span>
                 </div>
                 {transitContent}
-                <div className="halte">
+                <div className="halte truncate">
                   <i className="mdi mdi-store" />
-                  <span>{"Sampai: "+this.props.halte2}</span>
+                  <span>Sampai: </span><span className="halte-location">{this.props.halte2}</span>
                 </div>
               </div>
             }

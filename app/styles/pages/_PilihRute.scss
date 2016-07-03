@@ -1,5 +1,4 @@
 .PilihRute{
-
 	.to-from{
 		box-sizing: border-box;
 		padding-left: 16px;
@@ -27,5 +26,9 @@
 			font-size: 18px;
 			font-size: calculateRem(18px);	
 		}
+	}
+
+	.plus{
+		color: $black-54 !important;
 	}	
 }

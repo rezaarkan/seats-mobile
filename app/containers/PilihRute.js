@@ -75,7 +75,7 @@ class PilihRute extends Component {
         <Navbar back={true} pageName={"Pilih rute"}>
 
         </Navbar>
-        <div className="container-mobile">
+        <div className="container-mobile blue">
           <div className="to-from">
             <span>{asal}</span>
             <i className="mdi mdi-chevron-right" />
