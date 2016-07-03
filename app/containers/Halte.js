@@ -11,6 +11,7 @@ class Halte extends Component {
   render() {
     return (
       <div className="Halte">
+        <Navbar back={true} pageName="Halte" />
         <div className="container-mobile">
           <div className="header">
             <div className="content">
@@ -32,45 +33,50 @@ class Halte extends Component {
           <HalteBusItem 
             busId={"AB 2454 RT"}
             busRute={"2A"}
-            currentDestination={"Menuju Halte Kenari 1"}
+            currentDestination={"Halte Kenari 1"}
             arrivingIn={"23"}
           />
           <HalteBusItem 
             busId={"AB 2454 RT"}
             busRute={"2A"}
-            currentDestination={"Menuju Halte Kenari 1"}
+            currentDestination={"Halte Kenari 1"}
             arrivingIn={"23"}
           />
           <HalteBusItem 
             busId={"AB 2454 RT"}
             busRute={"2A"}
-            currentDestination={"Menuju Halte Kenari 1"}
+            currentDestination={"Halte Kenari 1"}
             arrivingIn={"23"}
           />
           <HalteBusItem 
             busId={"AB 2454 RT"}
             busRute={"2A"}
-            currentDestination={"Menuju Halte Kenari 1"}
+            currentDestination={"Halte Kenari 1"}
             arrivingIn={"23"}
           />
           <HalteBusItem 
             busId={"AB 2454 RT"}
             busRute={"2A"}
-            currentDestination={"Menuju Halte Kenari 1"}
+            currentDestination={"Halte Kenari 1"}
             arrivingIn={"23"}
           />
           <HalteBusItem 
             busId={"AB 2454 RT"}
             busRute={"2A"}
-            currentDestination={"Menuju Halte Kenari 1"}
+            currentDestination={"Halte Kenari 1"}
             arrivingIn={"23"}
           />
           <HalteBusItem 
             busId={"AB 2454 RT"}
             busRute={"2A"}
-            currentDestination={"Menuju Halte Kenari 1"}
+            currentDestination={"Halte Kenari 1"}
             arrivingIn={"23"}
-            last={true}
+          />
+          <HalteBusItem 
+            busId={"AB 2454 RT"}
+            busRute={"2A"}
+            currentDestination={"Halte Kenari 1"}
+            arrivingIn={"23"}
           />
         </div>
       </div>

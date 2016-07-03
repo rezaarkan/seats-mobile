@@ -8,7 +8,7 @@
 
 			font-size: 20px;
 			font-size: calculateRem(20px);
-			color: $black-54;	
+			color: $s-blue-dark;	
 		}
 
 		.id{
@@ -38,6 +38,7 @@
 		.title{
 			@include text-body;
 			font-size: 13px;
+			font-weight: $bold;
 			font-size: calculateRem(13px);
 			text-transform: uppercase;
 			color: $black-54;
@@ -51,6 +52,10 @@
 
 			margin-bottom: 6px;
 			margin-bottom: calculateRem(6px);
+
+			.halte-location{
+				color: $s-blue-dark;
+			}
 		}
 
 		.time, .distance{

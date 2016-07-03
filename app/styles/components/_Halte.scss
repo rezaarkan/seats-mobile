@@ -5,7 +5,7 @@
 		height: 270px;
 		height: calculateRem(270px);
 
-		background-color: $clr-cyan-600;
+		background-color: $s-blue-darker;
 
 		text-align: left;
 
@@ -27,19 +27,19 @@
 		.name{
 			@include text-headline;
 			text-transform: capitalize;
-			color: $clr-white;
+			color: $white-100;
 		}
 
 		.address{
 			@include text-body;
-			color: $clr-white;
+			color: $white-70;
 		}
 
 		.landmark{
 			@include text-body;
 			font-size: 13px;
 			font-size: calculateRem(13px);
-			color: $clr-white;
+			color: $white-70;
 		}
 	}
 
@@ -49,10 +49,11 @@
 
 		text-align: center;
 
-		background-color: $clr-grey-100;
+		background-color: $s-blue-dark;
 
 		span{
 			@include text-body;
+			color: $white-70;
 			font-size: 13px;
 			font-size: calculateRem(13px);
 		}
@@ -67,7 +68,7 @@
 
 			font-size: 20px;
 			font-size: calculateRem(20px);
-			color: $black-54;	
+			color: $s-blue-dark;	
 		}
 
 		.id{
@@ -83,7 +84,7 @@
 			padding: 3px;
 			padding: calculateRem(3px);
 
-			background-color: $clr-cyan-500;
+			background-color: $s-blue-light;
 			border-radius: 3px;
 		}
 
@@ -94,6 +95,10 @@
 			margin-top: calculateRem(4px);
 			padding-left: 3px;
 			padding-left: calculateRem(3px);
+
+			.halte-location{
+				color: $s-blue-dark;
+			}
 		}
 	}
 

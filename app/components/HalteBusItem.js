@@ -40,7 +40,7 @@ class HalteBusItem extends Component {
             leftAvatar={
               <Avatar
                 color={white}
-                backgroundColor={cyan500}
+                backgroundColor={"#00b6d9"}
                 size={28}
                 style={styles.rute}
               >
@@ -51,7 +51,9 @@ class HalteBusItem extends Component {
               <div className="block-center">
                 <i className="mdi mdi-bus" />
                 <div className="id">{this.props.busId}</div>
-                <div className="text">{this.props.currentDestination}</div>
+                <div className="text">
+                  <span>Menuju </span><span className="halte-location">{this.props.currentDestination}</span>
+                </div>
               </div>
             }
             rightAvatar={

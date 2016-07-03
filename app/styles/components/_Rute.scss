@@ -29,6 +29,8 @@
 			height: 56px;
 			height: calculateRem(56px);
 
+			border-radius: 50%;
+
 			text-align: center;
 
 			cursor: pointer;
@@ -68,7 +70,7 @@
 
 		.text{
 			@include text-body;
-			color: $clr-white;
+			color: $white-70;
 		}
 	}
 }
