@@ -19,17 +19,6 @@
 		display: block;
 
 		box-sizing: border-box;
-		padding-left: 8px;
-		padding-left: calculateRem(8px);
-		padding-top: 16px;
-		padding-top: calculateRem(16px);
-		padding-bottom: 6px;
-		padding-bottom: calculateRem(6px);
-
-		width: 75%;
-		float: right;
-
-		border-bottom: 1px solid $border-color;
 	}
 
 	.circle{
@@ -64,14 +53,28 @@
 	}
 
 	.location{
-		@include text-subhead;
-		color: $black-87;
+		padding-bottom: 8px;
+		padding-bottom: calculateRem(8px);
+
+		@include text-headline;
+		color: $white-100;
 		font-weight: $regular;
+
+		border-bottom: 1px solid $white-30;
+
+	}
+
+	&.tujuan{
+		margin-top: 28px;
+		margin-top: calculateRem(28px);
 	}
 
 	.label{
-		@include text-caption-2;
-		color: $black-54;
+		@include text-body;
+		font-size: 13px;
+		font-size: calculateRem(13px);
+		font-weight: $bold;
+		color: $white-50;
 		text-transform: uppercase;
 
 		margin-bottom: 4px;

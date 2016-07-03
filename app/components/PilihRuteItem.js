@@ -49,7 +49,7 @@ class PilihRuteItem extends Component {
       transitContent =
       <div className="transit">
         <i className="mdi mdi-directions-fork" />
-        <span>{"Transit: Halte "+this.props.halteTransit}</span>
+        <span>{"Transit: "+this.props.halteTransit}</span>
       </div>;
     }
 
@@ -67,17 +67,17 @@ class PilihRuteItem extends Component {
                 />
                 <div className="halte">
                   <i className="mdi mdi-store" />
-                  <span>{"Berangkat: Halte "+this.props.halte1}</span>
+                  <span>{"Berangkat: "+this.props.halte1}</span>
                 </div>
                 {transitContent}
                 <div className="halte">
                   <i className="mdi mdi-store" />
-                  <span>{"Sampai: Halte "+this.props.halte2}</span>
+                  <span>{"Sampai: "+this.props.halte2}</span>
                 </div>
               </div>
             }
             rightAvatar={
-              <div className="vertical-align">
+              <div>
                 <div className="time">
                   28
                 </div>

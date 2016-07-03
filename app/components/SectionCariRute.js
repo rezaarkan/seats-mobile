@@ -6,6 +6,13 @@ import CariRuteInput from 'components/CariRuteInput';
 import RaisedButton from 'material-ui/RaisedButton';
 import ls from 'local-storage';
 
+const styles={
+  button:{
+    width: "100%",
+    borderRadius: "5px",
+  }
+}
+
 class SectionCariRute extends Component {
 
   render() {
@@ -14,19 +21,19 @@ class SectionCariRute extends Component {
 
     return (
       <div className="SectionCariRute">
-        <CariRuteInput 
-        	type={"asal"}
-        	location={homeLocationNameAsal}
-        />
-        <CariRuteInput 
-        	type={"tujuan"}
-        	location={homeLocationNameTujuan}
-        />
-        <div className="block-button">
-          <Link to="/pilih-rute">
-        	 <RaisedButton label="Cari Rute" primary={true}/>
-          </Link>
+        <div className="input-box">
+          <CariRuteInput 
+          	type={"asal"}
+          	location={homeLocationNameAsal}
+          />
+          <CariRuteInput 
+          	type={"tujuan"}
+          	location={homeLocationNameTujuan}
+          />
         </div>
+        <Link to="/pilih-rute">
+         <RaisedButton label="Cari Rute" primary={true} style={styles.button}/>
+        </Link>
         <br /><br />
       </div>
     )

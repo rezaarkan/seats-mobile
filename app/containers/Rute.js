@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router';
+import { Link, browserHistory } from 'react-router';
 
 import Navbar from 'components/Navbar';
 import RuteBusItem from 'components/RuteBusItem';
@@ -8,22 +8,42 @@ import RuteHalteItem from 'components/RuteHalteItem';
 
 import {Tabs, Tab} from 'material-ui/Tabs';
 
+const styles={
+  tab:{
+    backgroundColor: "#154c87",
+  }
+}
+
 class Rute extends Component {
+  historyGoback(){
+   browserHistory.goBack();
+  }
 
   render() {
     return (
       <div className="Rute">
-        <div className="container-mobile">
+        <div className="container-mobile no-padding">
           <div className="header">
             <div className="rute">
-              2A
+              2B
             </div>
             <div className="text">
-              Terminal Jombor - Monjali - Kentungan - Terminal Condong Catur
+              Meliputi dari Terminal Jombor sampai Rejowinangun
+            </div>
+            <div className="back" onClick={this.historyGoback}>
+              <i className="mdi mdi-keyboard-backspace" />
             </div>
           </div>
-          <Tabs>
-            <Tab label="bus">
+          <Tabs
+            inkBarStyle={
+              {
+                backgroundColor: "#00b6d9",
+                height: "4px",
+                marginTop: "-4px",
+              }
+            }
+          >
+            <Tab label="bus" style={styles.tab}>
               <RuteBusItem
                 busId={"AB 5473 FT"}
                 currentDestination={"Mandala Krida"}
@@ -62,7 +82,7 @@ class Rute extends Component {
                 last={true}
               />
             </Tab>
-            <Tab label="halte">
+            <Tab label="halte" style={styles.tab}>
               <RuteHalteItem
                 name={"Kenari 1"}
                 address={"Jl. Kenari, Semaki, Umbulharjo"}

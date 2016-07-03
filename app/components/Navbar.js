@@ -3,7 +3,7 @@ import { Link, browserHistory } from 'react-router'
 
 class Navbar extends Component {
   historyGoback(){
-	browserHistory.goBack();
+	 browserHistory.goBack();
   }
 
   render() {

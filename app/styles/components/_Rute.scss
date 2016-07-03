@@ -5,7 +5,7 @@
 		height: 200px;
 		height: calculateRem(200px);
 
-		background-color: $clr-cyan-600;
+		background-color: $s-blue-darker;
 
 		text-align: center;
 
@@ -16,6 +16,36 @@
 		padding-left: calculateRem(24px);
 		padding-right: 24px;
 		padding-right: calculateRem(24px);
+
+		.back{
+			display: block;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			width: 56px;
+			width: calculateRem(56px);
+			height: 56px;
+			height: calculateRem(56px);
+
+			text-align: center;
+
+			cursor: pointer;
+
+			&:hover{
+				background-color: rgba(255,255,255,0.3);
+				transition: $trans-time;
+			}
+
+			i{
+				font-size: 24px;
+				font-size: calculateRem(24px);
+				color: $white-100;
+				line-height: 56px;
+				line-height: calculateRem(56px);
+			}
+		}
 
 		.rute{
 			$rute-size: 54px;
@@ -30,7 +60,7 @@
 			text-align: center;
 			color: $clr-white;
 
-			background-color: $clr-pink-500;
+			background-color: $s-blue-light;
 
 			margin-bottom: 12px;
 			margin-bottom: calculateRem(12px);

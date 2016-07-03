@@ -5,9 +5,6 @@ class CariRuteInput extends Component {
   render() {
     return (
       <div className={"CariRuteInput clearfix " + this.props.type}>
-      	<div className="block-left">
-      		<div className="circle" />
-      	</div>
       	<Link to={"/"+this.props.type} className="block-right">
           <div className="label">
             {this.props.type}
