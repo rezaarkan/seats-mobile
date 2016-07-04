@@ -45,3 +45,13 @@ gulp.task('css:build', ['css'], function() {
              .pipe($.rev.manifest())
              .pipe(gulp.dest('./dist'));
 })
+
+gulp.task('clean', function() {
+  return gulp.src('./dist')
+  .pipe($.rimraf());
+})
+
+gulp.task('build', ['clean', 'css:build'], function() {
+  return gulp.src('./app/assets/**')
+  .pipe(gulp.dest('./dist'));
+})

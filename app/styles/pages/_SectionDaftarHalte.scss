@@ -2,13 +2,13 @@
 	background-color: $white-100;
 
 	.halte-rute{
-		font-size: 20px !important;
-		font-size: calculateRem(20px) !important;
+		font-size: 18px !important;
+		font-size: calculateRem(18px) !important;
 
-		padding-top: 20px !important;
-		padding-top: calculateRem(20px) !important;
-		padding-bottom: 20px !important;
-		padding-bottom: calculateRem(20px) !important;
+		padding-top: 18px !important;
+		padding-top: calculateRem(18px) !important;
+		padding-bottom: 18px !important;
+		padding-bottom: calculateRem(18px) !important;
 
 		svg{
 			fill: $s-blue-light !important;

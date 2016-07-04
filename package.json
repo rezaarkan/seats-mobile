@@ -8,7 +8,7 @@
     "test": "NODE_ENV=test NODE_PATH=./app mocha --compilers js:babel-register -r app/spec/support/setup.mocha.js --recursive app/spec/**/*.test.js -w",
     "test:ci": "cross-env NODE_ENV=test cross-env NODE_PATH=./app mocha --compilers js:babel-register -r app/spec/support/setup.mocha.js --recursive 'app/spec/**/*.test.js'",
     "webpack": "webpack",
-    "build": "rimraf dist/ && npm run webpack && gulp css:build",
+    "build": "gulp build && webpack",
     "postinstall": "npm run build"
   },
   "engines": {
@@ -73,8 +73,10 @@
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat": "^2.6.0",
+    "gulp-ignore": "^2.0.1",
     "gulp-load-plugins": "^1.2.0",
     "gulp-rev": "^6.0.1",
+    "gulp-rimraf": "^0.2.0",
     "gulp-sass": "^2.1.1",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.4",
