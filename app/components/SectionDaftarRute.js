@@ -3,7 +3,10 @@ import { Link } from 'react-router'
 
 import RuteItem from 'components/RuteItem';
 
+import ls from 'local-storage';
+
 class SectionDaftarRute extends Component {
+
   render() {
     return (
       <div className="SectionDaftarRute">

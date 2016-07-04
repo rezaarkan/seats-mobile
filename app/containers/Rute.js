@@ -28,7 +28,7 @@ class Rute extends Component {
               2B
             </div>
             <div className="text">
-              Meliputi dari Terminal Jombor sampai Rejowinangun
+              Terminal Jombor - Monjali - Terminal Condongcatur - UGM - Monjali - Taman Pintar - XT Square
             </div>
             <div className="back" onClick={this.historyGoback}>
               <i className="mdi mdi-keyboard-backspace" />
