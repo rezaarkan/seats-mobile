@@ -53,5 +53,5 @@ gulp.task('clean', function() {
 
 gulp.task('build', ['clean', 'css:build'], function() {
   return gulp.src('./app/assets/**')
-  .pipe(gulp.dest('./dist'));
+  .pipe(gulp.dest('./dist/assets'));
 })
