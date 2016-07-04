@@ -23,20 +23,33 @@ class Peta extends Component {
       position: {
         lat: -7.7958091,
         lng: 110.3820899,
-      }
+      },
+      status: "hidden",
     }
 
     this.onSuggestSelectHandler = this.onSuggestSelectHandler.bind(this);
   }
 
   onSuggestSelectHandler(suggest) {
-    var suggestName = suggest.gmaps.address_components[0].short_name;
+    var suggestName = suggest.gmaps.address_components[0].short_name || suggest.label;
     var suggestLat = suggest.location.lat;
     var suggestLng = suggest.location.lng;
     var suggestAddress = suggest.gmaps.formatted_address;
     var formattedAddress = suggestAddress.slice(0,suggestAddress.indexOf(',',suggestAddress.indexOf(',')+1));
 
-    console.log(suggest);
+    if (ls.get('savedSuggest') == undefined){
+      ls.set('savedSuggest', []);
+    }
+
+    var savedSuggest = ls.get('savedSuggest');
+
+    savedSuggest.push(suggest);
+
+    if (savedSuggest.length > 5){
+      savedSuggest.splice(0, 1);
+    }
+
+    ls.set('savedSuggest', savedSuggest);
 
     this.setState({
       name: suggestName,
@@ -44,7 +57,8 @@ class Peta extends Component {
       position: {
         lat: suggestLat,
         lng: suggestLng,
-      }
+      },
+      status: "notHidden",
     });
 
     var temp = ls.get('locationName'+this.props.type);
@@ -57,21 +71,16 @@ class Peta extends Component {
   };
 
   render() {
-    var suggestion = [
-      {label: 'Mandala Krida', location: {lat: -7.7958091, lng: 110.3820899}},
-      {label: 'Kopma UGM', location: {lat: -7.7744103, lng: 110.373057}},
-      {label: 'Candi Prambanan', location: {lat: -7.7520153, lng: 110.4892787}},
-      {label: 'Bandara Adisucipto', location: {lat: -7.7876785, lng: 110.4295726}},
-      {label: 'Universitas Negeri Yogyakarta - Fakultas Teknik', location: {lat: -7.7691271, lng: 110.3859619}}
-    ];
+    if (ls.get('savedSuggest') != undefined){
+      var suggestion = ls.get('savedSuggest').reverse();
+    }
 
     return (
       <div className="Peta">
         <Navbar back={true} pageName={"Lokasi "+this.props.type} />
         <div className="container-mobile">
           <div className="search-location">
-            <Geosuggest 
-              fixtures={suggestion}
+            <Geosuggest
               placeholder={"Cari lokasi"}
               country={"id"}
               onSuggestSelect={this.onSuggestSelectHandler}
@@ -88,7 +97,6 @@ class Peta extends Component {
               }
               googleMapElement={
                 <GoogleMap
-                  ref={(map) => console.log(map)}
                   defaultZoom={15}
                   defaultCenter={this.state.position}
                   center={this.state.position}
@@ -100,7 +108,7 @@ class Peta extends Component {
                 </GoogleMap>
               }
             />
-            <div className="map-info">
+            <div className={"map-info "+this.state.status}>
               <div className="name">{this.state.name}</div>
               <div className="address">{this.state.address}</div>
               <Link to="/">

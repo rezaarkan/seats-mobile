@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"nested",
+				"nestedListStyle"
+			],
+			[
+				"sugg",
+				"suggest"
+			],
+			[
+				"plce",
+				"placeId"
+			],
+			[
+				"is",
+				"isDuplicate"
+			],
+			[
 				"s-",
 				"s-blue-dark"
 			],
@@ -117,10 +133,6 @@
 			],
 			[
 				"sugge",
-				"suggestAddress"
-			],
-			[
-				"sugg",
 				"suggestAddress"
 			],
 			[
@@ -502,44 +514,16 @@
 			[
 				"cent",
 				"center"
-			],
-			[
-				"item",
-				"itemHalf"
-			],
-			[
-				"class",
-				"className"
-			],
-			[
-				"cl",
-				"className"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/containers/Halte.js",
+			"file": "app/components/SectionDaftarHalte.js",
 			"settings":
 			{
-				"buffer_size": 2584,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/components/HalteBusItem.js",
-			"settings":
-			{
-				"buffer_size": 1866,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/styles/components/_Halte.scss",
-			"settings":
-			{
-				"buffer_size": 1873,
+				"buffer_size": 15591,
 				"line_ending": "Windows"
 			}
 		}
@@ -588,7 +572,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 398.0
+		"width": 414.0
 	},
 	"console":
 	{
@@ -616,11 +600,19 @@
 	],
 	"file_history":
 	[
+		"/E/xampp/htdocs/seats-react-mobile/app/components/Navbar.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/HalteItem.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteItem.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/containers/Halte.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/Peta.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/containers/Home.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/SectionDaftarHalte.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/HalteBusItem.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_Halte.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/themes/_color.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_variables.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_Rute.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteBusItem.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/HalteBusItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_CariRuteInput.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RencanaRute.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/RencanaRute.js",
@@ -633,15 +625,11 @@
 		"/E/xampp/htdocs/seats-react-mobile/package.json",
 		"/E/xampp/htdocs/seats-react-mobile/app/server/server.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_SectionCariRute.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/containers/Home.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/SectionCariRute.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/CariRuteInput.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_Peta.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/_shame.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/Peta.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteItem.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/Navbar.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_Navbar.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_helpers.scss",
 		"/E/xampp/htdocs/kulina-mobile-web/webpack.config.js",
@@ -688,14 +676,10 @@
 		"/E/xampp/htdocs/seats-react-mobile/node_modules/react-google-maps/lib/index.js",
 		"/E/xampp/htdocs/seats-react-mobile/node_modules/react-google-maps/lib/GoogleMap.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteHalteItem.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/containers/Halte.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_Halte.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/HalteItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/HalteBusItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/_RuteHalteItem.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/RuteBusItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/HomeMobile.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/SectionDaftarHalte.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/scripts/1 - materialize.min.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/SearchBar.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/App.js",
@@ -761,6 +745,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"conso",
+			"cons",
+			"rez",
+			"reza",
+			"rumah",
+			"console",
 			"cyan",
 			"rute",
 			"cyan",
@@ -882,13 +872,7 @@
 			"analytics.page",
 			"google",
 			"process",
-			"port",
-			"process.env",
-			"env",
-			"handleclick",
-			"analytics",
-			"analytics.page",
-			"analytics."
+			"port"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -917,54 +901,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/containers/Halte.js",
+					"file": "app/components/SectionDaftarHalte.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2584,
+						"buffer_size": 15591,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2448,
-								2448
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 535.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/components/HalteBusItem.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1866,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								888,
-								888
+								15506,
+								15506
 							]
 						],
 						"settings":
@@ -974,377 +928,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 335.0,
+						"translation.y": 95.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/styles/components/_Halte.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1873,
-						"regions":
-						{
-							"gutter_color_104":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/blue.png",
-								"regions":
-								[
-									[
-										104,
-										139
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1110":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/blue.png",
-								"regions":
-								[
-									[
-										1110,
-										1134
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1257":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										1281,
-										1302
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1258":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										1281,
-										1302
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1259":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										1281,
-										1302
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1270":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										1281,
-										1302
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1278":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										1281,
-										1302
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1279":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										1281,
-										1302
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1280":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										1281,
-										1302
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1281":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										1281,
-										1302
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1359":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/blue.png",
-								"regions":
-								[
-									[
-										1383,
-										1418
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1361":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/blue.png",
-								"regions":
-								[
-									[
-										1383,
-										1418
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1372":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/blue.png",
-								"regions":
-								[
-									[
-										1383,
-										1418
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1380":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/blue.png",
-								"regions":
-								[
-									[
-										1383,
-										1418
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1381":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/blue.png",
-								"regions":
-								[
-									[
-										1383,
-										1418
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1383":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/blue.png",
-								"regions":
-								[
-									[
-										1383,
-										1418
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1613":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/blue.png",
-								"regions":
-								[
-									[
-										1613,
-										1637
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_507":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										509,
-										520
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_508":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										509,
-										520
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_569":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										571,
-										582
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_570":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										571,
-										582
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_686":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										687,
-										697
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_688":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										687,
-										697
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_799":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/blue.png",
-								"regions":
-								[
-									[
-										799,
-										832
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_800":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/blue.png",
-								"regions":
-								[
-									[
-										799,
-										832
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_801":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/blue.png",
-								"regions":
-								[
-									[
-										799,
-										832
-									]
-								],
-								"scope": "gutter_color"
-							}
-						},
-						"selection":
-						[
-							[
-								1637,
-								1637
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 560.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1399,6 +986,38 @@
 		"selected_items":
 		[
 			[
+				"n",
+				"app\\components\\Navbar.js"
+			],
+			[
+				"ruteit",
+				"app\\components\\RuteItem.js"
+			],
+			[
+				"halteit",
+				"app\\components\\HalteItem.js"
+			],
+			[
+				"sectiondaft",
+				"app\\components\\SectionDaftarHalte.js"
+			],
+			[
+				"halte",
+				"app\\containers\\Halte.js"
+			],
+			[
+				"home",
+				"app\\containers\\Home.js"
+			],
+			[
+				"peta",
+				"app\\components\\Peta.js"
+			],
+			[
+				"haltebus",
+				"app\\components\\HalteBusItem.js"
+			],
+			[
 				"col",
 				"app\\styles\\themes\\_color.scss"
 			],
@@ -1409,10 +1028,6 @@
 			[
 				"colo",
 				"app\\styles\\themes\\_color.scss"
-			],
-			[
-				"haltebus",
-				"app\\components\\HalteBusItem.js"
 			],
 			[
 				"rute",
@@ -1443,10 +1058,6 @@
 				"app\\styles\\components\\_Halte.scss"
 			],
 			[
-				"halte",
-				"app\\containers\\Halte.js"
-			],
-			[
 				"pilih",
 				"app\\styles\\components\\_PilihRuteItem.scss"
 			],
@@ -1471,10 +1082,6 @@
 				"app\\containers\\PilihRute.js"
 			],
 			[
-				"peta",
-				"app\\styles\\components\\_Peta.scss"
-			],
-			[
 				"re",
 				"app\\styles\\components\\_RencanaRute.scss"
 			],
@@ -1493,10 +1100,6 @@
 			[
 				"sectioncar",
 				"app\\components\\SectionCariRute.js"
-			],
-			[
-				"home",
-				"app\\containers\\Home.js"
 			],
 			[
 				"ruteite",
@@ -1723,10 +1326,6 @@
 				"app\\styles\\components\\_PilihRuteItem.scss"
 			],
 			[
-				"ruteit",
-				"app\\components\\RuteItem.js"
-			],
-			[
 				"daftar",
 				"app\\components\\SectionDaftarHalte.js"
 			],
@@ -1897,18 +1496,6 @@
 			[
 				"analytic",
 				"src\\scripts\\3 - analytics.js"
-			],
-			[
-				"how",
-				"containers\\HowTo.js"
-			],
-			[
-				"google",
-				"containers\\GoogleLogin.js"
-			],
-			[
-				"app.",
-				"containers\\App.js"
 			]
 		],
 		"width": 0.0
@@ -1987,7 +1574,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 216.0,
+	"side_bar_width": 239.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

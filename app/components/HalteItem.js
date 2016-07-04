@@ -16,16 +16,18 @@ class HalteItem extends Component {
     var divider;
 
     if (lastTrue) {
-      divider=<Divider style={styles.hidden}/>;
+      divider=<Divider inset={true} style={styles.hidden}/>;
     } else {
-      divider=<Divider />;
+      divider=<Divider inset={true} />;
     }
 
     return (
       <div className="HalteItem clearfix">
         <Link to="/">      
           <ListItem
+            insetChildren={true}
             primaryText={this.props.halteName}
+            secondaryText={this.props.halteAddress}
           >
           </ListItem>
         </Link>

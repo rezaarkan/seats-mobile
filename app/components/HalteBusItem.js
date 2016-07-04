@@ -34,41 +34,41 @@ class HalteBusItem extends Component {
     }
 
     return (
-      <div className="HalteBusItem clearfix">
-        <Link to="/">      
-          <ListItem
-            leftAvatar={
-              <Avatar
-                color={white}
-                backgroundColor={"#00b6d9"}
-                size={28}
-                style={styles.rute}
-              >
-                {this.props.busRute}
-              </Avatar>
-            }
-            primaryText={
-              <div className="block-center">
-                <i className="mdi mdi-bus" />
-                <div className="id">{this.props.busId}</div>
-                <div className="text">
-                  <span>Menuju </span><span className="halte-location">{this.props.currentDestination}</span>
-                </div>
+      <div className="HalteBusItem clearfix">     
+        <ListItem
+          disabled={true}
+          leftAvatar={
+            <Avatar
+              color={white}
+              backgroundColor={"#00b6d9"}
+              size={28}
+              style={styles.rute}
+            >
+              {this.props.busRute}
+            </Avatar>
+          }
+          primaryText={
+            <div className="block-center">
+              <i className="mdi mdi-bus" />
+              <div className="id">{this.props.busId}</div>
+              <div className="text">
+                <span>Menuju </span>
+                <Link to="/halte" className="halte-location">{this.props.currentDestination}</Link>
               </div>
-            }
-            rightAvatar={
-              <div className="block-right" style={styles.time}>
-                <div className="time">
-                  {this.props.arrivingIn}
-                </div>
-                <div className="text">
-                  menit
-                </div>
+            </div>
+          }
+          rightAvatar={
+            <div className="block-right" style={styles.time}>
+              <div className="time">
+                {this.props.arrivingIn}
               </div>
-            }
-          >
-          </ListItem>
-        </Link>
+              <div className="text">
+                menit
+              </div>
+            </div>
+          }
+        >
+        </ListItem>
         {divider}
       </div>
     )
