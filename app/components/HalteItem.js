@@ -12,6 +12,7 @@ const styles={
 
 class HalteItem extends Component {
   render() {
+    var link = this.props.link || "/";
     var lastTrue = this.props.last || false;
     var divider;
 
@@ -23,7 +24,7 @@ class HalteItem extends Component {
 
     return (
       <div className="HalteItem clearfix">
-        <Link to="/">      
+        <Link to={link}>      
           <ListItem
             insetChildren={true}
             primaryText={this.props.halteName}

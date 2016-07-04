@@ -16,7 +16,7 @@ class Halte extends Component {
           <div className="header">
             <div className="content">
               <div className="name">
-                Kenari
+                Kenari 1
               </div>
               <div className="address">
                 Jalan Kenari, Semaki, Umbulharjo
@@ -24,7 +24,7 @@ class Halte extends Component {
               <div className="landmark">
                 Mandala Krida, GOR Amongraga, SMKN 6 Yogyakarta
               </div>
-              <RuteIndicator type={"halte"} />
+              <RuteIndicator type={"halte"} rute1={"2A"} rute2={"2B"}/>
             </div>
           </div>
           <div className="seperator">
@@ -34,49 +34,61 @@ class Halte extends Component {
             busId={"AB 2454 RT"}
             busRute={"2A"}
             currentDestination={"Halte Kenari 1"}
-            arrivingIn={"23"}
+            arrivingIn={"4"}
           />
           <HalteBusItem 
-            busId={"AB 2454 RT"}
-            busRute={"2A"}
+            busId={"AB 1234 CT"}
+            busRute={"2B"}
             currentDestination={"Halte Kenari 1"}
-            arrivingIn={"23"}
+            arrivingIn={"13"}
           />
           <HalteBusItem 
-            busId={"AB 2454 RT"}
+            busId={"AB 5554 IM"}
             busRute={"2A"}
-            currentDestination={"Halte Kenari 1"}
-            arrivingIn={"23"}
+            currentDestination={"Halte Kusumanegara 4"}
+            arrivingIn={"25"}
           />
           <HalteBusItem 
-            busId={"AB 2454 RT"}
-            busRute={"2A"}
-            currentDestination={"Halte Kenari 1"}
-            arrivingIn={"23"}
+            busId={"AB 8214 GH"}
+            busRute={"2B"}
+            currentDestination={"Halte Yos Sudarso"}
+            arrivingIn={"27"}
           />
           <HalteBusItem 
-            busId={"AB 2454 RT"}
+            busId={"AB 3614 CG"}
             busRute={"2A"}
-            currentDestination={"Halte Kenari 1"}
-            arrivingIn={"23"}
+            currentDestination={"Halte Gedong Kuning (Dep. Kehutanan)"}
+            arrivingIn={"33"}
           />
           <HalteBusItem 
-            busId={"AB 2454 RT"}
-            busRute={"2A"}
-            currentDestination={"Halte Kenari 1"}
-            arrivingIn={"23"}
+            busId={"AB 8839 HD"}
+            busRute={"2B"}
+            currentDestination={"Halte Cik Di Tiro 2"}
+            arrivingIn={"39"}
           />
           <HalteBusItem 
-            busId={"AB 2454 RT"}
+            busId={"AB 9274 HC"}
             busRute={"2A"}
-            currentDestination={"Halte Kenari 1"}
-            arrivingIn={"23"}
+            currentDestination={"Halte RSI Hidayatullah"}
+            arrivingIn={"45"}
           />
           <HalteBusItem 
-            busId={"AB 2454 RT"}
+            busId={"AB 8392 JD"}
             busRute={"2A"}
-            currentDestination={"Halte Kenari 1"}
-            arrivingIn={"23"}
+            currentDestination={"Halte Katamso 1"}
+            arrivingIn={"59"}
+          />
+          <HalteBusItem 
+            busId={"AB 8493 LK"}
+            busRute={"2B"}
+            currentDestination={"Halte Ring Road Utara (Monjali 2)"}
+            arrivingIn={"62"}
+          />
+          <HalteBusItem 
+            busId={"AB 9458 MC"}
+            busRute={"2B"}
+            currentDestination={"Halte Terminal Jombor"}
+            arrivingIn={"78"}
           />
         </div>
       </div>

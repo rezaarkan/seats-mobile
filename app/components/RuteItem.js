@@ -22,18 +22,20 @@ const styles={
 
 class RuteItem extends Component {
   render() {
+    var link = this.props.link || "/";
     var lastTrue = this.props.last || false;
     var divider;
 
     if (lastTrue) {
       divider=<br />;
     } else {
-      divider=<Divider inset={true} />;
+      divider=<Divider />;
     }
 
     return (
       <div className="RuteItem clearfix">
-        <Link to="/">      
+        <Divider />
+        <Link to={link}>      
           <ListItem
             leftAvatar={
               <Avatar
@@ -47,6 +49,9 @@ class RuteItem extends Component {
             }
             primaryText={
               <div>
+                <div className="text">
+                  {this.props.description}
+                </div>
                 <div className="halte">
                   <i className="mdi mdi-store" />
                   <span>{this.props.halteCount + " halte"}</span>

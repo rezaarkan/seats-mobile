@@ -90,14 +90,18 @@
 
 		.text{
 			@include text-body;
+			color: $black-54;
 
 			margin-top: 4px;
 			margin-top: calculateRem(4px);
 			padding-left: 3px;
 			padding-left: calculateRem(3px);
+			padding-right: 12px;
+			padding-right: calculateRem(12px);
 
 			.halte-location{
 				color: $s-blue-dark;
+				font-weight: $medium;
 			}
 		}
 	}
@@ -112,6 +116,7 @@
 		.text{
 			@include text-body;
 			text-align: center;
+			color: $black-54;
 
 			line-height: 16px;
 			line-height: calculateRem(16px);
