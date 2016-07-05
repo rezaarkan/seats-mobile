@@ -74,12 +74,12 @@ class PilihRute extends Component {
     }
 
     /* Story Mode */
-    if ((asal == "Tugu" || asal == "Tugu Jogja") && (tujuan == "Mandala Krida" || tujuan == "Stadion Mandala Krida")) {
-      var halte1 = "Sudirman 3";
-      var halte3 = "Mangkubumi 1";
-      var halte5 = "AM Sangaji 1";
-      var halte2 = "Kenari 1";
-      var halte4 = "Kenari 2";
+    if ((asal == "Mandala Krida" || asal == "Stadion Mandala Krida") && (tujuan == "Tugu Jogja" || tujuan == "Tugu")) {
+      var halte1 = "Kenari 1";
+      var halte3 = "Kenari 2";
+      var halte5 = "Kusumanegara 1";
+      var halte2 = "Sudirman 3";
+      var halte4 = "Mangkubumi 1";
       var halteTransit = "Cik Di Tiro 2";
 
       var rute1 = "1B";
