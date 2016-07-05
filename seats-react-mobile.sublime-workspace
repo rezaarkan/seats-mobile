@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"rute",
+				"ruteClicked"
+			],
+			[
+				"Ma",
+				"Malioboro"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
 				"nested",
 				"nestedListStyle"
 			],
@@ -24,14 +56,6 @@
 				"s-blue-dark"
 			],
 			[
-				"mar",
-				"margin-top"
-			],
-			[
-				"padd",
-				"padding-bottom"
-			],
-			[
 				"border",
 				"border-radius"
 			],
@@ -50,10 +74,6 @@
 			[
 				"rand",
 				"randomDistanceTujuan"
-			],
-			[
-				"margi",
-				"margin-top"
 			],
 			[
 				"ha",
@@ -86,10 +106,6 @@
 			[
 				"location",
 				"locationNameAsal"
-			],
-			[
-				"rute",
-				"ruteCount"
 			],
 			[
 				"sele",
@@ -164,10 +180,6 @@
 				"min-height"
 			],
 			[
-				"padding",
-				"padding-bottom"
-			],
-			[
 				"pad",
 				"padding-top"
 			],
@@ -222,10 +234,6 @@
 			[
 				"renca",
 				"rencanaRuteIndicator"
-			],
-			[
-				"di",
-				"divider"
 			],
 			[
 				"RencanaR",
@@ -506,24 +514,24 @@
 			[
 				"co",
 				"content"
-			],
-			[
-				"marg",
-				"margin-left"
-			],
-			[
-				"cent",
-				"center"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/components/SectionDaftarHalte.js",
+			"file": "app/containers/Rute.js",
 			"settings":
 			{
-				"buffer_size": 15591,
+				"buffer_size": 4017,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/components/SectionDaftarRute.js",
+			"settings":
+			{
+				"buffer_size": 2336,
 				"line_ending": "Windows"
 			}
 		}
@@ -535,16 +543,16 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 342.0,
-		"last_filter": "js",
+		"height": 147.0,
+		"last_filter": "jsx",
 		"selected_items":
 		[
 			[
-				"js",
+				"jsx",
 				"Set Syntax: JSX"
 			],
 			[
-				"jsx",
+				"js",
 				"Set Syntax: JSX"
 			],
 			[
@@ -572,7 +580,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 414.0
+		"width": 398.0
 	},
 	"console":
 	{
@@ -600,19 +608,29 @@
 	],
 	"file_history":
 	[
+		"/D/Buku Tahunan/URUTAN HALAMAN 2/DIBACA.txt",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/SectionDaftarRute.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/Navbar.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/HalteItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteItem.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/containers/Halte.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/Peta.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/containers/Home.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/HalteItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/SectionDaftarHalte.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteItem.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_SectionDaftarRute.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteBusItem.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/HalteBusItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_Halte.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/containers/Halte.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteIndicator.js",
+		"/E/xampp/htdocs/seats-react-mobile/gulpfile.js",
+		"/E/xampp/htdocs/seats-react-mobile/package.json",
+		"/E/xampp/htdocs/seats-react-mobile/dist/main.css",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_SectionDaftarHalte.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_SectionCariRute.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/Peta.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/containers/Home.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/themes/_color.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_variables.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_Rute.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteBusItem.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_CariRuteInput.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RencanaRute.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/RencanaRute.js",
@@ -622,14 +640,11 @@
 		"/E/xampp/htdocs/seats-react-mobile/app/components/PilihRuteItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/PilihRute.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_PilihRute.scss",
-		"/E/xampp/htdocs/seats-react-mobile/package.json",
 		"/E/xampp/htdocs/seats-react-mobile/app/server/server.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_SectionCariRute.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/SectionCariRute.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/CariRuteInput.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_Peta.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/_shame.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteItem.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_Navbar.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_helpers.scss",
 		"/E/xampp/htdocs/kulina-mobile-web/webpack.config.js",
@@ -644,15 +659,11 @@
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/base/_global-components.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/routes/index.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/vendors/_materialize.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/SectionDaftarRute.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_mixins.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_SectionDaftarRute.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_SectionDaftarHalte.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteIndicator.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/RencanaRuteItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RencanaRuteItem.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/base/_globals.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteIndicator.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/server/views/index.ejs",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/vendors/_materialdesignicons.scss",
 		"/E/xampp/htdocs/seats-react-mobile/node_modules/mdi/css/materialdesignicons.min.css",
@@ -686,7 +697,6 @@
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/Navbar.scss",
 		"/E/xampp/htdocs/seats-react-universal/package.json",
 		"/E/xampp/htdocs/seats-react-mobile/.babelrc",
-		"/E/xampp/htdocs/seats-react-mobile/gulpfile.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/app.js",
 		"/E/nodejs/node_modules/npm/package.json",
 		"/E/xampp/htdocs/seats-react-mobile/node_modules/material-ui/package.json",
@@ -696,7 +706,6 @@
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/Intro.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/Questions.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/themes/_dark.scss",
-		"/E/xampp/htdocs/seats-react-mobile/dist/main.css",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/_intro.scss",
 		"/E/xampp/htdocs/seats-react-mobile/npm-shrinkwrap.json",
 		"/E/xampp/htdocs/seats-react/resources/styles/components/MapSection.scss",
@@ -726,8 +735,7 @@
 		"/E/xampp/htdocs/kulina-mobile-web/containers/OrderPending.js",
 		"/E/xampp/htdocs/kulina-mobile-web/containers/HowTo.js",
 		"/E/xampp/htdocs/kulina-mobile-web/containers/DatePicker.js",
-		"/E/xampp/htdocs/kulina-mobile-web/containers/Checkout.js",
-		"/E/xampp/htdocs/kulina-mobile-web/containers/Intro.js"
+		"/E/xampp/htdocs/kulina-mobile-web/containers/Checkout.js"
 	],
 	"find":
 	{
@@ -745,6 +753,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"i{",
+			"i",
+			"text",
+			"KENARI",
+			"2A",
+			"Kenari",
+			"kenari",
 			"conso",
 			"cons",
 			"rez",
@@ -865,14 +880,7 @@
 			"analyticsSeg",
 			"diskon",
 			"mdi",
-			"facebooklog",
-			"page",
-			"pag",
-			"analytics",
-			"analytics.page",
-			"google",
-			"process",
-			"port"
+			"facebooklog"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -906,19 +914,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/components/SectionDaftarHalte.js",
+					"file": "app/containers/Rute.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 15591,
+						"buffer_size": 4017,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15506,
-								15506
+								826,
+								826
 							]
 						],
 						"settings":
@@ -928,10 +936,40 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 95.0,
+						"translation.y": 90.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/components/SectionDaftarRute.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2336,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1195,
+								1287
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -986,6 +1024,98 @@
 		"selected_items":
 		[
 			[
+				"daftarr",
+				"app\\components\\SectionDaftarRute.js"
+			],
+			[
+				"navb",
+				"app\\components\\Navbar.js"
+			],
+			[
+				"daftarrute",
+				"app\\components\\SectionDaftarRute.js"
+			],
+			[
+				"rute.js",
+				"app\\containers\\Rute.js"
+			],
+			[
+				"halteit",
+				"app\\components\\HalteItem.js"
+			],
+			[
+				"ruteite",
+				"app\\components\\RuteItem.js"
+			],
+			[
+				"daftar",
+				"app\\components\\SectionDaftarHalte.js"
+			],
+			[
+				"section",
+				"app\\styles\\pages\\_SectionDaftarRute.scss"
+			],
+			[
+				"rutebus",
+				"app\\styles\\components\\_RuteBusItem.scss"
+			],
+			[
+				"rutei",
+				"app\\components\\RuteItem.js"
+			],
+			[
+				"halte.s",
+				"app\\styles\\components\\_Halte.scss"
+			],
+			[
+				"haltebu",
+				"app\\components\\HalteBusItem.js"
+			],
+			[
+				"ruteind",
+				"app\\components\\RuteIndicator.js"
+			],
+			[
+				"halte",
+				"app\\containers\\Halte.js"
+			],
+			[
+				"daft",
+				"app\\components\\SectionDaftarHalte.js"
+			],
+			[
+				"halteitem",
+				"app\\components\\HalteItem.js"
+			],
+			[
+				"gul",
+				"gulpfile.js"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"sec",
+				"app\\styles\\pages\\_SectionCariRute.scss"
+			],
+			[
+				"sectionha",
+				"app\\styles\\pages\\_SectionDaftarHalte.scss"
+			],
+			[
+				"sectionhal",
+				"app\\styles\\pages\\_SectionDaftarHalte.scss"
+			],
+			[
 				"n",
 				"app\\components\\Navbar.js"
 			],
@@ -994,16 +1124,8 @@
 				"app\\components\\RuteItem.js"
 			],
 			[
-				"halteit",
-				"app\\components\\HalteItem.js"
-			],
-			[
 				"sectiondaft",
 				"app\\components\\SectionDaftarHalte.js"
-			],
-			[
-				"halte",
-				"app\\containers\\Halte.js"
 			],
 			[
 				"home",
@@ -1034,10 +1156,6 @@
 				"app\\styles\\components\\_Rute.scss"
 			],
 			[
-				"rutebus",
-				"app\\styles\\components\\_RuteBusItem.scss"
-			],
-			[
 				"cari",
 				"app\\styles\\components\\_CariRuteInput.scss"
 			],
@@ -1066,16 +1184,8 @@
 				"app\\styles\\components\\_Rute.scss"
 			],
 			[
-				"pack",
-				"package.json"
-			],
-			[
 				"server",
 				"app\\server\\server.js"
-			],
-			[
-				"sec",
-				"app\\styles\\pages\\_SectionCariRute.scss"
 			],
 			[
 				"pilihru",
@@ -1100,10 +1210,6 @@
 			[
 				"sectioncar",
 				"app\\components\\SectionCariRute.js"
-			],
-			[
-				"ruteite",
-				"app\\styles\\components\\_RuteItem.scss"
 			],
 			[
 				"pilihrutei",
@@ -1154,10 +1260,6 @@
 				"app\\styles\\components\\_PilihRuteItem.scss"
 			],
 			[
-				"navb",
-				"app\\components\\Navbar.js"
-			],
-			[
 				"renca",
 				"app\\containers\\RencanaRute.js"
 			],
@@ -1190,20 +1292,12 @@
 				"app\\components\\SectionDaftarRute.js"
 			],
 			[
-				"rute.js",
-				"app\\containers\\Rute.js"
-			],
-			[
 				"global",
 				"app\\styles\\base\\_global-components.scss"
 			],
 			[
 				"mixi",
 				"app\\styles\\abstracts\\_mixins.scss"
-			],
-			[
-				"section",
-				"app\\styles\\pages\\_SectionDaftarRute.scss"
 			],
 			[
 				"color",
@@ -1232,10 +1326,6 @@
 			[
 				"index.e",
 				"app\\server\\views\\index.ejs"
-			],
-			[
-				"packa",
-				"package.json"
 			],
 			[
 				"mixin",
@@ -1286,10 +1376,6 @@
 				"app\\styles\\components\\_RuteHalteItem.scss"
 			],
 			[
-				"rutei",
-				"app\\components\\RuteItem.js"
-			],
-			[
 				"rutein",
 				"app\\styles\\components\\_RuteIndicator.scss"
 			],
@@ -1324,10 +1410,6 @@
 			[
 				"pilh",
 				"app\\styles\\components\\_PilihRuteItem.scss"
-			],
-			[
-				"daftar",
-				"app\\components\\SectionDaftarHalte.js"
 			],
 			[
 				"mater",
@@ -1418,10 +1500,6 @@
 				"app\\scripts\\0 - jquery-3.0.0.min.js"
 			],
 			[
-				"gulp",
-				"gulpfile.js"
-			],
-			[
 				"dark",
 				"app\\styles\\themes\\_dark.scss"
 			],
@@ -1435,10 +1513,6 @@
 			],
 			[
 				"gu",
-				"gulpfile.js"
-			],
-			[
-				"gul",
 				"gulpfile.js"
 			],
 			[
@@ -1460,42 +1534,6 @@
 			[
 				"paka",
 				"package.json"
-			],
-			[
-				"index.ejs",
-				"server\\views\\index.ejs"
-			],
-			[
-				"kul",
-				"src\\scripts\\kulina.js"
-			],
-			[
-				"intro",
-				"containers\\Intro.js"
-			],
-			[
-				"plan",
-				"containers\\PlanDetail.js"
-			],
-			[
-				"index.",
-				"server\\views\\index.ejs"
-			],
-			[
-				"check",
-				"containers\\Checkout.js"
-			],
-			[
-				"checl",
-				"node_modules\\babel-core\\lib\\helpers\\code-frame.js"
-			],
-			[
-				"chec",
-				"containers\\Checkout.js"
-			],
-			[
-				"analytic",
-				"src\\scripts\\3 - analytics.js"
 			]
 		],
 		"width": 0.0

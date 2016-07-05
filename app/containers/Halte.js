@@ -7,11 +7,14 @@ import RuteIndicator from 'components/RuteIndicator';
 import HalteBusItem from 'components/HalteBusItem';
 
 class Halte extends Component {
+  componentDidMount() {
+      window.scrollTo(0, 0);  
+  }
 
   render() {
     return (
       <div className="Halte">
-        <Navbar back={true} pageName="Halte" />
+        <Navbar back={true} pageName="Informasi Halte" />
         <div className="container-mobile">
           <div className="header">
             <div className="content">

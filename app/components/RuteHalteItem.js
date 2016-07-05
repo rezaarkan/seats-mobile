@@ -12,6 +12,7 @@ const styles={
 
 class RuteHalteItem extends Component {
   render() {
+    var link = this.props.link || "/rute";
     var lastTrue = this.props.last || false;
     var divider;
 
@@ -23,12 +24,12 @@ class RuteHalteItem extends Component {
 
     return (
       <div className="RuteHalteItem clearfix">
-        <Link to="/">      
+        <Link to={link}>   
           <ListItem
             primaryText={
               <div>
                 <div className="halte">
-                  <span className="name">{"Halte "+this.props.name}</span>
+                  <span className="name">{this.props.name}</span>
                   <RuteIndicator type={"ruteHalte"}/>
                 </div>
                 <div className="address">

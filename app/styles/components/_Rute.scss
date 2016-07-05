@@ -73,4 +73,22 @@
 			color: $white-70;
 		}
 	}
+
+	.seperator{
+		padding: 8px;
+		padding: calculateRem(8px);
+
+		text-align: center;
+
+		background-color: $clr-grey-100;
+
+		border-bottom: 1px solid $black-12;
+
+		span{
+			@include text-body;
+			color: $black-54;
+			font-size: 13px;
+			font-size: calculateRem(13px);
+		}
+	}
 }

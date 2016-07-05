@@ -53,8 +53,13 @@
 			margin-bottom: 6px;
 			margin-bottom: calculateRem(6px);
 
+			span{
+				color: $black-54;
+			}
+
 			.halte-location{
 				color: $s-blue-dark;
+				font-weight: $medium;
 			}
 		}
 
@@ -80,7 +85,7 @@
 
 				font-size: 18px;
 				font-size: calculateRem(18px);
-				color: $black-26;	
+				color: $s-blue-dark;	
 			}
 		}
 	}

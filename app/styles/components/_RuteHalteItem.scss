@@ -19,6 +19,7 @@
 			margin: 0;
 
 			@include text-body;
+			color: $black-54;
 		}
 
 		i{
@@ -37,6 +38,7 @@
 			@include text-body;
 			font-size: 13px;
 			font-size: calculateRem(13px);
+			color: $black-54;
 		}
 	}	
 }

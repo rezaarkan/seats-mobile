@@ -12,7 +12,7 @@ import ls from 'local-storage';
 
 const styles={
   rencanaHeader: {
-    paddingBottom: "0",
+    paddingBottom: "0px",
   },
   rencanaHeaderRute:{
     top: "15px",
@@ -28,6 +28,9 @@ const styles={
 }
 
 class RencanaRute extends Component {
+  componentDidMount() {
+      window.scrollTo(0, 0);  
+  }
 
   render() {
     var selectedRute1 = ls.get('selectedRute1') || "99";
@@ -40,8 +43,8 @@ class RencanaRute extends Component {
     var locationNameAsal = ls.get('locationNameAsal') || "Lokasi Asal";
     var locationNameTujuan = ls.get('locationNameTujuan') || "Lokasi Tujuan";
 
-    var randomDistanceAsal = Math.floor(Math.random() * 250);
-    var randomDistanceTujuan = Math.floor(Math.random() * 250);
+    var randomDistanceAsal = Math.floor(Math.random() * 110);
+    var randomDistanceTujuan = Math.floor(Math.random() * 100);
 
     var totalRencanaRute;
 

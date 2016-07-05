@@ -13,6 +13,7 @@ const styles={
 
 class RuteBusItem extends Component {
   render() {
+    var link = this.props.link || "/rute";
     var lastTrue = this.props.last || false;
     var divider;
 
@@ -34,16 +35,15 @@ class RuteBusItem extends Component {
           }
           primaryText={
             <div className="block-right">
-              <div className="title">posisi</div>
               <div className="text">
-                <span>Menuju </span><Link to="/halte" className="halte-location">{this.props.currentDestination}</Link>
+                <span>Menuju </span><Link to={link} className="halte-location">{this.props.currentDestination}</Link>
               </div>
               <div className="time">
-                <i className="mdi mdi-store" />
+                <i className="mdi mdi-clock" />
                 <span>{this.props.arrivingIn + " menit"}</span>
               </div>
               <div className="distance">
-                <i className="mdi mdi-bus" />
+                <i className="mdi mdi-trending-up" />
                 <span>{this.props.distance + " km"}</span>
               </div>
             </div>

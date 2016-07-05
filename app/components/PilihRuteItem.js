@@ -86,7 +86,7 @@ class PilihRuteItem extends Component {
             rightAvatar={
               <div>
                 <div className="time">
-                  28
+                  {this.props.time}
                 </div>
                 <div className="text">
                   menit

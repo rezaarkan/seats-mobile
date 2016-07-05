@@ -8,7 +8,6 @@ import SectionDaftarRute from 'components/SectionDaftarRute';
 import SectionDaftarHalte from 'components/SectionDaftarHalte';
 
 import {Tabs, Tab} from 'material-ui/Tabs';
-import SwipeableViews from 'react-swipeable-views';
 
 const styles={
   tab:{
@@ -17,18 +16,12 @@ const styles={
 }
 
 class Home extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      slideIndex: 0,
-    };
+  componentDidMount() {
+      window.scrollTo(0, 0);  
   }
 
   handleChange = (value) => {
-    this.setState({
-      slideIndex: value,
-    });
+
   };
 
   render() {
@@ -45,13 +38,13 @@ class Home extends Component {
               }
             }
           >
-            <Tab label="Cari rute" style={styles.tab}>
+            <Tab label="Cari rute" style={styles.tab} value={1}>
               <SectionCariRute />
             </Tab>
-            <Tab label="rute" style={styles.tab}>
+            <Tab label="rute" style={styles.tab} value={2}>
               <SectionDaftarRute />
             </Tab>
-            <Tab label="halte" style={styles.tab}>
+            <Tab label="halte" style={styles.tab} value={3}>
               <SectionDaftarHalte />
             </Tab>
           </Tabs>

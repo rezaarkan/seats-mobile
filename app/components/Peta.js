@@ -41,6 +41,8 @@ class Peta extends Component {
       ls.set('savedSuggest', []);
     }
 
+    console.log(suggest);
+
     var savedSuggest = ls.get('savedSuggest');
 
     savedSuggest.push(suggest);
