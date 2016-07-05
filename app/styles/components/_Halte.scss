@@ -11,6 +11,33 @@
 
 		box-sizing: border-box;
 
+		.bg{
+			width: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+
+			background: 50% 50% no-repeat;
+			background-position: center;
+			background-size: cover;
+			background-image: url(assets/images/skripsi-halte-kenari.jpg);
+		}
+
+		.gradient{
+			width: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+
+			@include linear-gradient($s-blue-dark, $s-blue-darker, $s-blue-darkest);
+
+			opacity: 0.8;
+		}
+
 		.content{
 			position: absolute;
 			bottom: 0;

@@ -17,6 +17,8 @@ class Halte extends Component {
         <Navbar back={true} pageName="Informasi Halte" />
         <div className="container-mobile">
           <div className="header">
+            <div className="bg" />
+            <div className="gradient" />
             <div className="content">
               <div className="name">
                 Kenari 1

@@ -4,12 +4,28 @@
 		"selected_items":
 		[
 			[
-				"rute",
-				"ruteClicked"
+				"Ma",
+				"Mandala"
 			],
 			[
-				"Ma",
-				"Malioboro"
+				"v",
+				"value"
+			],
+			[
+				"tab",
+				"tabsValue"
+			],
+			[
+				"va",
+				"tabsValue"
+			],
+			[
+				"halte",
+				"halte1"
+			],
+			[
+				"rute",
+				"ruteClicked"
 			],
 			[
 				"mar",
@@ -77,10 +93,6 @@
 			],
 			[
 				"ha",
-				"halteTransit"
-			],
-			[
-				"halte",
 				"halteTransit"
 			],
 			[
@@ -502,36 +514,27 @@
 			[
 				"cen",
 				"center"
-			],
-			[
-				"black",
-				"black-54"
-			],
-			[
-				"con",
-				"content"
-			],
-			[
-				"co",
-				"content"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/containers/Rute.js",
+			"file": "app/containers/Halte.js",
 			"settings":
 			{
-				"buffer_size": 4017,
+				"buffer_size": 3141,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/components/SectionDaftarRute.js",
+			"contents": ".Halte{\n	.header{\n		position: relative;\n		width: 100%;\n		height: 270px;\n		height: calculateRem(270px);\n\n		background-color: $s-blue-darker;\n\n		text-align: left;\n\n		box-sizing: border-box;\n\n		.bg{\n			\n		}\n\n		.content{\n			position: absolute;\n			bottom: 0;\n			left: 0;\n\n			padding-bottom: 16px;\n			padding-bottom: calculateRem(16px);\n			padding-left: 24px;\n			padding-left: calculateRem(24px);\n			padding-right: 24px;\n			padding-right: calculateRem(24px);\n		}\n\n		.name{\n			@include text-headline;\n			text-transform: capitalize;\n			color: $white-100;\n		}\n\n		.address{\n			@include text-body;\n			color: $white-70;\n		}\n\n		.landmark{\n			@include text-body;\n			font-size: 13px;\n			font-size: calculateRem(13px);\n			color: $white-70;\n		}\n	}\n\n	.seperator{\n		padding: 8px;\n		padding: calculateRem(8px);\n\n		text-align: center;\n\n		background-color: $s-blue-dark;\n\n		span{\n			@include text-body;\n			color: $white-70;\n			font-size: 13px;\n			font-size: calculateRem(13px);\n		}\n	}\n\n	.block-center{\n		i{\n			vertical-align: middle;\n\n			margin-right: 4px;\n			margin-right: calculateRem(4px);\n\n			font-size: 20px;\n			font-size: calculateRem(20px);\n			color: $s-blue-dark;	\n		}\n\n		.id{\n			display: inline-block;\n			vertical-align: middle;\n\n			@include text-caption;\n			font-size: 11px;\n			font-size: calculateRem(10px);\n			color: $clr-white;\n			text-transform: uppercase;\n\n			padding: 3px;\n			padding: calculateRem(3px);\n\n			background-color: $s-blue-light;\n			border-radius: 3px;\n		}\n\n		.text{\n			@include text-body;\n			color: $black-54;\n\n			margin-top: 4px;\n			margin-top: calculateRem(4px);\n			padding-left: 3px;\n			padding-left: calculateRem(3px);\n			padding-right: 12px;\n			padding-right: calculateRem(12px);\n\n			.halte-location{\n				color: $s-blue-dark;\n				font-weight: $medium;\n			}\n		}\n	}\n\n	.block-right{\n		.time{\n			@include text-headline;\n			text-align: center;\n\n			margin-bottom: 0;\n		}\n		.text{\n			@include text-body;\n			text-align: center;\n			color: $black-54;\n\n			line-height: 16px;\n			line-height: calculateRem(16px);\n		}\n	}\n}",
+			"file": "app/styles/components/_Halte.scss",
+			"file_size": 2127,
+			"file_write_time": 131121235761978318,
 			"settings":
 			{
-				"buffer_size": 2336,
+				"buffer_size": 2019,
 				"line_ending": "Windows"
 			}
 		}
@@ -608,37 +611,39 @@
 	],
 	"file_history":
 	[
-		"/D/Buku Tahunan/URUTAN HALAMAN 2/DIBACA.txt",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/SectionDaftarHalte.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/containers/PilihRute.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/Peta.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/containers/Home.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/containers/RencanaRute.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/containers/Halte.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/containers/Rute.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/PilihRuteItem.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteHalteItem.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_Halte.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_Rute.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteBusItem.scss",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteBusItem.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteHalteItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/SectionDaftarRute.js",
+		"/E/xampp/htdocs/seats-react-mobile/app/components/HalteBusItem.js",
+		"/D/Buku Tahunan/URUTAN HALAMAN 2/DIBACA.txt",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/Navbar.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/HalteItem.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/SectionDaftarHalte.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteItem.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_SectionDaftarRute.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteBusItem.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/HalteBusItem.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_Halte.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/containers/Halte.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteIndicator.js",
 		"/E/xampp/htdocs/seats-react-mobile/gulpfile.js",
 		"/E/xampp/htdocs/seats-react-mobile/package.json",
 		"/E/xampp/htdocs/seats-react-mobile/dist/main.css",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_SectionDaftarHalte.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_SectionCariRute.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/Peta.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/containers/Home.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/themes/_color.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/abstracts/_variables.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_Rute.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_CariRuteInput.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RencanaRute.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/containers/RencanaRute.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/containers/Rute.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_PilihRuteItem.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteBusItem.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/PilihRuteItem.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/containers/PilihRute.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/pages/_PilihRute.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/server/server.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/SectionCariRute.js",
@@ -668,7 +673,6 @@
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/vendors/_materialdesignicons.scss",
 		"/E/xampp/htdocs/seats-react-mobile/node_modules/mdi/css/materialdesignicons.min.css",
 		"/E/xampp/htdocs/seats-react-mobile/node_modules/mdi/scss/materialdesignicons.scss",
-		"/E/xampp/htdocs/seats-react-mobile/app/components/RuteHalteItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/server/server.deploy.js",
 		"/E/xampp/htdocs/seats-react-mobile/webpack.config.deploy.js",
 		"/E/xampp/htdocs/seats-react-mobile/webpack.server.deploy.js",
@@ -686,7 +690,6 @@
 		"/E/xampp/htdocs/seats-react-mobile/node_modules/react-google-maps/lib/utils/index.js",
 		"/E/xampp/htdocs/seats-react-mobile/node_modules/react-google-maps/lib/index.js",
 		"/E/xampp/htdocs/seats-react-mobile/node_modules/react-google-maps/lib/GoogleMap.js",
-		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/_RuteHalteItem.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/containers/HalteBusItem.js",
 		"/E/xampp/htdocs/seats-react-mobile/app/components/_RuteHalteItem.scss",
 		"/E/xampp/htdocs/seats-react-mobile/app/styles/components/RuteBusItem.js",
@@ -753,6 +756,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"distance",
+			"28",
+			"kenari",
+			"text",
 			"i{",
 			"i",
 			"text",
@@ -876,11 +883,7 @@
 			"maps",
 			"add",
 			"didupdate",
-			"willupdate",
-			"analyticsSeg",
-			"diskon",
-			"mdi",
-			"facebooklog"
+			"willupdate"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -909,24 +912,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/containers/Rute.js",
+					"file": "app/containers/Halte.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4017,
+						"buffer_size": 3141,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								826,
-								826
+								583,
+								583
 							]
 						],
 						"settings":
@@ -936,40 +939,117 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 90.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/components/SectionDaftarRute.js",
+					"file": "app/styles/components/_Halte.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2336,
+						"buffer_size": 2019,
 						"regions":
 						{
+							"gutter_color_104":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/blue.png",
+								"regions":
+								[
+									[
+										104,
+										139
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_1110":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/blue.png",
+								"regions":
+								[
+									[
+										1126,
+										1150
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_1281":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/white.png",
+								"regions":
+								[
+									[
+										1297,
+										1318
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_1383":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/blue.png",
+								"regions":
+								[
+									[
+										1399,
+										1434
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_1696":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/blue.png",
+								"regions":
+								[
+									[
+										1712,
+										1736
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_799":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/blue.png",
+								"regions":
+								[
+									[
+										815,
+										848
+									]
+								],
+								"scope": "gutter_color"
+							}
 						},
 						"selection":
 						[
 							[
-								1195,
-								1287
+								199,
+								199
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 180.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1024,6 +1104,98 @@
 		"selected_items":
 		[
 			[
+				"halte",
+				"app\\styles\\components\\_Halte.scss"
+			],
+			[
+				"daftar",
+				"app\\components\\SectionDaftarHalte.js"
+			],
+			[
+				"pilihrute",
+				"app\\containers\\PilihRute.js"
+			],
+			[
+				"renca",
+				"app\\containers\\RencanaRute.js"
+			],
+			[
+				"daf",
+				"app\\components\\SectionDaftarHalte.js"
+			],
+			[
+				"peta",
+				"app\\components\\Peta.js"
+			],
+			[
+				"home",
+				"app\\containers\\Home.js"
+			],
+			[
+				"rencana",
+				"app\\containers\\RencanaRute.js"
+			],
+			[
+				"rute.js",
+				"app\\containers\\Rute.js"
+			],
+			[
+				"pilihrutei",
+				"app\\components\\PilihRuteItem.js"
+			],
+			[
+				"pilihru",
+				"app\\containers\\PilihRute.js"
+			],
+			[
+				"ruteha",
+				"app\\styles\\components\\_RuteHalteItem.scss"
+			],
+			[
+				"halte.sc",
+				"app\\styles\\components\\_Halte.scss"
+			],
+			[
+				"rute.sc",
+				"app\\styles\\components\\_Rute.scss"
+			],
+			[
+				"rute.scs",
+				"app\\styles\\components\\_Rute.scss"
+			],
+			[
+				"rutehal",
+				"app\\components\\RuteHalteItem.js"
+			],
+			[
+				"rute.j",
+				"app\\containers\\Rute.js"
+			],
+			[
+				"rutebu",
+				"app\\styles\\components\\_RuteBusItem.scss"
+			],
+			[
+				"rutebus",
+				"app\\components\\RuteBusItem.js"
+			],
+			[
+				"sectiondaftarha",
+				"app\\components\\SectionDaftarHalte.js"
+			],
+			[
+				"daftarsr",
+				"app\\components\\SectionDaftarRute.js"
+			],
+			[
+				"halte.js",
+				"app\\containers\\Halte.js"
+			],
+			[
+				"haltebus",
+				"app\\components\\HalteBusItem.js"
+			],
+			[
 				"daftarr",
 				"app\\components\\SectionDaftarRute.js"
 			],
@@ -1036,10 +1208,6 @@
 				"app\\components\\SectionDaftarRute.js"
 			],
 			[
-				"rute.js",
-				"app\\containers\\Rute.js"
-			],
-			[
 				"halteit",
 				"app\\components\\HalteItem.js"
 			],
@@ -1048,16 +1216,8 @@
 				"app\\components\\RuteItem.js"
 			],
 			[
-				"daftar",
-				"app\\components\\SectionDaftarHalte.js"
-			],
-			[
 				"section",
 				"app\\styles\\pages\\_SectionDaftarRute.scss"
-			],
-			[
-				"rutebus",
-				"app\\styles\\components\\_RuteBusItem.scss"
 			],
 			[
 				"rutei",
@@ -1074,10 +1234,6 @@
 			[
 				"ruteind",
 				"app\\components\\RuteIndicator.js"
-			],
-			[
-				"halte",
-				"app\\containers\\Halte.js"
 			],
 			[
 				"daft",
@@ -1128,18 +1284,6 @@
 				"app\\components\\SectionDaftarHalte.js"
 			],
 			[
-				"home",
-				"app\\containers\\Home.js"
-			],
-			[
-				"peta",
-				"app\\components\\Peta.js"
-			],
-			[
-				"haltebus",
-				"app\\components\\HalteBusItem.js"
-			],
-			[
 				"col",
 				"app\\styles\\themes\\_color.scss"
 			],
@@ -1160,10 +1304,6 @@
 				"app\\styles\\components\\_CariRuteInput.scss"
 			],
 			[
-				"rencana",
-				"app\\styles\\components\\_RencanaRute.scss"
-			],
-			[
 				"rencan",
 				"app\\containers\\RencanaRute.js"
 			],
@@ -1180,16 +1320,8 @@
 				"app\\styles\\components\\_PilihRuteItem.scss"
 			],
 			[
-				"rute.sc",
-				"app\\styles\\components\\_Rute.scss"
-			],
-			[
 				"server",
 				"app\\server\\server.js"
-			],
-			[
-				"pilihru",
-				"app\\containers\\PilihRute.js"
 			],
 			[
 				"re",
@@ -1210,10 +1342,6 @@
 			[
 				"sectioncar",
 				"app\\components\\SectionCariRute.js"
-			],
-			[
-				"pilihrutei",
-				"app\\components\\PilihRuteItem.js"
 			],
 			[
 				"pilihr",
@@ -1254,14 +1382,6 @@
 			[
 				"main",
 				"app\\styles\\main.scss"
-			],
-			[
-				"pilihrute",
-				"app\\styles\\components\\_PilihRuteItem.scss"
-			],
-			[
-				"renca",
-				"app\\containers\\RencanaRute.js"
 			],
 			[
 				"ser",
@@ -1340,10 +1460,6 @@
 				"app\\components\\RuteBusItem.js"
 			],
 			[
-				"ruteha",
-				"app\\components\\RuteHalteItem.js"
-			],
-			[
 				"ru",
 				"app\\components\\RuteIndicator.js"
 			],
@@ -1372,16 +1488,8 @@
 				"app\\containers\\Rute.js"
 			],
 			[
-				"rutehal",
-				"app\\styles\\components\\_RuteHalteItem.scss"
-			],
-			[
 				"rutein",
 				"app\\styles\\components\\_RuteIndicator.scss"
-			],
-			[
-				"rutebu",
-				"app\\components\\RuteBusItem.js"
 			],
 			[
 				"halteb",
@@ -1506,34 +1614,6 @@
 			[
 				"varia",
 				"app\\styles\\abstracts\\_variables.scss"
-			],
-			[
-				"main.sc",
-				"app\\styles\\main.scss"
-			],
-			[
-				"gu",
-				"gulpfile.js"
-			],
-			[
-				"shri",
-				"npm-shrinkwrap.json"
-			],
-			[
-				"pa",
-				"package.json"
-			],
-			[
-				"kulina",
-				"src\\scripts\\kulina.js"
-			],
-			[
-				"base",
-				"src\\styles\\kulina\\base\\_globals.scss"
-			],
-			[
-				"paka",
-				"package.json"
 			]
 		],
 		"width": 0.0
@@ -1541,15 +1621,15 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "kul",
+		"last_filter": "",
 		"selected_items":
 		[
 			[
-				"kul",
+				"",
 				"F:\\Reza Projects\\kulina-mobile-web.sublime-project"
 			],
 			[
-				"",
+				"kul",
 				"F:\\Reza Projects\\kulina-mobile-web.sublime-project"
 			],
 			[
