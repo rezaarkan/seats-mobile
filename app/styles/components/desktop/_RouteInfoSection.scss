@@ -1,0 +1,43 @@
+.RouteInfoSection{
+	position: absolute;
+	top: 0;
+	right: 35%;
+	bottom: 0;
+	left: 22.5%;
+
+	background-color: $s-blue-darkest;
+
+	.other-bus{
+		.container{
+			@include padding-h(0);
+		}
+
+		table{
+			width: 100%;
+		}
+
+		td:first-child, th:first-child{
+			padding-left: 24px;
+			padding-left: calculateRem(24px);
+		}
+
+		td:last-child, th:last-child{
+			padding-right: 24px;
+			padding-right: calculateRem(24px);
+		}
+
+		thead{
+			th{
+				@extend %mp-clear;
+				@include text-body;
+
+				font-size: 13px;
+				font-size: calculateRem(13px);
+				color: $white-70;
+				text-transform: uppercase;
+				font-weight: $bold;
+				letter-spacing: 0.85pt;
+			}
+		}
+	}
+}

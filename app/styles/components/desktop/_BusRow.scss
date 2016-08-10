@@ -1,0 +1,60 @@
+.BusRow{
+	$route-size: 35px;
+	
+	td{
+		padding: 16px 0;
+		padding: calculateRem(16px) 0;
+
+		transition: $trans-time;
+
+		&.selected{
+			background-color: rgba(255,255,255,0.04);
+		}
+	}
+
+	td .route{
+		display: block;
+		margin: 0 auto;
+
+		@include size($route-size);
+		@include size(calculateRem($route-size));
+
+		border-radius: 50%;
+
+		@include text-body;
+
+		line-height: $route-size;
+		text-align: center;
+
+		&.near{
+			background-color: $s-blue-light;
+			color: $white-100;
+		}
+
+		&.far{
+			background-color: none;
+			color: $white-100;
+			border: 2px solid $s-blue-dark;
+		}
+	}
+
+	td .time-left, td .time-eta{
+		@include text-body;
+
+		color: $white-70;
+
+	}
+
+	.ArrivalProgress{
+		.progress-container{
+			width: 90%;
+			height: 6px;
+			height: calculateRem(6px);
+
+			margin-top: 4px;
+			margin-top: calculateRem(4px);
+
+			background-color: rgba(255,255,255,0.12);
+		}
+	}
+}

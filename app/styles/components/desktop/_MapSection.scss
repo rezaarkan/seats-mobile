@@ -1,0 +1,23 @@
+.MapSection{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 65%;
+
+	.selected-bus{
+		height: 160px;
+		height: calculateRem(160px);
+
+		background-color: $sidebar-background-color;
+
+		.container{
+			max-height: 160px;
+			max-height: calculateRem(160px);
+
+			box-sizing: border-box;
+
+			background-color: $sidebar-background-color;
+		}
+	}
+}

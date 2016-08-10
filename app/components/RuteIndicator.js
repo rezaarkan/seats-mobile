@@ -1,5 +1,7 @@
-import React, { Component, PropTypes } from 'react'
-import { Link } from 'react-router'
+import React, { Component, PropTypes } from 'react';
+import { Link } from 'react-router';
+
+import _ from 'lodash';
 
 class RuteIndicator extends Component {
   render() {
@@ -19,7 +21,7 @@ class RuteIndicator extends Component {
           <span className="plus">+</span>
           <div className="rute">{this.props.rute2}</div>
         </div>;
-    } else if (this.props.type=="ruteHalte") {
+    } else if (this.props.type=="ruteHalte" && this.props.ruteCount=="1") {
       ruteIndicator=
         <div className="RuteIndicator rute-halte clearfix">
           <div className="rute">2B</div>
@@ -35,7 +37,25 @@ class RuteIndicator extends Component {
     
     return (
       <span>
-        {ruteIndicator}
+        <div className="RuteIndicator halte clearfix">
+        {
+          _.map(this.props.ruteList, (r, i)=> {
+            if (i > 0) {
+              var ruteElement=
+                <div>
+                  <span className="plus">+</span>
+                  <div className="rute">{r.ruteId}</div>
+                </div>;
+            } else {
+              var ruteElement=
+                <div className="rute">{r.ruteId}</div>;
+            }
+            return(
+              {ruteElement}
+            )
+          })
+        }
+        </div>
       </span>
     )
   }

@@ -1,0 +1,12 @@
+.Desktop{
+	height: 100vh;
+
+	// overflow: hidden;
+
+	.layout{
+		position: relative;
+
+		min-height: 100vh;
+		min-height: calc(100vh - #{$navbar-height});
+	}
+}

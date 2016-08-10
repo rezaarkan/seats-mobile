@@ -1,0 +1,12 @@
+.Header{
+	position: relative;
+
+	nav{
+		display: flex;
+
+		height: $navbar-height;
+		height: calculateRem($navbar-height);
+
+		background-color: $s-blue-light;
+	}
+}

@@ -30,7 +30,11 @@ class RuteHalteItem extends Component {
               <div>
                 <div className="halte">
                   <span className="name">{this.props.name}</span>
-                  <RuteIndicator type={"ruteHalte"}/>
+                  <RuteIndicator
+                    type={"ruteHalte"}
+                    ruteCount={this.props.ruteCount}
+                    ruteList={this.props.ruteList}
+                  />
                 </div>
                 <div className="address">
                   <span>{this.props.address}</span>

@@ -1,0 +1,124 @@
+.NearestBus{
+	$route-size: 56px;
+	
+	background-color: $s-blue-dark;
+
+	.route{
+		display: block;
+		float: left;
+
+		@include size($route-size);
+		@include size(calculateRem($route-size));
+
+		border-radius: 50%;
+
+		@include text-headline;
+
+		color: white;
+		line-height: $route-size;
+		text-align: center;
+
+		background-color: $s-blue-light;
+	}
+
+	.info{
+		float: right;
+
+		width: calc(100% - #{$route-size});
+
+		box-sizing: border-box;
+		padding-left: 16px;
+		padding-left: calculateRem(16px);
+
+		.mdi-bus{
+			float: left;
+
+			font-size: 18px;
+			font-size: calculateRem(18px);
+
+			margin-right: 8px;
+			margin-right: calculateRem(8px);
+		}
+
+		.mdi-store{
+			float: left;
+
+			font-size: 18px;
+			font-size: calculateRem(18px);
+
+			margin-left: 8px;
+			margin-left: calculateRem(8px);
+		}
+
+		.ArrivalProgress{
+			.progress-container{
+				float: left;
+
+				width: 80%;
+				width: calc(100% - 52px);
+				width: calc(100% - #{calculateRem(52px)});
+				height: 6px;
+				height: calculateRem(6px);
+
+				background-color: rgba(255,255,255,0.12);
+
+				margin-top: 8px;
+				margin-top: calculateRem(8px);
+			}
+		}
+
+		i{
+			color: $s-blue-light;
+		}
+
+		p{
+			@extend %mp-clear;
+			@include text-body;
+
+			display: block;
+
+			color: $white-70;
+			text-transform: uppercase;
+			font-weight: $medium;
+			letter-spacing: 0.85pt;
+		}
+
+		.time-eta{
+			display: inline-block;
+
+			width: 50%;
+
+			@include text-subhead;
+
+			color: $white-100;
+			text-align: right;
+		}
+
+		.time-left{
+			display: inline-block;
+
+			width: 50%;
+
+			@include text-title;
+
+			color: $white-100;
+			text-align: left;
+		}
+
+		.halte{
+			display: inline-block;
+
+			@include text-body;
+
+			text-align: left;
+
+			&.dept{
+				color: $white-70;
+			}
+
+			&.dest{
+				color: $white-100;
+			}
+		}
+	}
+}

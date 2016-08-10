@@ -32,10 +32,22 @@
 'components/Peta';
 
 @import
+'components/desktop/Header',
+'components/desktop/ArrivalProgress',
+'components/desktop/MapSection',
+'components/desktop/Map',
+'components/desktop/BusRow',
+'components/desktop/NearestBus',
+'components/desktop/RouteInfoSection',
+'components/desktop/HalteInfo',
+'components/desktop/HalteInfoSidebar';
+
+@import
 'pages/SectionCariRute',
 'pages/SectionDaftarRute',
 'pages/SectionDaftarHalte',
 'pages/Home',
-'pages/PilihRute';
+'pages/PilihRute',
+'pages/Desktop';
 
 @import 'shame';

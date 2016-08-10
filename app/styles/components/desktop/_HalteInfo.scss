@@ -1,0 +1,197 @@
+.HalteInfo{
+	.header{
+		position: relative;
+		width: 100%;
+		height: 270px;
+		height: calculateRem(270px);
+
+		background-color: $s-blue-darker;
+
+		text-align: left;
+
+		box-sizing: border-box;
+
+		.bg{
+			width: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+
+			background: 50% 50% no-repeat;
+			background-position: center;
+			background-size: cover;
+			background-image: url(assets/images/skripsi-halte-kenari.jpg);
+		}
+
+		.gradient{
+			width: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+
+			@include linear-gradient($s-blue-dark, $s-blue-darker, $s-blue-darkest);
+
+			opacity: 0.8;
+		}
+
+		.content{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+
+			padding-bottom: 16px;
+			padding-bottom: calculateRem(16px);
+			padding-left: 24px;
+			padding-left: calculateRem(24px);
+			padding-right: 24px;
+			padding-right: calculateRem(24px);
+		}
+
+		.name{
+			@include text-headline;
+			text-transform: capitalize;
+			color: $white-100;
+		}
+
+		.address{
+			@include text-body;
+			color: $white-70;
+		}
+
+		.landmark{
+			@include text-body;
+			font-size: 13px;
+			font-size: calculateRem(13px);
+			color: $white-70;
+		}
+	}
+
+	.container{
+		@include padding-h(24px);
+		@include padding-h(calculateRem(24px));
+		@include padding-v(24px);
+		@include padding-h(calculateRem(24px));
+	}
+
+	.divider-container{
+		padding-left: 24px;
+		padding-left: calculateRem(24px);
+	}
+
+	.image-size{
+		position: relative;
+
+		@include size(120px);
+		@include size(calculateRem(120px));
+
+		display: block;
+		margin: 0 auto;
+
+		.image{
+			width: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+
+			background: 50% 50% no-repeat;
+			background-position: center;
+			background-size: cover;
+			background-color: rgba(0,0,0,0.26);
+
+			border-radius: 50%;
+		}
+	}
+
+	.routes{
+		text-align: left;
+
+		p{
+			@extend %mp-clear;
+			@include text-body;
+
+			color: $white-100;
+			text-transform: uppercase;
+			font-weight: $medium;
+			letter-spacing: 0.85pt;
+		}
+
+		.route{
+			$size: 35px;
+
+			display: inline-block;
+
+			@include size($size);
+			@include size(calculateRem($size));
+
+			border-radius: 50%;
+
+			@include text-body;
+
+			color: white;
+			line-height: $size;
+			text-align: center;
+
+			margin-right: 8px;
+			margin-right: calculateRem(8px);
+			margin-top: 8px;
+			margin-top: calculateRem(8px);
+
+			background-color: $seats-green;
+		}
+	}
+
+	.landmarks{
+		text-align: left;
+
+		p{
+			@extend %mp-clear;
+			@include text-body;
+
+			color: $text-primary;
+			text-transform: uppercase;
+			font-weight: $medium;
+			letter-spacing: 0.85pt;
+		}
+
+		.landmark{
+			display: inline-block;
+
+			@include text-body;
+
+			color: $text-secondary;
+
+			margin-right: 8px;
+			margin-right: calculateRem(8px);
+			margin-top: 8px;
+			margin-top: calculateRem(8px);
+
+			@include padding-h(8px);
+			@include padding-h(calculateRem(8px));
+
+			border-radius: 12px;
+			border-radius: calculateRem(12px);
+
+			background-color: rgba(0,0,0,0);
+			border: 1px solid $text-disabled;
+
+			transition: $trans-time;
+
+			i{
+				margin-right: 5px;
+				margin-right: calculateRem(5px);
+			}
+
+			&:hover{
+				color: $text-primary;
+				background-color: rgba(70,210,77,1);
+				border: 1px solid $seats-green;
+			}
+		}
+	}
+}

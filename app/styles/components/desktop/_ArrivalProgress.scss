@@ -1,0 +1,22 @@
+.ArrivalProgress{
+	$size: 8px;
+
+	.progress-container{
+		width: 100%;
+		height: $size;
+		height: calculateRem($size);
+
+		background-color: $clr-grey-200;
+		border-radius: $size/2;
+	}
+
+	.progress{
+		height: 100%;
+
+		background-color: $s-blue-light;
+		border-top-left-radius: $size/2;
+		border-bottom-left-radius: $size/2;
+
+		transition: $trans-time;
+	}
+}

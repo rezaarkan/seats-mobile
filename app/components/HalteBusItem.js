@@ -25,6 +25,7 @@ const styles={
 class HalteBusItem extends Component {
   render() {
     var lastTrue = this.props.last || false;
+    var link = this.props.link || "/halte";
     var divider;
 
     if (lastTrue) {
@@ -53,7 +54,7 @@ class HalteBusItem extends Component {
               <div className="id">{this.props.busId}</div>
               <div className="text">
                 <span>Menuju </span>
-                <Link to="/halte" className="halte-location">{this.props.currentDestination}</Link>
+                <Link to={link} className="halte-location">{this.props.currentDestination}</Link>
               </div>
             </div>
           }

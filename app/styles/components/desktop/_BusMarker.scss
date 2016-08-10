@@ -1,0 +1,21 @@
+.BusMarker{
+	.marker{
+		display: inline-block;
+
+		text-align: center;
+
+		padding: 4px;
+		padding: calculateRem(4px);
+
+		border-radius: 50%;
+		background-color: $seats-green;
+	}
+
+	i{
+		font-size: 18px;
+		font-size: calculateRem(18px);
+		color: white;
+
+		margin: 0 !important;
+	}
+}

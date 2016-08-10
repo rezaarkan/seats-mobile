@@ -1,0 +1,104 @@
+.Map{
+	position: relative;
+
+	height: 100%;
+
+	.progress-widget{
+		position: absolute;
+		z-index: 2;
+		left: 50%;
+		bottom: 10%;
+		transform: translate(-50%,0);
+
+		width: 75%;
+
+		line-height: 16px;
+		line-height: calculateRem(16px);
+
+		padding: 16px;
+		padding: calculateRem(16px);
+		margin: 0 auto;
+
+		background-color: $s-blue-light;
+		border-radius: 6px;
+		box-shadow: 0 5px 11px 0 rgba(0,0,0,.18) , 0 4px 15px 0 rgba(0,0,0,.15);
+	}
+
+	i{
+		float: left;
+
+		color: $white-100;
+		font-size: 18px;
+		font-size: calculateRem(18px);
+	}
+
+	.mdi-bus{
+		margin-right: 8px;
+		margin-right: calculateRem(8px);
+	}
+
+	.mdi-store{
+		margin-left: 8px;
+		margin-left: calculateRem(8px);
+	}
+
+	.ArrivalProgress{
+		.progress-container{
+			float: left;
+
+			width: 80%;
+			width: calc(100% - 52px);
+			width: calc(100% - #{calculateRem(52px)});
+
+			background-color: rgba(255,255,255,0.12);
+
+			margin-top: 4px;
+			margin-top: calculateRem(4px);
+		}
+	}
+
+	.overlay{
+		display: table;
+
+		position: absolute;
+		z-index: 1;
+
+		width: 100%;
+		height: 100%;
+
+		background-color: rgba(42,52,88,0.87);
+
+		transition: $trans-time;
+
+		.content{
+			display: table-cell;
+
+			vertical-align: middle;
+			text-align: center;
+		}
+
+		.text{		
+			@include text-headline;
+
+			color: $white-100;
+
+			margin-bottom: 20px;
+			margin-bottom: calculateRem(20px);
+		}
+
+		.button{
+			@include text-body;
+
+			@include button($s-blue-light, 6px, 8px, 16px);
+			@include button-link($white-100);
+
+			transition: $trans-time;
+
+			&:hover{
+				color: white;
+				border-color: $s-blue-dark;
+				background-color: $s-blue-dark;
+			}
+		}
+	}
+}
