@@ -11,6 +11,7 @@ const styles={
 }
 
 class HalteItem extends Component {
+
   render() {
     var link = this.props.link || "/";
     var lastTrue = this.props.last || false;
@@ -23,14 +24,13 @@ class HalteItem extends Component {
     }
 
     return (
-      <div className="HalteItem clearfix">
-        <Link to={link}>      
+      <div className="HalteItem clearfix">   
           <ListItem
             primaryText={this.props.halteName}
             secondaryText={this.props.halteAddress}
+            onTouchTap={this.props.event}
           >
           </ListItem>
-        </Link>
         {divider}
       </div>
     )

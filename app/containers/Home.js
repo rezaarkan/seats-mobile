@@ -45,7 +45,7 @@ class Home extends Component {
             }
           >
             <Tab label="Cari rute" style={styles.tab} value={1}>
-              <SectionCariRute />
+              <SectionCariRute pilihHalteAsal = {this.props.pilihHalteAsal} pilihHalteTujuan = {this.props.pilihHalteTujuan} />
             </Tab>
             <Tab label="rute" rute={this.props.rute} style={styles.tab} value={2}>
               <SectionDaftarRute rute={this.props.rute} />
@@ -61,7 +61,7 @@ class Home extends Component {
 }
 
 function mapStateToProps(state) {
-  return { rute: state.rute, halte: state.halte }
+  return { rute: state.rute, halte: state.halte, pilihHalteAsal: state.pilihHalteAsal, pilihHalteTujuan: state.pilihHalteTujuan }
 }
 
 export default connect(mapStateToProps, { loadDaftarRute, loadDaftarHalte })(Home);

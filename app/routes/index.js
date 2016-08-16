@@ -10,6 +10,7 @@ import PilihRute from 'containers/PilihRute';
 import RencanaRute from 'containers/RencanaRute';
 import Rute from 'containers/Rute';
 import Halte from 'containers/Halte';
+import PilihHalte from 'containers/PilihHalte';
 import PilihLokasiAsal from 'containers/PilihLokasiAsal';
 import PilihLokasiTujuan from 'containers/PilihLokasiTujuan';
 import Desktop from 'containers/Desktop';
@@ -24,6 +25,7 @@ export default function(history) {
         <Route path="halte/:halteId" component={Halte} />
         <Route path="asal" component={PilihLokasiAsal} />
         <Route path="tujuan" component={PilihLokasiTujuan} />
+        <Route path="pilih-halte/:jenis" component={PilihHalte} />
         <Route path="desktop" component={Desktop} />
         <IndexRoute component={Home} />
       </Route>

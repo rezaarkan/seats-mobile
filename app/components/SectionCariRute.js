@@ -4,7 +4,8 @@ import { Link } from 'react-router'
 import CariRuteInput from 'components/CariRuteInput';
 
 import RaisedButton from 'material-ui/RaisedButton';
-import ls from 'local-storage';
+
+import _ from 'lodash';
 
 const styles={
   button:{
@@ -16,8 +17,14 @@ const styles={
 class SectionCariRute extends Component {
 
   render() {
-    var homeLocationNameAsal = ls.get('locationNameAsal') || "Pilih asal";
-    var homeLocationNameTujuan = ls.get('locationNameTujuan') || "Pilih tujuan";
+    var halteAsal = this.props.pilihHalteAsal.halteAsal || {};
+    var halteTujuan = this.props.pilihHalteTujuan.halteTujuan || {};
+
+    var halteAsalName = halteAsal.halteName || "Pilih asal";
+    var halteTujuanName = halteTujuan.halteName || "Pilih tujuan";
+
+    var homeLocationNameAsal =  _.startCase(halteAsalName.toLowerCase());
+    var homeLocationNameTujuan = _.startCase(halteTujuanName.toLowerCase());
 
     return (
       <div className="SectionCariRute">

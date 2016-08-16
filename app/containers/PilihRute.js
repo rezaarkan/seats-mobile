@@ -2,21 +2,41 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
 
+import { loadPilihanRute } from 'actions/pilih-rute';
+
 import Navbar from 'components/Navbar';
 import PilihRuteItem from 'components/PilihRuteItem';
 
-import ls from 'local-storage';
+import _ from 'lodash';
 
 class PilihRute extends Component {
+
   componentDidMount() {
+      let halteAsal = this.props.pilihHalteAsal;
+      let halteTujuan = this.props.pilihHalteTujuan;
+
+      let halteAsalId = halteAsal.halteAsal.halteId;
+      let halteTujuanId = halteTujuan.halteTujuan.halteId;
+
+      console.log (halteAsalId);
+      console.log (halteTujuanId);
+
+      this.props.loadPilihanRute({ halteAsalId, halteTujuan });
+
       window.scrollTo(0, 0);  
   }
 
   render() {
-    var asal = ls.get('locationNameAsal');
-    var tujuan = ls.get('locationNameTujuan');
-    var asalOld = ls.get('locationNameAsalOld');
-    var tujuanOld = ls.get('locationNameTujuanOld');
+    var halteAsal = this.props.pilihHalteAsal.halteAsal || {};
+    var halteTujuan = this.props.pilihHalteTujuan.halteTujuan || {};
+
+    var halteAsalName = halteAsal.halteName;
+    var halteTujuanName = halteTujuan.halteName;
+
+    var asal = _.startCase(halteAsalName.toLowerCase()) || "Halte A";
+    var tujuan = _.startCase(halteTujuanName.toLowerCase()) || "Halte B";
+    var asalOld = "skda";
+    var tujuanOld = "jdkasjd";
 
     if (asal != asalOld || tujuan != tujuanOld){
       var ruteText = ['1A', '1B', '2A', '2B', '3A', '3B', '4A', '4B'];
@@ -150,8 +170,12 @@ class PilihRute extends Component {
   }
 }
 
-function mapStateToProps() {
-  return {};
+function mapStateToProps(state) {
+  return {
+    pilihHalteAsal: state.pilihHalteAsal,
+    pilihHalteTujuan: state.pilihHalteTujuan,
+    pilihRute: state.pilihRute,
+  };
 }
 
-export default connect(mapStateToProps)(PilihRute);
+export default connect(mapStateToProps, { loadPilihanRute })(PilihRute);
