@@ -29,7 +29,11 @@ const styles={
 
 class RencanaRute extends Component {
   componentDidMount() {
-      window.scrollTo(0, 0);  
+      window.scrollTo(0, 0);
+      if(this.props.pilihRute.travelInfo == undefined)
+      {
+        browserHistory.push("/");
+      }   
   }
 
   render() {
@@ -46,49 +50,22 @@ class RencanaRute extends Component {
     var randomDistanceAsal = Math.floor(Math.random() * 110);
     var randomDistanceTujuan = Math.floor(Math.random() * 100);
 
-    var totalRencanaRute;
+    var halteAsal = this.props.pilihHalteAsal.halteAsal || {};
+    var halteTujuan = this.props.pilihHalteTujuan.halteTujuan || {};
 
-    if (ruteCount=="0") {
-      totalRencanaRute =
-      <div>
-        <RencanaRuteItem
-          type={"start"}
-          location={selectedHalte1}
-          nearestBusTime={"14"}
-          rute={selectedRute1}
-          position={locationNameAsal}
-          distance={randomDistanceAsal}
-        />
-        <RencanaRuteItem type={"journey"} journeyTime={"23"}/>
-        <RencanaRuteItem
-          type={"finish"}
-          location={selectedHalte2}
-          position={locationNameTujuan}
-          distance={randomDistanceTujuan}
-        />
-      </div>;
-    } else {
-      totalRencanaRute =
-      <div>
-        <RencanaRuteItem
-          type={"start"}
-          location={selectedHalte1}
-          nearestBusTime={"14"}
-          rute={selectedRute1}
-          position={locationNameAsal}
-          distance={randomDistanceAsal}
-        />
-        <RencanaRuteItem type={"journey"} journeyTime={"23"}/>
-        <RencanaRuteItem type={"transit"} location={selectedHalteTransit} nearestBusTime={"14"} rute={selectedRute2}/>
-        <RencanaRuteItem type={"journey"} journeyTime={"23"}/>
-        <RencanaRuteItem
-          type={"finish"}
-          location={selectedHalte2}
-          position={locationNameTujuan}
-          distance={randomDistanceTujuan}
-        />
-      </div>;
-    }
+    var halteAsalName = halteAsal.halteName || "Halte A";
+    var halteTujuanName = halteTujuan.halteName || "Halte B";
+
+    var travelInfo = this.props.pilihRute.travelInfo || {};
+    var rute = [];
+    var time = Math.ceil(parseFloat(this.props.pilihRute.totalTime)/60) || "00";
+
+    var asal = _.startCase(halteAsalName.toLowerCase());
+    var tujuan = _.startCase(halteTujuanName.toLowerCase());
+
+    travelInfo.map((t, i) => {
+      rute[i] = t.ruteId;
+    });
 
     return (
       <div className="RencanaRute">
@@ -109,7 +86,7 @@ class RencanaRute extends Component {
             rightAvatar={
               <div>
                 <div className="time">
-                  28
+                  {time}
                 </div>
                 <div className="text">
                   menit
@@ -133,7 +110,21 @@ class RencanaRute extends Component {
               </div>
             }
           />
-          {totalRencanaRute}
+          <RencanaRuteItem
+            type={"start"}
+            location={asal}
+            nearestBusTime={"14"}
+            rute={rute[0]}
+            position={"Lokasi awal"}
+            distance={randomDistanceAsal}
+          />
+          <RencanaRuteItem type={"journey"} journeyTime={"23"}/>
+          <RencanaRuteItem
+            type={"finish"}
+            location={tujuan}
+            position={"Lokasi akhir"}
+            distance={randomDistanceTujuan}
+          />
         </div>
 
       </div>
@@ -141,8 +132,11 @@ class RencanaRute extends Component {
   }
 }
 
-function mapStateToProps() {
-  return {};
+function mapStateToProps(state) {
+  return {
+    pilihHalteAsal: state.pilihHalteAsal,
+    pilihHalteTujuan: state.pilihHalteTujuan,
+    pilihRute: state.pilihRute,
+  };
 }
-
 export default connect(mapStateToProps)(RencanaRute);

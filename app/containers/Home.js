@@ -4,6 +4,7 @@ import { Link } from 'react-router';
 
 import { loadDaftarRute } from 'actions/rutedaftar';
 import { loadDaftarHalte } from 'actions/halte';
+import { loadPilihanRute } from 'actions/pilih-rute';
 
 import Navbar from 'components/Navbar';
 import SectionCariRute from 'components/SectionCariRute';
@@ -24,10 +25,18 @@ class Home extends Component {
   }
 
   componentDidMount() {
-      this.props.loadDaftarRute();
-      this.props.loadDaftarHalte();
+    if ((this.props.pilihHalteAsal.halteAsal != undefined) && (this.props.pilihHalteTujuan.halteTujuan != undefined))
+    {
+      let halteAsalId = this.props.pilihHalteAsal.halteAsal.halteId;
+      let halteTujuanId = this.props.pilihHalteTujuan.halteTujuan.halteId;
+
+      this.props.loadPilihanRute({ halteAsalId, halteTujuanId });
+    }
+
+    this.props.loadDaftarRute();
+    this.props.loadDaftarHalte();
       
-      window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }
 
   render() {
@@ -61,7 +70,13 @@ class Home extends Component {
 }
 
 function mapStateToProps(state) {
-  return { rute: state.rute, halte: state.halte, pilihHalteAsal: state.pilihHalteAsal, pilihHalteTujuan: state.pilihHalteTujuan }
+  return {
+    rute: state.rute,
+    halte: state.halte,
+    pilihHalteAsal: state.pilihHalteAsal,
+    pilihHalteTujuan: state.pilihHalteTujuan,
+    pilihRute: state.pilihRute,
+ }
 }
 
-export default connect(mapStateToProps, { loadDaftarRute, loadDaftarHalte })(Home);
+export default connect(mapStateToProps, { loadDaftarRute, loadDaftarHalte, loadPilihanRute })(Home);

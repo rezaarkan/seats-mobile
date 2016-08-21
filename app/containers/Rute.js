@@ -33,6 +33,8 @@ class Rute extends Component {
   }
 
   render() {
+    var buses = this.props.ruteBus || [];
+
     return (
       <div className="Rute">
         <Navbar back={true} pageName="Informasi Rute" />
@@ -59,14 +61,14 @@ class Rute extends Component {
                 <span>{"Bus rute "+this.props.rute.ruteId}</span>
               </div>
               {
-                this.props.ruteBus.map((b)=>{
+                this.props.ruteBus.map((b, i) => {
                   var namaHalte = _.startCase(b.toHalte.namaHalte.toLowerCase()) || "Halte Tujuan";
                   var jarak = Math.ceil(parseFloat(b.jarak)/1000);
                   var waktuKedatangan = Math.ceil(parseFloat(b.waktuKedatangan)/60);
 
                   return(
                     <RuteBusItem
-                      key={b.arrivalCode}
+                      key={i}
                       busId={b.platNomor}
                       distance={jarak}
                       currentDestination={namaHalte}
@@ -82,18 +84,18 @@ class Rute extends Component {
                 <span>{"Halte yang dilalui rute "+this.props.rute.ruteId}</span>
               </div>
               {
-                this.props.ruteHalte.map((h)=> {
+                this.props.ruteHalte.map((h, i) => {
                   var temp = h.rutePass;
                   var ruteCount = Object.keys(temp).length;
 
                   return(
                     <RuteHalteItem
-                      key={h.detailHalte.halteId}
+                      key={i}
                       name={h.detailHalte.namaHalte}
                       address={h.detailHalte.lokasiHalte}
                       link={"../halte/"+h.slug}
                       ruteCount={ruteCount}
-                      ruteList={h.rutePass}
+                      
                     />
                   )
                 })
@@ -109,7 +111,10 @@ class Rute extends Component {
 }
 
 function mapStateToProps(state) {
-  return { rute: state.ruteDetail, ruteBus: state.ruteBus, ruteHalte: state.ruteHalte };
+  return {
+    rute: state.ruteDetail,
+    ruteBus: state.ruteBus,
+    ruteHalte: state.ruteHalte, };
 }
 
 export default connect(mapStateToProps, { loadRuteDetail, loadRuteBus, loadRuteHalte })(Rute);
